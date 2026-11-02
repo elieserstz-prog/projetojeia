@@ -1,0 +1,263 @@
+{
+  "sources": [
+    {
+      "id": "source-a4b3ac4af85c075d457a8c55ffb4b73e",
+      "kind": "dxf_original",
+      "version": "AC1024",
+      "inputSha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+      "options": {
+        "headerOnly": true
+      },
+      "capabilities": [
+        "input_identity"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-32b0f0527231cc3c90212641be20c619",
+      "kind": "freecad",
+      "version": "unavailable",
+      "inputSha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+      "options": {},
+      "capabilities": [],
+      "validation": {
+        "state": "rejected",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "RuntimeError: <built-in function __import__> returned a result with an exception set"
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-151bbf7e4d1da7ecb139351fe64b1429",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "FreeCAD kernel coordinates in internal mm; correspondence to DXF units/layouts not verified"
+    }
+  ],
+  "transforms": [],
+  "spaces": [],
+  "viewports": [],
+  "layers": [],
+  "blockDefinitions": [],
+  "blockInstances": [],
+  "entities": [],
+  "occurrences": [],
+  "geometries": [],
+  "dimensionStyles": [],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [],
+  "views": [],
+  "evidence": [],
+  "classifications": [],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [],
+  "reconciliations": [],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diagnostic-bf7a42354359244ad169471f4d8b8c6d",
+      "code": "EXPERIMENTAL_EXTRACTION_ONLY",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        }
+      ],
+      "message": "No physical interpretation, reconciliation or JEIA integration.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-5c2472183bdab4ee4298cd2f700ee5fa",
+      "code": "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        }
+      ],
+      "message": "Native shapes alone do not establish DXF handles, blocks, Model/Paper or view identity.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-e6e48b033dcd9615df31074cd6ace9d5",
+      "code": "NATIVE_IMPORT_SCALE_UNVERIFIED",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        }
+      ],
+      "message": "FreeCAD kernel mm do not prove DXF unit conversion; do not apply another header factor.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-2b40fcb061f8ac33619434aee84f93e7",
+      "code": "NATIVE_WORKER_ERROR",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        }
+      ],
+      "message": "RuntimeError: <built-in function __import__> returned a result with an exception set",
+      "details": {
+        "nativeLogTail": "\nTraceback (most recent call last):\n  File \"/workspace/projetojeia/dxf_fase_2b/jeia_dxf_freecad/worker.py\", line 23, in main\n    result=extract_native(request['input'],request_id=request['requestId'],generation=request['generation'],\n        revision=request['revision'],**request['limits'])\n  File \"/workspace/projetojeia/dxf_fase_2b/jeia_dxf_freecad/native.py\", line 27, in extract_native\n    Import.readDXF(str(path),doc.Name,False)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: <built-in function __import__> returned a result with an exception set\n"
+      },
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "document": {
+    "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a",
+    "fileName": "01_geometrias_mm.dxf",
+    "sha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+    "byteLength": 16216,
+    "dxfVersion": "AC1024",
+    "encoding": "utf-8",
+    "units": {
+      "rawInsunits": 4,
+      "rawMeasurement": 1,
+      "resolvedUnit": "INSUNITS:4",
+      "mmPerDrawingUnit": 1.0,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Header fact; native importer scale remains unverified"
+      }
+    },
+    "rawHeader": {
+      "$ACADVER": "AC1024",
+      "$MEASUREMENT": 1,
+      "$INSUNITS": 4
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "context": {
+    "requestId": "req-85cc781c4b694843af0b2b5b94156f13",
+    "selectionGeneration": 0,
+    "analysisRevision": 1,
+    "purpose": "production_analysis",
+    "producer": "experimental-freecad-adapter-0.1.0",
+    "createdAt": "2026-11-02T15:01:06.530003+00:00"
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        },
+        "consumer": "visualization",
+        "status": "not_assessed",
+        "blockingDiagnosticIds": [],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bf7a42354359244ad169471f4d8b8c6d",
+          "diagnostic-5c2472183bdab4ee4298cd2f700ee5fa",
+          "diagnostic-e6e48b033dcd9615df31074cd6ace9d5",
+          "diagnostic-2b40fcb061f8ac33619434aee84f93e7"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bf7a42354359244ad169471f4d8b8c6d",
+          "diagnostic-5c2472183bdab4ee4298cd2f700ee5fa",
+          "diagnostic-e6e48b033dcd9615df31074cd6ace9d5",
+          "diagnostic-2b40fcb061f8ac33619434aee84f93e7"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-d38e6cac8b5a4f8fc4263cc7a04e450a"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bf7a42354359244ad169471f4d8b8c6d",
+          "diagnostic-5c2472183bdab4ee4298cd2f700ee5fa",
+          "diagnostic-e6e48b033dcd9615df31074cd6ace9d5",
+          "diagnostic-2b40fcb061f8ac33619434aee84f93e7"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      }
+    ],
+    "cncReleased": false
+  }
+}

@@ -1,0 +1,40 @@
+Python 3.12.14; jsonschema 4.26.0 existente. Testes unitarios/simulacoes identificadas; nao equivalem a importacao DXF aprovada.
+
+test_binary_input (test_contract_and_runner.ContractTests.test_binary_input) ... ok
+test_cli_cannot_overwrite_input (test_contract_and_runner.ContractTests.test_cli_cannot_overwrite_input) ... ok
+test_empty_input (test_contract_and_runner.ContractTests.test_empty_input) ... ok
+test_inch_header_not_applied_to_native_geometry (test_contract_and_runner.ContractTests.test_inch_header_not_applied_to_native_geometry) ... ok
+test_input_limit (test_contract_and_runner.ContractTests.test_input_limit) ... ok
+test_invalid_options (test_contract_and_runner.ContractTests.test_invalid_options) ... ok
+test_invalid_selection_identity (test_contract_and_runner.ContractTests.test_invalid_selection_identity) ... ok
+test_metadata_hash (test_contract_and_runner.ContractTests.test_metadata_hash) ... ok
+test_metadata_mm (test_contract_and_runner.ContractTests.test_metadata_mm) ... ok
+test_missing_executable (test_contract_and_runner.ContractTests.test_missing_executable) ... ok
+test_no_existing_output_overwrite (test_contract_and_runner.ContractTests.test_no_existing_output_overwrite) ... ok
+test_nonfinite_number_rejected (test_contract_and_runner.ContractTests.test_nonfinite_number_rejected) ... ok
+test_schema_is_frozen (test_contract_and_runner.ContractTests.test_schema_is_frozen) ... ok
+test_schema_meta (test_contract_and_runner.ContractTests.test_schema_meta) ... ok
+test_schema_required_generation (test_contract_and_runner.ContractTests.test_schema_required_generation) ... ok
+test_simulated_bad_source_hash (test_contract_and_runner.ContractTests.test_simulated_bad_source_hash) ... ok
+test_simulated_cnc_permission_rejected (test_contract_and_runner.ContractTests.test_simulated_cnc_permission_rejected) ... ok
+test_simulated_crash (test_contract_and_runner.ContractTests.test_simulated_crash) ... ok
+test_simulated_curve_edge_coordinate_conflict_detected (test_contract_and_runner.ContractTests.test_simulated_curve_edge_coordinate_conflict_detected) ... ok
+test_simulated_material_permission_rejected (test_contract_and_runner.ContractTests.test_simulated_material_permission_rejected) ... ok
+test_simulated_missing_response (test_contract_and_runner.ContractTests.test_simulated_missing_response) ... ok
+test_simulated_response_identity (test_contract_and_runner.ContractTests.test_simulated_response_identity) ... ok
+test_simulated_response_limit (test_contract_and_runner.ContractTests.test_simulated_response_limit) ... ok
+test_simulated_snapshot_change (test_contract_and_runner.ContractTests.test_simulated_snapshot_change) ... ok
+test_simulated_timeout (test_contract_and_runner.ContractTests.test_simulated_timeout) ... ok
+test_simulated_unresolved_frame_preserves_brep_not_global_points (test_contract_and_runner.ContractTests.test_simulated_unresolved_frame_preserves_brep_not_global_points) ... ok
+test_simulated_wrong_generation (test_contract_and_runner.ContractTests.test_simulated_wrong_generation) ... ok
+test_simulated_wrong_hash (test_contract_and_runner.ContractTests.test_simulated_wrong_hash) ... ok
+test_simulated_wrong_request (test_contract_and_runner.ContractTests.test_simulated_wrong_request) ... ok
+test_sources_do_not_fabricate_ezdxf (test_contract_and_runner.ContractTests.test_sources_do_not_fabricate_ezdxf) ... ok
+test_synthetic_fixture_blocked (test_contract_and_runner.ContractTests.test_synthetic_fixture_blocked) ... ok
+test_unknown_units_no_fallback (test_contract_and_runner.ContractTests.test_unknown_units_no_fallback) ... ok
+test_unmatched_geometry (test_contract_and_runner.ContractTests.test_unmatched_geometry) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.373s
+
+OK

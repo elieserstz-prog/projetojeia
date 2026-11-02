@@ -1,0 +1,186 @@
+{
+  "experimental": true,
+  "integrationApproved": false,
+  "nativeKernel": [
+    {
+      "case": "line",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: line\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "arc",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: arc\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "circle",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: circle\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "ellipse",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: ellipse\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "bspline",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: bspline\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "disk",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: disk\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "box",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: box\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "cylinder",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: cylinder\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "placement",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: placement\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "nested_placement",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: nested_placement\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "limits",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: limits\n",
+      "stderrTail": ""
+    },
+    {
+      "case": "empty",
+      "status": "passed",
+      "exitCode": 0,
+      "schemaError": null,
+      "stdoutTail": "NATIVE CASE PASS: empty\n",
+      "stderrTail": ""
+    }
+  ],
+  "dxfImports": [
+    {
+      "route": "FreeCADCmd",
+      "fixture": "01_geometrias_mm.dxf",
+      "status": "failed",
+      "exitCode": 2,
+      "geometryCount": 0,
+      "diagnosticCodes": [
+        "EXPERIMENTAL_EXTRACTION_ONLY",
+        "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "NATIVE_PROCESS_FAILED"
+      ],
+      "schemaError": null,
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "route": "API Python",
+      "fixture": "01_geometrias_mm.dxf",
+      "status": "failed",
+      "exitCode": 2,
+      "geometryCount": 0,
+      "diagnosticCodes": [
+        "EXPERIMENTAL_EXTRACTION_ONLY",
+        "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "NATIVE_WORKER_ERROR"
+      ],
+      "schemaError": null,
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "route": "API Python",
+      "fixture": "02_peca_folha_carimbo_cotas.dxf",
+      "status": "failed",
+      "exitCode": 2,
+      "geometryCount": 0,
+      "diagnosticCodes": [
+        "EXPERIMENTAL_EXTRACTION_ONLY",
+        "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "NATIVE_WORKER_ERROR"
+      ],
+      "schemaError": null,
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "route": "API Python",
+      "fixture": "03_blocos_polegadas_ocs.dxf",
+      "status": "failed",
+      "exitCode": 2,
+      "geometryCount": 0,
+      "diagnosticCodes": [
+        "EXPERIMENTAL_EXTRACTION_ONLY",
+        "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "NATIVE_WORKER_ERROR"
+      ],
+      "schemaError": null,
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "route": "API Python",
+      "fixture": "04_unidade_ausente.dxf",
+      "status": "failed",
+      "exitCode": 2,
+      "geometryCount": 0,
+      "diagnosticCodes": [
+        "EXPERIMENTAL_EXTRACTION_ONLY",
+        "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "DXF_UNITS_UNRESOLVED",
+        "NATIVE_WORKER_ERROR"
+      ],
+      "schemaError": null,
+      "stdoutTail": "",
+      "stderrTail": ""
+    }
+  ],
+  "note": "Kernel fixtures do not approve DXF import. Native environment failures remain failures, not skipped/expected-pass cases."
+}

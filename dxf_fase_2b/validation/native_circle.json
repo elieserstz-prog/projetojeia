@@ -1,0 +1,506 @@
+{
+  "sources": [
+    {
+      "id": "source-6a7ec7fc8a24812b8aff64c21f86150e",
+      "kind": "dxf_original",
+      "version": "unknown",
+      "inputSha256": "3806a40559c48fd5275a0136b78bdaf7b01d1235f8f6abfd58c39342a3e65765",
+      "options": {
+        "headerOnly": true
+      },
+      "capabilities": [
+        "input_identity"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-82d3ea5d4523cfb766cd5918bf31f90c",
+      "kind": "freecad",
+      "version": "1.0.0",
+      "inputSha256": "3806a40559c48fd5275a0136b78bdaf7b01d1235f8f6abfd58c39342a3e65765",
+      "options": {
+        "shapeCoordinates": "FreeCAD internal mm",
+        "sourceUnitConversionVerified": false,
+        "maxEdges": 20000,
+        "maxFaces": 10000,
+        "maxBrepBytes": 16777216
+      },
+      "capabilities": [
+        "native_BREP",
+        "edge_curves",
+        "face_topology",
+        "source_object_metadata"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-f675a1e249988ff280c6751cbc54d541",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "FreeCAD kernel coordinates in internal mm; correspondence to DXF units/layouts not verified"
+    }
+  ],
+  "transforms": [],
+  "spaces": [],
+  "viewports": [],
+  "layers": [],
+  "blockDefinitions": [],
+  "blockInstances": [],
+  "entities": [],
+  "occurrences": [],
+  "geometries": [
+    {
+      "id": "geometry-3db899b1a52a0806e66061c294d9ee0f",
+      "sourceId": "source-82d3ea5d4523cfb766cd5918bf31f90c",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Shape",
+      "frameId": "frame-f675a1e249988ff280c6751cbc54d541",
+      "payload": {
+        "type": "BREP_SUMMARY",
+        "solids": 0,
+        "faces": 0,
+        "edges": 1,
+        "valid": true,
+        "bboxMin": [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        "bboxMax": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "volume": null
+      },
+      "approximation": "summary",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-4c18bb0311f30bef508cf2f13bdf52c0",
+      "sourceId": "source-82d3ea5d4523cfb766cd5918bf31f90c",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge1.Curve",
+      "frameId": "frame-f675a1e249988ff280c6751cbc54d541",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius": 5.0
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [],
+  "views": [],
+  "evidence": [
+    {
+      "id": "evidence-4fae94b26f621af2f235c290f857f112",
+      "sourceId": "source-82d3ea5d4523cfb766cd5918bf31f90c",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-4c18bb0311f30bef508cf2f13bdf52c0"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge1",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 1,
+        "geometryId": "geometry-4c18bb0311f30bef508cf2f13bdf52c0",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 6.283185307179586,
+        "lengthMm": 31.41592653589793,
+        "closed": true,
+        "start": [
+          5.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          5.0,
+          -1.2246467991473533e-15,
+          0.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-84b304531decbe8dd416b6eec88b7b84",
+      "sourceId": "source-82d3ea5d4523cfb766cd5918bf31f90c",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-3db899b1a52a0806e66061c294d9ee0f"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Topology",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Exact original/global BREP plus native objects, vertices, edges, trimmed faces and adjacency; no DXF entity association fabricated.",
+      "value": {
+        "objectName": "TestShape",
+        "objectType": "Part::Feature",
+        "properties": {
+          "Name": "TestShape",
+          "Label": "TestShape",
+          "TypeId": "Part::Feature"
+        },
+        "originalShapePlacement": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "exportedShapePlacement": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "globalPlacementKnown": true,
+        "shapeType": "Edge",
+        "aggregateOnly": false,
+        "shapeChildren": [],
+        "counts": {
+          "vertices": 1,
+          "edges": 1,
+          "faces": 0,
+          "solids": 0
+        },
+        "vertices": [
+          [
+            5.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "edges": [
+          {
+            "index": 1,
+            "geometryId": "geometry-4c18bb0311f30bef508cf2f13bdf52c0",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 6.283185307179586,
+            "lengthMm": 31.41592653589793,
+            "closed": true,
+            "start": [
+              5.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              5.0,
+              -1.2246467991473533e-15,
+              0.0
+            ]
+          }
+        ],
+        "faces": [],
+        "rawObjectBrep": "\nCASCADE Topology V1, (c) Matra-Datavision\nLocations 1\n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \nCurve2ds 0\nCurves 1\n2 0 0 0 0 0 1 1 0 -0 -0 1 0 5\nPolygon3D 0\nPolygonOnTriangulations 0\nSurfaces 0\nTriangulations 0\n\nTShapes 2\nVe\n1e-07\n5 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  1 0 0 6.28318530717959\n0\n\n1101000\n+2 0 -2 0 *\n\n+1 1 ",
+        "globalBrep": "\nCASCADE Topology V1, (c) Matra-Datavision\nLocations 3\n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \n2  2 -1 0\nCurve2ds 0\nCurves 1\n2 0 0 0 0 0 1 1 0 -0 -0 1 0 5\nPolygon3D 0\nPolygonOnTriangulations 0\nSurfaces 0\nTriangulations 0\n\nTShapes 2\nVe\n1e-07\n5 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  1 0 0 6.28318530717959\n0\n\n1101000\n+2 3 -2 3 *\n\n+1 1 ",
+        "constructionReference": false
+      },
+      "reliability": "observed"
+    }
+  ],
+  "classifications": [],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [],
+  "reconciliations": [],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diagnostic-3c792e3af04c0a9ec6ea68d466847e1b",
+      "code": "EXPERIMENTAL_EXTRACTION_ONLY",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        }
+      ],
+      "message": "No physical interpretation, reconciliation or JEIA integration.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-912a5edfbd794ba10161e05b716aa2e1",
+      "code": "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        }
+      ],
+      "message": "Native shapes alone do not establish DXF handles, blocks, Model/Paper or view identity.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-de89299578108554f2518955779aa7d8",
+      "code": "NATIVE_IMPORT_SCALE_UNVERIFIED",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        }
+      ],
+      "message": "FreeCAD kernel mm do not prove DXF unit conversion; do not apply another header factor.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-5d2c5b7d582b740676b00b12ea90cce1",
+      "code": "SYNTHETIC_DATA",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        }
+      ],
+      "message": "Synthetic kernel fixture, not a DXF integration approval.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-bf88d80d77457efa7a55027e34c4827e",
+      "code": "FACE_SCHEMA_REPRESENTATION",
+      "severity": "info",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-3db899b1a52a0806e66061c294d9ee0f"
+        }
+      ],
+      "message": "Frozen 1.0 schema has no analytic face payload; exact BREP and face metadata retained in evidence.",
+      "details": null,
+      "blocksConsumers": [],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "document": {
+    "id": "document-3806a40559c48fd5275a0136b78bdaf7",
+    "fileName": "SYNTHETIC_KERNEL_circle.dxf",
+    "sha256": "3806a40559c48fd5275a0136b78bdaf7b01d1235f8f6abfd58c39342a3e65765",
+    "byteLength": 84,
+    "dxfVersion": "unknown",
+    "encoding": null,
+    "units": {
+      "rawInsunits": 4,
+      "rawMeasurement": null,
+      "resolvedUnit": "INSUNITS:4",
+      "mmPerDrawingUnit": 1.0,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Header fact; native importer scale remains unverified"
+      }
+    },
+    "rawHeader": {
+      "$INSUNITS": 4
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "context": {
+    "requestId": "req-6389209589bd48f69837f27ede46b84c",
+    "selectionGeneration": 0,
+    "analysisRevision": 1,
+    "purpose": "synthetic_example",
+    "producer": "experimental-freecad-adapter-0.1.0",
+    "createdAt": "2026-11-02T15:01:04.053408+00:00"
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        },
+        "consumer": "visualization",
+        "status": "not_assessed",
+        "blockingDiagnosticIds": [],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-3c792e3af04c0a9ec6ea68d466847e1b",
+          "diagnostic-912a5edfbd794ba10161e05b716aa2e1",
+          "diagnostic-de89299578108554f2518955779aa7d8",
+          "diagnostic-5d2c5b7d582b740676b00b12ea90cce1"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-3c792e3af04c0a9ec6ea68d466847e1b",
+          "diagnostic-912a5edfbd794ba10161e05b716aa2e1",
+          "diagnostic-de89299578108554f2518955779aa7d8",
+          "diagnostic-5d2c5b7d582b740676b00b12ea90cce1"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-3806a40559c48fd5275a0136b78bdaf7"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-3c792e3af04c0a9ec6ea68d466847e1b",
+          "diagnostic-912a5edfbd794ba10161e05b716aa2e1",
+          "diagnostic-de89299578108554f2518955779aa7d8",
+          "diagnostic-5d2c5b7d582b740676b00b12ea90cce1"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      }
+    ],
+    "cncReleased": false
+  }
+}

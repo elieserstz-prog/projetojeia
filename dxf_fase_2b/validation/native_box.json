@@ -1,0 +1,1781 @@
+{
+  "sources": [
+    {
+      "id": "source-4146cacf03f202f277dccad2808e1943",
+      "kind": "dxf_original",
+      "version": "unknown",
+      "inputSha256": "c8125bf07a13b383081876896d625371ba953c3674ab22dc0245c1333995fe4f",
+      "options": {
+        "headerOnly": true
+      },
+      "capabilities": [
+        "input_identity"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-4200c3b9293107f8e166405dc0597f83",
+      "kind": "freecad",
+      "version": "1.0.0",
+      "inputSha256": "c8125bf07a13b383081876896d625371ba953c3674ab22dc0245c1333995fe4f",
+      "options": {
+        "shapeCoordinates": "FreeCAD internal mm",
+        "sourceUnitConversionVerified": false,
+        "maxEdges": 20000,
+        "maxFaces": 10000,
+        "maxBrepBytes": 16777216
+      },
+      "capabilities": [
+        "native_BREP",
+        "edge_curves",
+        "face_topology",
+        "source_object_metadata"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "FreeCAD kernel coordinates in internal mm; correspondence to DXF units/layouts not verified"
+    }
+  ],
+  "transforms": [],
+  "spaces": [],
+  "viewports": [],
+  "layers": [],
+  "blockDefinitions": [],
+  "blockInstances": [],
+  "entities": [],
+  "occurrences": [],
+  "geometries": [
+    {
+      "id": "geometry-4667e051e07f95a416dbadc47fe32013",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Shape",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "BREP_SUMMARY",
+        "solids": 1,
+        "faces": 6,
+        "edges": 12,
+        "valid": true,
+        "bboxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bboxMax": [
+          10.0,
+          20.0,
+          30.0
+        ],
+        "volume": {
+          "value": 6000.0,
+          "unit": "mm3",
+          "validation": {
+            "state": "extracted",
+            "evidenceIds": [],
+            "diagnosticIds": [],
+            "reason": null
+          }
+        }
+      },
+      "approximation": "summary",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-37bf6c24c5a51e3bfcb3fc2049a024e2",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge1.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          0.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-f09395b438f53fdc5add8ee4cb10feab",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge2.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-9ceb652069dc097ae62328c809461c2c",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge3.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-0719cf42d9ce3e44fc5171da84f6484c",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge4.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-40f1b30aa272f1a532ec3a2b59fd039f",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge5.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-4a13f9c6b80f5a6513ffe4df8b0f92a5",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge6.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          10.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-877c612826f39e89d819d7bbd13498b7",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge7.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          10.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-d01a1ad1ae92019e41b03cb13ee54460",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge8.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          0.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-99f70ecacc497ac66b2fbad2beef7cd9",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge9.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          0.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-6ea4c726ef227ceace331caae76587a6",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge10.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-74c17752f81e123edfc1485f8fcb91e9",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge11.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          0.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-dce9a825d3cd20db3065b8d2e1c58ef3",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "entityId": null,
+      "occurrenceId": null,
+      "sourceObjectKey": "TestShape.Edge12.Curve",
+      "frameId": "frame-a094ae3ff7d923945a1627a16f96ea2d",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          20.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [],
+  "views": [],
+  "evidence": [
+    {
+      "id": "evidence-3274562b3f71401c0f27983ee16bcc3b",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-37bf6c24c5a51e3bfcb3fc2049a024e2"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge1",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 1,
+        "geometryId": "geometry-37bf6c24c5a51e3bfcb3fc2049a024e2",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 30.0,
+        "lengthMm": 30.0,
+        "closed": false,
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          0.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-73e2fe421c08c0f200bf3dc48b1be873",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-f09395b438f53fdc5add8ee4cb10feab"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge2",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 2,
+        "geometryId": "geometry-f09395b438f53fdc5add8ee4cb10feab",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 20.0,
+        "lengthMm": 20.0,
+        "closed": false,
+        "start": [
+          0.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-3e59289b5bd2c57e6c5442b941ea7893",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-9ceb652069dc097ae62328c809461c2c"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge3",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 3,
+        "geometryId": "geometry-9ceb652069dc097ae62328c809461c2c",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 30.0,
+        "lengthMm": 30.0,
+        "closed": false,
+        "start": [
+          0.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-122b7c73bf1615ebd403fec5c4a57d93",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-0719cf42d9ce3e44fc5171da84f6484c"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge4",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 4,
+        "geometryId": "geometry-0719cf42d9ce3e44fc5171da84f6484c",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 20.0,
+        "lengthMm": 20.0,
+        "closed": false,
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-2faef42c86cdf637c6ad0dbd6bd749f3",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-40f1b30aa272f1a532ec3a2b59fd039f"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge5",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 5,
+        "geometryId": "geometry-40f1b30aa272f1a532ec3a2b59fd039f",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 30.0,
+        "lengthMm": 30.0,
+        "closed": false,
+        "start": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-ec8a23ad78d77a3927a861b851dd2744",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-4a13f9c6b80f5a6513ffe4df8b0f92a5"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge6",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 6,
+        "geometryId": "geometry-4a13f9c6b80f5a6513ffe4df8b0f92a5",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 20.0,
+        "lengthMm": 20.0,
+        "closed": false,
+        "start": [
+          10.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-9ccd150f0e651041b3ed6b2b7924c0fc",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-877c612826f39e89d819d7bbd13498b7"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge7",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 7,
+        "geometryId": "geometry-877c612826f39e89d819d7bbd13498b7",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 30.0,
+        "lengthMm": 30.0,
+        "closed": false,
+        "start": [
+          10.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-b9d4cc941b56aae7b10ed67a8fa72ce0",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-d01a1ad1ae92019e41b03cb13ee54460"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge8",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 8,
+        "geometryId": "geometry-d01a1ad1ae92019e41b03cb13ee54460",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 20.0,
+        "lengthMm": 20.0,
+        "closed": false,
+        "start": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          0.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-76f10dc0ee2d7d7998ccb94bdf258293",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-99f70ecacc497ac66b2fbad2beef7cd9"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge9",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 9,
+        "geometryId": "geometry-99f70ecacc497ac66b2fbad2beef7cd9",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 10.0,
+        "lengthMm": 10.0,
+        "closed": false,
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          0.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-1611d5f1227b3f85f89aedd4b635b0ad",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-6ea4c726ef227ceace331caae76587a6"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge10",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 10,
+        "geometryId": "geometry-6ea4c726ef227ceace331caae76587a6",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 10.0,
+        "lengthMm": 10.0,
+        "closed": false,
+        "start": [
+          0.0,
+          0.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-1ce317e9020ed8e0f356376c5d5a8ba6",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-74c17752f81e123edfc1485f8fcb91e9"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge11",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 11,
+        "geometryId": "geometry-74c17752f81e123edfc1485f8fcb91e9",
+        "orientation": "Reversed",
+        "firstParameter": 0.0,
+        "lastParameter": 10.0,
+        "lengthMm": 10.0,
+        "closed": false,
+        "start": [
+          0.0,
+          20.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          0.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-1b80b95dd363d1fcb607e81ca5367f11",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-dce9a825d3cd20db3065b8d2e1c58ef3"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Edge12",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Native edge domain, endpoints and orientation; analytic payload does not discard BREP topology.",
+      "value": {
+        "index": 12,
+        "geometryId": "geometry-dce9a825d3cd20db3065b8d2e1c58ef3",
+        "orientation": "Forward",
+        "firstParameter": 0.0,
+        "lastParameter": 10.0,
+        "lengthMm": 10.0,
+        "closed": false,
+        "start": [
+          0.0,
+          20.0,
+          30.0
+        ],
+        "end": [
+          10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "evidence-eb776c4ceb502c69dc9d844ee249b336",
+      "sourceId": "source-4200c3b9293107f8e166405dc0597f83",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-4667e051e07f95a416dbadc47fe32013"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "TestShape.Topology",
+      "method": "FreeCAD_Part_native_observation",
+      "description": "Exact original/global BREP plus native objects, vertices, edges, trimmed faces and adjacency; no DXF entity association fabricated.",
+      "value": {
+        "objectName": "TestShape",
+        "objectType": "Part::Feature",
+        "properties": {
+          "Name": "TestShape",
+          "Label": "TestShape",
+          "TypeId": "Part::Feature"
+        },
+        "originalShapePlacement": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "exportedShapePlacement": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "globalPlacementKnown": true,
+        "shapeType": "Solid",
+        "aggregateOnly": false,
+        "shapeChildren": [],
+        "counts": {
+          "vertices": 8,
+          "edges": 12,
+          "faces": 6,
+          "solids": 1
+        },
+        "vertices": [
+          [
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.0,
+            30.0
+          ],
+          [
+            0.0,
+            20.0,
+            0.0
+          ],
+          [
+            10.0,
+            0.0,
+            30.0
+          ],
+          [
+            10.0,
+            0.0,
+            0.0
+          ],
+          [
+            10.0,
+            20.0,
+            30.0
+          ],
+          [
+            10.0,
+            20.0,
+            0.0
+          ]
+        ],
+        "edges": [
+          {
+            "index": 1,
+            "geometryId": "geometry-37bf6c24c5a51e3bfcb3fc2049a024e2",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 30.0,
+            "lengthMm": 30.0,
+            "closed": false,
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              0.0,
+              0.0,
+              30.0
+            ]
+          },
+          {
+            "index": 2,
+            "geometryId": "geometry-f09395b438f53fdc5add8ee4cb10feab",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 20.0,
+            "lengthMm": 20.0,
+            "closed": false,
+            "start": [
+              0.0,
+              0.0,
+              30.0
+            ],
+            "end": [
+              0.0,
+              20.0,
+              30.0
+            ]
+          },
+          {
+            "index": 3,
+            "geometryId": "geometry-9ceb652069dc097ae62328c809461c2c",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 30.0,
+            "lengthMm": 30.0,
+            "closed": false,
+            "start": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "end": [
+              0.0,
+              20.0,
+              30.0
+            ]
+          },
+          {
+            "index": 4,
+            "geometryId": "geometry-0719cf42d9ce3e44fc5171da84f6484c",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 20.0,
+            "lengthMm": 20.0,
+            "closed": false,
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              0.0,
+              20.0,
+              0.0
+            ]
+          },
+          {
+            "index": 5,
+            "geometryId": "geometry-40f1b30aa272f1a532ec3a2b59fd039f",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 30.0,
+            "lengthMm": 30.0,
+            "closed": false,
+            "start": [
+              10.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              10.0,
+              0.0,
+              30.0
+            ]
+          },
+          {
+            "index": 6,
+            "geometryId": "geometry-4a13f9c6b80f5a6513ffe4df8b0f92a5",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 20.0,
+            "lengthMm": 20.0,
+            "closed": false,
+            "start": [
+              10.0,
+              0.0,
+              30.0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              30.0
+            ]
+          },
+          {
+            "index": 7,
+            "geometryId": "geometry-877c612826f39e89d819d7bbd13498b7",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 30.0,
+            "lengthMm": 30.0,
+            "closed": false,
+            "start": [
+              10.0,
+              20.0,
+              0.0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              30.0
+            ]
+          },
+          {
+            "index": 8,
+            "geometryId": "geometry-d01a1ad1ae92019e41b03cb13ee54460",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 20.0,
+            "lengthMm": 20.0,
+            "closed": false,
+            "start": [
+              10.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              0.0
+            ]
+          },
+          {
+            "index": 9,
+            "geometryId": "geometry-99f70ecacc497ac66b2fbad2beef7cd9",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 10.0,
+            "lengthMm": 10.0,
+            "closed": false,
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "end": [
+              10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "index": 10,
+            "geometryId": "geometry-6ea4c726ef227ceace331caae76587a6",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 10.0,
+            "lengthMm": 10.0,
+            "closed": false,
+            "start": [
+              0.0,
+              0.0,
+              30.0
+            ],
+            "end": [
+              10.0,
+              0.0,
+              30.0
+            ]
+          },
+          {
+            "index": 11,
+            "geometryId": "geometry-74c17752f81e123edfc1485f8fcb91e9",
+            "orientation": "Reversed",
+            "firstParameter": 0.0,
+            "lastParameter": 10.0,
+            "lengthMm": 10.0,
+            "closed": false,
+            "start": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              0.0
+            ]
+          },
+          {
+            "index": 12,
+            "geometryId": "geometry-dce9a825d3cd20db3065b8d2e1c58ef3",
+            "orientation": "Forward",
+            "firstParameter": 0.0,
+            "lastParameter": 10.0,
+            "lengthMm": 10.0,
+            "closed": false,
+            "start": [
+              0.0,
+              20.0,
+              30.0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              30.0
+            ]
+          }
+        ],
+        "faces": [
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Axis": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              30.0,
+              -20.0,
+              0.0
+            ],
+            "areaMm2": 600.0,
+            "centerOfMass": [
+              0.0,
+              10.0,
+              15.0
+            ],
+            "orientation": "Reversed",
+            "valid": true,
+            "index": 1,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 1,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 2,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 3,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 4,
+                    "orientation": "Reversed"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                10.0,
+                0.0,
+                0.0
+              ],
+              "Axis": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              30.0,
+              -20.0,
+              0.0
+            ],
+            "areaMm2": 600.0,
+            "centerOfMass": [
+              10.0,
+              10.0,
+              15.0
+            ],
+            "orientation": "Forward",
+            "valid": true,
+            "index": 2,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 5,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 6,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 7,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 8,
+                    "orientation": "Forward"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Axis": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              30.0,
+              0.0,
+              10.0
+            ],
+            "areaMm2": 300.0,
+            "centerOfMass": [
+              5.0,
+              0.0,
+              15.0
+            ],
+            "orientation": "Reversed",
+            "valid": true,
+            "index": 3,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 9,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 5,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 10,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 1,
+                    "orientation": "Reversed"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                0.0,
+                20.0,
+                0.0
+              ],
+              "Axis": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              30.0,
+              0.0,
+              10.0
+            ],
+            "areaMm2": 300.0,
+            "centerOfMass": [
+              5.0,
+              20.0,
+              15.0
+            ],
+            "orientation": "Forward",
+            "valid": true,
+            "index": 4,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 11,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 7,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 12,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 3,
+                    "orientation": "Forward"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Axis": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              10.0,
+              0.0,
+              20.0
+            ],
+            "areaMm2": 199.99999999999997,
+            "centerOfMass": [
+              5.0,
+              10.0,
+              0.0
+            ],
+            "orientation": "Reversed",
+            "valid": true,
+            "index": 5,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 4,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 11,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 8,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 9,
+                    "orientation": "Reversed"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Plane",
+            "attributes": {
+              "Position": [
+                0.0,
+                0.0,
+                30.0
+              ],
+              "Axis": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            "parameterRange": [
+              0.0,
+              10.0,
+              0.0,
+              20.0
+            ],
+            "areaMm2": 199.99999999999997,
+            "centerOfMass": [
+              5.0,
+              10.0,
+              30.0
+            ],
+            "orientation": "Forward",
+            "valid": true,
+            "index": 6,
+            "wires": [
+              {
+                "closed": true,
+                "edges": [
+                  {
+                    "edgeIndex": 2,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 12,
+                    "orientation": "Reversed"
+                  },
+                  {
+                    "edgeIndex": 6,
+                    "orientation": "Forward"
+                  },
+                  {
+                    "edgeIndex": 10,
+                    "orientation": "Forward"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rawObjectBrep": "\nCASCADE Topology V1, (c) Matra-Datavision\nLocations 1\n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \nCurve2ds 24\n1 0 0 1 0 \n1 0 0 1 0 \n1 30 0 0 -1 \n1 0 0 0 1 \n1 0 -20 1 0 \n1 0 0 1 0 \n1 0 0 0 -1 \n1 0 0 0 1 \n1 0 0 1 0 \n1 0 10 1 0 \n1 30 0 0 -1 \n1 10 0 0 1 \n1 0 -20 1 0 \n1 0 10 1 0 \n1 0 0 0 -1 \n1 10 0 0 1 \n1 0 0 0 1 \n1 0 0 1 0 \n1 30 0 0 1 \n1 0 0 1 0 \n1 0 0 0 1 \n1 0 20 1 0 \n1 30 0 0 1 \n1 0 20 1 0 \nCurves 12\n1 0 0 0 0 0 1 \n1 0 0 30 -0 1 0 \n1 0 20 0 0 0 1 \n1 0 0 0 -0 1 0 \n1 10 0 0 0 0 1 \n1 10 0 30 -0 1 0 \n1 10 20 0 0 0 1 \n1 10 0 0 -0 1 0 \n1 0 0 0 1 0 -0 \n1 0 0 30 1 0 -0 \n1 0 20 0 1 0 -0 \n1 0 20 30 1 0 -0 \nPolygon3D 0\nPolygonOnTriangulations 0\nSurfaces 6\n1 0 0 0 1 0 -0 0 0 1 0 -1 0 \n1 0 0 0 -0 1 0 0 0 1 1 0 -0 \n1 0 0 30 0 0 1 1 0 -0 -0 1 0 \n1 0 20 0 -0 1 0 0 0 1 1 0 -0 \n1 0 0 0 0 0 1 1 0 -0 -0 1 0 \n1 10 0 0 1 0 -0 0 0 1 0 -1 0 \nTriangulations 0\n\nTShapes 34\nVe\n1e-07\n0 0 30\n0 0\n\n0101101\n*\nVe\n1e-07\n0 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  1 0 0 30\n2  1 1 0 0 30\n2  2 2 0 0 30\n0\n\n0101000\n-34 0 +33 0 *\nVe\n1e-07\n0 20 30\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  2 0 0 20\n2  3 1 0 0 20\n2  4 3 0 0 20\n0\n\n0101000\n-31 0 +34 0 *\nVe\n1e-07\n0 20 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  3 0 0 30\n2  5 1 0 0 30\n2  6 4 0 0 30\n0\n\n0101000\n-31 0 +29 0 *\nEd\n 1e-07 1 1 0\n1  4 0 0 20\n2  7 1 0 0 20\n2  8 5 0 0 20\n0\n\n0101000\n-29 0 +33 0 *\nWi\n\n0101100\n-32 0 -30 0 +28 0 +27 0 *\nFa\n0  1e-07 1 0\n\n0111000\n+26 0 *\nVe\n1e-07\n10 0 30\n0 0\n\n0101101\n*\nVe\n1e-07\n10 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  5 0 0 30\n2  9 6 0 0 30\n2  10 2 0 0 30\n0\n\n0101000\n-24 0 +23 0 *\nVe\n1e-07\n10 20 30\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  6 0 0 20\n2  11 6 0 0 20\n2  12 3 0 0 20\n0\n\n0101000\n-21 0 +24 0 *\nVe\n1e-07\n10 20 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  7 0 0 30\n2  13 6 0 0 30\n2  14 4 0 0 30\n0\n\n0101000\n-21 0 +19 0 *\nEd\n 1e-07 1 1 0\n1  8 0 0 20\n2  15 6 0 0 20\n2  16 5 0 0 20\n0\n\n0101000\n-19 0 +23 0 *\nWi\n\n0101100\n-22 0 -20 0 +18 0 +17 0 *\nFa\n0  1e-07 6 0\n\n0111000\n+16 0 *\nEd\n 1e-07 1 1 0\n1  9 0 0 10\n2  17 2 0 0 10\n2  18 5 0 0 10\n0\n\n0101000\n-23 0 +33 0 *\nEd\n 1e-07 1 1 0\n1  10 0 0 10\n2  19 2 0 0 10\n2  20 3 0 0 10\n0\n\n0101000\n-24 0 +34 0 *\nWi\n\n0101100\n-14 0 -22 0 +13 0 +32 0 *\nFa\n0  1e-07 2 0\n\n0111000\n+12 0 *\nEd\n 1e-07 1 1 0\n1  11 0 0 10\n2  21 4 0 0 10\n2  22 5 0 0 10\n0\n\n0101000\n-19 0 +29 0 *\nEd\n 1e-07 1 1 0\n1  12 0 0 10\n2  23 4 0 0 10\n2  24 3 0 0 10\n0\n\n0101000\n-21 0 +31 0 *\nWi\n\n0101100\n-10 0 -18 0 +9 0 +28 0 *\nFa\n0  1e-07 4 0\n\n0111000\n+8 0 *\nWi\n\n0101100\n-27 0 -10 0 +17 0 +14 0 *\nFa\n0  1e-07 5 0\n\n0111000\n+6 0 *\nWi\n\n0101100\n-30 0 -9 0 +20 0 +13 0 *\nFa\n0  1e-07 3 0\n\n0111000\n+4 0 *\nSh\n\n0101100\n-25 0 +15 0 -11 0 +7 0 -5 0 +3 0 *\nSo\n\n1100000\n+2 0 *\n\n+1 1 ",
+        "globalBrep": "\nCASCADE Topology V1, (c) Matra-Datavision\nLocations 3\n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \n1\n              1               0               0               0 \n              0               1               0               0 \n              0               0               1               0 \n2  2 -1 0\nCurve2ds 24\n1 0 0 1 0 \n1 0 0 1 0 \n1 30 0 0 -1 \n1 0 0 0 1 \n1 0 -20 1 0 \n1 0 0 1 0 \n1 0 0 0 -1 \n1 0 0 0 1 \n1 0 0 1 0 \n1 0 10 1 0 \n1 30 0 0 -1 \n1 10 0 0 1 \n1 0 -20 1 0 \n1 0 10 1 0 \n1 0 0 0 -1 \n1 10 0 0 1 \n1 0 0 0 1 \n1 0 0 1 0 \n1 30 0 0 1 \n1 0 0 1 0 \n1 0 0 0 1 \n1 0 20 1 0 \n1 30 0 0 1 \n1 0 20 1 0 \nCurves 12\n1 0 0 0 0 0 1 \n1 0 0 30 -0 1 0 \n1 0 20 0 0 0 1 \n1 0 0 0 -0 1 0 \n1 10 0 0 0 0 1 \n1 10 0 30 -0 1 0 \n1 10 20 0 0 0 1 \n1 10 0 0 -0 1 0 \n1 0 0 0 1 0 -0 \n1 0 0 30 1 0 -0 \n1 0 20 0 1 0 -0 \n1 0 20 30 1 0 -0 \nPolygon3D 0\nPolygonOnTriangulations 0\nSurfaces 6\n1 0 0 0 1 0 -0 0 0 1 0 -1 0 \n1 0 0 0 -0 1 0 0 0 1 1 0 -0 \n1 0 0 30 0 0 1 1 0 -0 -0 1 0 \n1 0 20 0 -0 1 0 0 0 1 1 0 -0 \n1 0 0 0 0 0 1 1 0 -0 -0 1 0 \n1 10 0 0 1 0 -0 0 0 1 0 -1 0 \nTriangulations 0\n\nTShapes 34\nVe\n1e-07\n0 0 30\n0 0\n\n0101101\n*\nVe\n1e-07\n0 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  1 0 0 30\n2  1 1 0 0 30\n2  2 2 0 0 30\n0\n\n0101000\n-34 3 +33 3 *\nVe\n1e-07\n0 20 30\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  2 0 0 20\n2  3 1 0 0 20\n2  4 3 0 0 20\n0\n\n0101000\n-31 3 +34 3 *\nVe\n1e-07\n0 20 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  3 0 0 30\n2  5 1 0 0 30\n2  6 4 0 0 30\n0\n\n0101000\n-31 3 +29 3 *\nEd\n 1e-07 1 1 0\n1  4 0 0 20\n2  7 1 0 0 20\n2  8 5 0 0 20\n0\n\n0101000\n-29 3 +33 3 *\nWi\n\n0101100\n-32 0 -30 0 +28 0 +27 0 *\nFa\n0  1e-07 1 0\n\n0111000\n+26 0 *\nVe\n1e-07\n10 0 30\n0 0\n\n0101101\n*\nVe\n1e-07\n10 0 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  5 0 0 30\n2  9 6 0 0 30\n2  10 2 0 0 30\n0\n\n0101000\n-24 3 +23 3 *\nVe\n1e-07\n10 20 30\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  6 0 0 20\n2  11 6 0 0 20\n2  12 3 0 0 20\n0\n\n0101000\n-21 3 +24 3 *\nVe\n1e-07\n10 20 0\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  7 0 0 30\n2  13 6 0 0 30\n2  14 4 0 0 30\n0\n\n0101000\n-21 3 +19 3 *\nEd\n 1e-07 1 1 0\n1  8 0 0 20\n2  15 6 0 0 20\n2  16 5 0 0 20\n0\n\n0101000\n-19 3 +23 3 *\nWi\n\n0101100\n-22 0 -20 0 +18 0 +17 0 *\nFa\n0  1e-07 6 0\n\n0111000\n+16 0 *\nEd\n 1e-07 1 1 0\n1  9 0 0 10\n2  17 2 0 0 10\n2  18 5 0 0 10\n0\n\n0101000\n-23 3 +33 3 *\nEd\n 1e-07 1 1 0\n1  10 0 0 10\n2  19 2 0 0 10\n2  20 3 0 0 10\n0\n\n0101000\n-24 3 +34 3 *\nWi\n\n0101100\n-14 0 -22 0 +13 0 +32 0 *\nFa\n0  1e-07 2 0\n\n0111000\n+12 0 *\nEd\n 1e-07 1 1 0\n1  11 0 0 10\n2  21 4 0 0 10\n2  22 5 0 0 10\n0\n\n0101000\n-19 3 +29 3 *\nEd\n 1e-07 1 1 0\n1  12 0 0 10\n2  23 4 0 0 10\n2  24 3 0 0 10\n0\n\n0101000\n-21 3 +31 3 *\nWi\n\n0101100\n-10 0 -18 0 +9 0 +28 0 *\nFa\n0  1e-07 4 0\n\n0111000\n+8 0 *\nWi\n\n0101100\n-27 0 -10 0 +17 0 +14 0 *\nFa\n0  1e-07 5 0\n\n0111000\n+6 0 *\nWi\n\n0101100\n-30 0 -9 0 +20 0 +13 0 *\nFa\n0  1e-07 3 0\n\n0111000\n+4 0 *\nSh\n\n0101100\n-25 0 +15 0 -11 0 +7 0 -5 0 +3 0 *\nSo\n\n1100000\n+2 0 *\n\n+1 1 ",
+        "constructionReference": false
+      },
+      "reliability": "observed"
+    }
+  ],
+  "classifications": [],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [],
+  "reconciliations": [],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diagnostic-dc67886efa6a267933aa541041cda4d6",
+      "code": "EXPERIMENTAL_EXTRACTION_ONLY",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        }
+      ],
+      "message": "No physical interpretation, reconciliation or JEIA integration.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-65e812f8c649ad2c55633cedb9e177c1",
+      "code": "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        }
+      ],
+      "message": "Native shapes alone do not establish DXF handles, blocks, Model/Paper or view identity.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-fd332f1e2329c6e6b5dd5cf310aad190",
+      "code": "NATIVE_IMPORT_SCALE_UNVERIFIED",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        }
+      ],
+      "message": "FreeCAD kernel mm do not prove DXF unit conversion; do not apply another header factor.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-cad53287c9fe02dedf36e258a983c28a",
+      "code": "SYNTHETIC_DATA",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        }
+      ],
+      "message": "Synthetic kernel fixture, not a DXF integration approval.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-166cde2520b83eb091645b9a13d7e9c0",
+      "code": "FACE_SCHEMA_REPRESENTATION",
+      "severity": "info",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "geometry-4667e051e07f95a416dbadc47fe32013"
+        }
+      ],
+      "message": "Frozen 1.0 schema has no analytic face payload; exact BREP and face metadata retained in evidence.",
+      "details": null,
+      "blocksConsumers": [],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "document": {
+    "id": "document-c8125bf07a13b383081876896d625371",
+    "fileName": "SYNTHETIC_KERNEL_box.dxf",
+    "sha256": "c8125bf07a13b383081876896d625371ba953c3674ab22dc0245c1333995fe4f",
+    "byteLength": 81,
+    "dxfVersion": "unknown",
+    "encoding": null,
+    "units": {
+      "rawInsunits": 4,
+      "rawMeasurement": null,
+      "resolvedUnit": "INSUNITS:4",
+      "mmPerDrawingUnit": 1.0,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Header fact; native importer scale remains unverified"
+      }
+    },
+    "rawHeader": {
+      "$INSUNITS": 4
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "context": {
+    "requestId": "req-39cf60e6126f4bb58e1afa6b6903e76d",
+    "selectionGeneration": 0,
+    "analysisRevision": 1,
+    "purpose": "synthetic_example",
+    "producer": "experimental-freecad-adapter-0.1.0",
+    "createdAt": "2026-11-02T15:01:05.059966+00:00"
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        },
+        "consumer": "visualization",
+        "status": "not_assessed",
+        "blockingDiagnosticIds": [],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-dc67886efa6a267933aa541041cda4d6",
+          "diagnostic-65e812f8c649ad2c55633cedb9e177c1",
+          "diagnostic-fd332f1e2329c6e6b5dd5cf310aad190",
+          "diagnostic-cad53287c9fe02dedf36e258a983c28a"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-dc67886efa6a267933aa541041cda4d6",
+          "diagnostic-65e812f8c649ad2c55633cedb9e177c1",
+          "diagnostic-fd332f1e2329c6e6b5dd5cf310aad190",
+          "diagnostic-cad53287c9fe02dedf36e258a983c28a"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-c8125bf07a13b383081876896d625371"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-dc67886efa6a267933aa541041cda4d6",
+          "diagnostic-65e812f8c649ad2c55633cedb9e177c1",
+          "diagnostic-fd332f1e2329c6e6b5dd5cf310aad190",
+          "diagnostic-cad53287c9fe02dedf36e258a983c28a"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+      }
+    ],
+    "cncReleased": false
+  }
+}

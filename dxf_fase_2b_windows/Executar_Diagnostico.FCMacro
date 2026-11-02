@@ -4,12 +4,24 @@
 FREECAD_CMD = None
 # Example: FREECAD_CMD = r"C:\Program Files\FreeCAD 1.0\bin\FreeCADCmd.exe"
 
+import importlib
+import importlib.util
 import sys
+import uuid
 from pathlib import Path
-_jeia_package = str(Path(__file__).resolve().parent)
-sys.path.insert(0, _jeia_package)
+_jeia_root = Path(__file__).resolve().parent / 'diagnostic'
+# The GUI may still cache the previous diagnostic package. Load this copy in
+# its own namespace; don't replace or reuse modules belonging to that session.
+_jeia_namespace = '_jeia_diag_launcher_' + uuid.uuid4().hex
+_jeia_spec = importlib.util.spec_from_file_location(
+    _jeia_namespace, _jeia_root / '__init__.py', submodule_search_locations=[str(_jeia_root)])
+_jeia_module = importlib.util.module_from_spec(_jeia_spec)
+sys.modules[_jeia_namespace] = _jeia_module
 try:
-    from diagnostic.bootstrap import main
-    main(freecad_cmd=FREECAD_CMD)
+    _jeia_spec.loader.exec_module(_jeia_module)
+    _jeia_bootstrap = importlib.import_module(_jeia_namespace + '.bootstrap')
+    _jeia_bootstrap.main(freecad_cmd=FREECAD_CMD)
 finally:
-    sys.path.remove(_jeia_package)
+    for _jeia_key in list(sys.modules):
+        if _jeia_key == _jeia_namespace or _jeia_key.startswith(_jeia_namespace + '.'):
+            del sys.modules[_jeia_key]

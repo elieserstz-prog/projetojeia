@@ -1,0 +1,10 @@
+{
+  "profile": "isolated_defaults",
+  "variant": "legacy_explicit_endpoint",
+  "inputSha256": "9eab80bead17057320bb534b22042edd12a00eefe2e7df778c1674a6d0210bc3",
+  "expectedEdges": 3,
+  "requestedMode": null,
+  "status": "failed",
+  "error": "RuntimeError: <function _import at 0x7f5a9b545ee0> returned a result with an exception set",
+  "trace": "Traceback (most recent call last):\n  File \"/workspace/projetojeia/dxf_fase_2b_windows/diagnostic/polyline_probe.py\", line 131, in run_probe\n    stats = importer.readDXF(str(path), doc.Name, False)\nRuntimeError: <function _import at 0x7f5a9b545ee0> returned a result with an exception set\n"
+}

@@ -1,0 +1,433 @@
+{
+  "kind": "real_kernel_missing_method_wrapper_NOT_WINDOWS",
+  "freecadVersion": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "inventory": [
+    {
+      "name": "NativeWrapper",
+      "label": "Local only",
+      "typeId": "Part::FeaturePython",
+      "hasShape": true,
+      "properties": [],
+      "nullShape": false,
+      "nativeShapeCounts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "nativeLocalEdges": [
+        {
+          "index": 1,
+          "curveType": "Line",
+          "length": 10.0,
+          "start": [
+            10.0,
+            20.0,
+            30.0
+          ],
+          "end": [
+            20.0,
+            20.0,
+            30.0
+          ]
+        }
+      ],
+      "coordinateFrameStatus": "unresolved",
+      "coordinateDiagnostic": "AttributeError: getGlobalPlacement() not available on Part::FeaturePython"
+    }
+  ],
+  "globalMidpoints": {},
+  "packet": {
+    "sources": [
+      {
+        "id": "source-55c49cfc99b21bc07dceb127a4524850",
+        "kind": "dxf_original",
+        "version": "unknown",
+        "inputSha256": "d7ddad2fe291b2ab9744f206f9482529d815b7a004ebfe07f1b7008987ac87f4",
+        "options": {
+          "headerOnly": true
+        },
+        "capabilities": [
+          "input_identity"
+        ],
+        "validation": {
+          "state": "extracted",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      {
+        "id": "source-8ec16b5cdd46909a1dc78d11622889de",
+        "kind": "freecad",
+        "version": "1.0.0",
+        "inputSha256": "d7ddad2fe291b2ab9744f206f9482529d815b7a004ebfe07f1b7008987ac87f4",
+        "options": {
+          "shapeCoordinates": "FreeCAD internal mm",
+          "sourceUnitConversionVerified": false,
+          "maxEdges": 20000,
+          "maxFaces": 10000,
+          "maxBrepBytes": 16777216
+        },
+        "capabilities": [
+          "native_BREP",
+          "edge_curves",
+          "face_topology",
+          "source_object_metadata"
+        ],
+        "validation": {
+          "state": "extracted",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      }
+    ],
+    "frames": [
+      {
+        "id": "frame-ad804fd25b46ac05413ad8be3d8084c7",
+        "kind": "document_wcs",
+        "unit": "mm",
+        "spaceId": null,
+        "description": "FreeCAD kernel coordinates in internal mm; correspondence to DXF units/layouts not verified"
+      }
+    ],
+    "transforms": [],
+    "spaces": [],
+    "viewports": [],
+    "layers": [],
+    "blockDefinitions": [],
+    "blockInstances": [],
+    "entities": [],
+    "occurrences": [],
+    "geometries": [
+      {
+        "id": "geometry-d2bc083a381c96cb65d17e15a1504a3e",
+        "sourceId": "source-8ec16b5cdd46909a1dc78d11622889de",
+        "entityId": null,
+        "occurrenceId": null,
+        "sourceObjectKey": "NativeWrapper.UnresolvedFrame",
+        "frameId": "frame-ad804fd25b46ac05413ad8be3d8084c7",
+        "payload": {
+          "type": "UNSUPPORTED",
+          "originalType": "Edge",
+          "reason": "Object-to-document frame unresolved; exact local BREP retained separately"
+        },
+        "approximation": "unsupported",
+        "derivedFromGeometryIds": [],
+        "appliedTransformIds": [],
+        "validation": {
+          "state": "unsupported",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": "Object-to-document frame unresolved; exact local BREP retained separately"
+        }
+      }
+    ],
+    "dimensionStyles": [],
+    "dimensions": [],
+    "tolerances": [],
+    "annotations": [],
+    "parts": [],
+    "views": [],
+    "evidence": [
+      {
+        "id": "evidence-2f362c70f164bb09d583bdb399781410",
+        "sourceId": "source-8ec16b5cdd46909a1dc78d11622889de",
+        "targets": [
+          {
+            "kind": "geometry",
+            "id": "geometry-d2bc083a381c96cb65d17e15a1504a3e"
+          }
+        ],
+        "family": "topology",
+        "independenceKey": "NativeWrapper.UnresolvedFrame",
+        "method": "FreeCAD_Part_native_observation",
+        "description": "Local source preserved without fabricating global coordinates.",
+        "value": {
+          "objectName": "NativeWrapper",
+          "objectType": "Part::FeaturePython",
+          "originalShapePlacement": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "localBrep": "\nCASCADE Topology V1, (c) Matra-Datavision\nLocations 0\nCurve2ds 0\nCurves 1\n1 10 20 30 1 0 0 \nPolygon3D 0\nPolygonOnTriangulations 0\nSurfaces 0\nTriangulations 0\n\nTShapes 3\nVe\n1e-07\n10 20 30\n0 0\n\n0101101\n*\nVe\n1e-07\n20 20 30\n0 0\n\n0101101\n*\nEd\n 1e-07 1 1 0\n1  1 0 0 10\n0\n\n1101000\n+3 0 -2 0 *\n\n+1 0 ",
+          "coordinateFrameStatus": "unresolved"
+        },
+        "reliability": "observed"
+      }
+    ],
+    "classifications": [],
+    "observations": [],
+    "featureRelations": [],
+    "features": [],
+    "setups": [],
+    "operations": [],
+    "numericProfiles": [],
+    "reconciliations": [],
+    "decisions": [],
+    "diagnostics": [
+      {
+        "id": "diagnostic-5e4658d7bba70053e6ba47f98c328faa",
+        "code": "EXPERIMENTAL_EXTRACTION_ONLY",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          }
+        ],
+        "message": "No physical interpretation, reconciliation or JEIA integration.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-540410afbd5c5c2b6fad3f22496660aa",
+        "code": "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          }
+        ],
+        "message": "Native shapes alone do not establish DXF handles, blocks, Model/Paper or view identity.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-58550769bb18e3621bcf8df2a17823b1",
+        "code": "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          }
+        ],
+        "message": "FreeCAD kernel mm do not prove DXF unit conversion; do not apply another header factor.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-7a62fc3e4458b882af211e82f0c7183a",
+        "code": "SYNTHETIC_DATA",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          }
+        ],
+        "message": "Synthetic kernel fixture, not a DXF integration approval.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-982f2c9f7e925d1664933115cc819ad9",
+        "code": "GLOBAL_PLACEMENT_UNAVAILABLE",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          }
+        ],
+        "message": "Only native shape coordinates preserved: 'types.SimpleNamespace' object has no attribute 'getGlobalPlacement'",
+        "details": {
+          "object": "NativeWrapper"
+        },
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      }
+    ],
+    "contract": "JEIA_DXF_TECH",
+    "version": "1.0",
+    "document": {
+      "id": "document-d7ddad2fe291b2ab9744f206f9482529",
+      "fileName": "SYNTHETIC_UNRESOLVED.dxf",
+      "sha256": "d7ddad2fe291b2ab9744f206f9482529d815b7a004ebfe07f1b7008987ac87f4",
+      "byteLength": 51,
+      "dxfVersion": "unknown",
+      "encoding": null,
+      "units": {
+        "rawInsunits": 4,
+        "rawMeasurement": null,
+        "resolvedUnit": "INSUNITS:4",
+        "mmPerDrawingUnit": 1.0,
+        "resolutionMethod": "header",
+        "validation": {
+          "state": "extracted",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": "Header fact; native importer scale remains unverified"
+        }
+      },
+      "rawHeader": {
+        "$INSUNITS": 4
+      },
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    "context": {
+      "requestId": "req-b609fb028b344774931dbd78877cd42f",
+      "selectionGeneration": 0,
+      "analysisRevision": 1,
+      "purpose": "synthetic_example",
+      "producer": "experimental-freecad-adapter-0.1.0",
+      "createdAt": "2026-11-02T18:33:46.373194+00:00"
+    },
+    "validation": {
+      "stage": "extracted",
+      "schemaStatus": "not_checked",
+      "semanticStatus": "not_checked",
+      "eligibility": [
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          },
+          "consumer": "visualization",
+          "status": "not_assessed",
+          "blockingDiagnosticIds": [],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          },
+          "consumer": "material",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-5e4658d7bba70053e6ba47f98c328faa",
+            "diagnostic-540410afbd5c5c2b6fad3f22496660aa",
+            "diagnostic-58550769bb18e3621bcf8df2a17823b1",
+            "diagnostic-7a62fc3e4458b882af211e82f0c7183a",
+            "diagnostic-982f2c9f7e925d1664933115cc819ad9"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          },
+          "consumer": "process",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-5e4658d7bba70053e6ba47f98c328faa",
+            "diagnostic-540410afbd5c5c2b6fad3f22496660aa",
+            "diagnostic-58550769bb18e3621bcf8df2a17823b1",
+            "diagnostic-7a62fc3e4458b882af211e82f0c7183a",
+            "diagnostic-982f2c9f7e925d1664933115cc819ad9"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-d7ddad2fe291b2ab9744f206f9482529"
+          },
+          "consumer": "cost",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-5e4658d7bba70053e6ba47f98c328faa",
+            "diagnostic-540410afbd5c5c2b6fad3f22496660aa",
+            "diagnostic-58550769bb18e3621bcf8df2a17823b1",
+            "diagnostic-7a62fc3e4458b882af211e82f0c7183a",
+            "diagnostic-982f2c9f7e925d1664933115cc819ad9"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        }
+      ],
+      "cncReleased": false
+    }
+  },
+  "brepChecks": [
+    {
+      "object": "NativeWrapper",
+      "kind": "localBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "625602f0d395e63ef5ceabd6e942b7524c96c6e63baa54f64366fcd77b357865",
+      "bytes": 293,
+      "coordinateFrameStatus": "unresolved",
+      "physicalCoordinatesApproved": false
+    }
+  ],
+  "integrationApproved": false,
+  "windowsValidationApproved": false
+}

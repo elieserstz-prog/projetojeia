@@ -8,8 +8,9 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from diagnostic.core import (compare, isolation, profile, read_json, run_process, sha256,
+from diagnostic.core import (isolation, profile, read_json, run_process, sha256,
                              summarize, validate_identity, write_json)
+from diagnostic.assessment import assess_geometry
 
 
 def execute(exe, session, folder, request):
@@ -93,7 +94,7 @@ def run(config):
                 validate_identity(result['packet'], original_hash, request)
                 if sha256(path) != original_hash:
                     raise ValueError('Example bytes changed')
-                entry['comparison'] = compare(result['packet'], case, result['edgeMidpoints'])
+                entry['comparison'] = assess_geometry(result['packet'], case, result['edgeMidpoints'], result['objectInventory'])
                 entry['brepChecks'] = result['brepChecks']
                 entry['brepFiles'] = export_brep(result, folder)
                 entry['objectInventory'] = result['objectInventory']
@@ -104,12 +105,27 @@ def run(config):
                     entry['status'] = 'failed'
                     entry['reason'] = 'BREP absent, invalid, or changed during round-trip'
                 if any(d['code'] in ('NATIVE_GEOMETRY_CONFLICT', 'TOPOLOGY_RESOURCE_LIMIT', 'BREP_RESOURCE_LIMIT',
-                                     'BREP_EXPORT_FAILED', 'GLOBAL_PLACEMENT_UNAVAILABLE', 'FACE_METADATA_UNAVAILABLE')
+                                     'BREP_EXPORT_FAILED', 'FACE_METADATA_UNAVAILABLE')
                        for d in entry['diagnostics']):
                     entry['status'] = 'failed'
                     entry['reason'] = 'Native conflict, resource limit or incomplete geometry; inspect diagnostics'
             except Exception as exc:
                 entry['reason'] = type(exc).__name__ + ': ' + str(exc)
+        # Extra investigation is observational; it never patches the input or
+        # changes acceptance of the original four cases.
+        try:
+            probe_folder = session / 'polyline_probe'
+            request = {'session': str(session), 'mode': 'polyline_probe',
+                       'input': str(ROOT / 'examples' / oracle['cases'][0]['file']),
+                       'probeOutput': str(probe_folder / 'trials')}
+            probe = execute(config['freecadCmd'], session, probe_folder, request)
+            report['polylineInvestigation'] = {'status': 'completed', 'folder': probe_folder.name,
+                                                'trials': len(probe['trials']),
+                                                'sourceUnchanged': probe['sourceUnchanged'],
+                                                'changesOriginalCaseResults': False}
+        except Exception as exc:
+            report['polylineInvestigation'] = {'status': 'failed', 'error': str(exc),
+                                                'changesOriginalCaseResults': False}
         statuses = [c['status'] for c in report['cases']]
         if not report['kernelControl']['passed'] or 'failed' in statuses:
             report['technicalOutcome'] = 'failed'

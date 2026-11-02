@@ -1,0 +1,38 @@
+{
+  "kind": "source_inspection_not_execution_of_FreeCAD_1_1_4",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Mod/Draft/importDXF.py",
+      "sha256": "c0520e31a75a8e4dcb002c606d606855b1a9a565da0f13400d62761dccf9a992",
+      "bytes": 191300
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Mod/Import/App/AppImportPy.cpp",
+      "sha256": "4438cd9f9a626f5888ef41dec3491ec9c2f3ab9c6582f01dc55769beaec0049c",
+      "bytes": 27420
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Mod/Import/App/dxf/ImpExpDxf.cpp",
+      "sha256": "c0d79c58d129d2eeaf0299a599bde9c4c43e86b8ca31d9e1f07ca5a7accbd994",
+      "bytes": 80822
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Mod/Import/App/dxf/dxf.cpp",
+      "sha256": "635d7d580a42d49a725b5c63f7b75411532f1c27070e824770a9ddfecbe7b9f3",
+      "bytes": 112040
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Mod/Import/App/dxf/dxf.h",
+      "sha256": "3b3d411e656d05ef670266d58161090532aa44425a34dc64d726e707b2c2281c",
+      "bytes": 35425
+    }
+  ],
+  "mechanism": [
+    "eInteger1 is DXF code 70",
+    "SetupValueAttribute stores address of flags",
+    "ReadPolyLine registers header flags then reads VERTEX without unregistering code 70",
+    "VERTEX flags=0 overwrite closed POLYLINE flags=1",
+    "OnReadPolyline receives overwritten flags and BuildWireFromPolyline skips closing edge"
+  ],
+  "sourceFixApplied": false
+}

@@ -1,0 +1,1 @@
+PASS: native local BREP retained; no global coordinates invented; no AttributeError

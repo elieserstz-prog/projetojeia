@@ -1,5 +1,11 @@
 JEIA DXF FASE 2B - DIAGNOSTICO WINDOWS EXPERIMENTAL
 
+REVISAO CORRECOES R01: extraia em uma PASTA NOVA. Preserve a sessao anterior.
+Corrige o tratamento de objetos sem getGlobalPlacement sem inventar WCS.
+Adiciona 30 ensaios de fechamento de polilinha em perfis temporarios.
+Nao corrige silenciosamente o DXF nem modifica o importador instalado.
+Leia RELATORIO_CORRECOES_R01.md para resultados e limitacoes.
+
 1. Salve o ZIP em Downloads e use EXTRair tudo. Nao execute de dentro do ZIP.
 2. Abra a pasta extraida e execute INICIAR_DIAGNOSTICO.cmd com duplo clique.
    Nao e necessario executar como administrador. Nao abra a JEIA CAD 04.1.
@@ -7,7 +13,8 @@ JEIA DXF FASE 2B - DIAGNOSTICO WINDOWS EXPERIMENTAL
 4. Abra RESUMO.txt e relatorio.json nessa pasta.
 
 O pacote procurara o FreeCADCmd instalado e executara um teste de versao,
-um controle do kernel e quatro importacoes DXF em processos separados.
+um controle do kernel e quatro importacoes DXF em processos separados,
+mais um trabalhador isolado com 30 ensaios de investigacao de polilinha.
 Escrevera somente resultados e configuracoes temporarias na pasta da sessao.
 Nao instala programas ou bibliotecas, nao altera a instalacao nem as
 preferencias habituais do FreeCAD e nao executa a JEIA. Em timeout, encerra

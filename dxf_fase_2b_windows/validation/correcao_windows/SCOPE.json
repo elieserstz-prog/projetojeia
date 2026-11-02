@@ -1,0 +1,21 @@
+{
+  "originalCAD": {
+    "commit": "456495402676e7b4bee023377d5fea0ddfa8230f",
+    "checkedFiles": 15,
+    "changedFiles": [],
+    "preserved": true
+  },
+  "approvedFase2B": {
+    "commit": "a6aeed691cf4276a2e0f4c50bc723909e8712d8c",
+    "checkedFiles": 56,
+    "changedFiles": [],
+    "preserved": true
+  },
+  "approvedAdapterExamplesAndSchemaByteIdentical": true,
+  "noDependenciesInstalled": true,
+  "windowsR01Executed": false,
+  "baselineDiagnosticCommit": "bf78d6d6e2642a6f28a346ae981408486aaf05da",
+  "expectedValuesUnchanged": true,
+  "powershellAndCmdUnchanged": true,
+  "macroLoadsNewRevisionWithoutCacheReuse": true
+}

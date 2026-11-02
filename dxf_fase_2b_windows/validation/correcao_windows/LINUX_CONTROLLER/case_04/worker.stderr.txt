@@ -1,0 +1,2 @@
+Unknown value '0' for INSUNITS
+Unable to process encoding for TEXT/MTEXT 'Revisão: peça sintética — não fabricar'

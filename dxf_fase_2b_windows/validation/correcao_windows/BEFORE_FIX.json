@@ -1,0 +1,7 @@
+{
+  "sourceCommit": "bf78d6d6e2642a6f28a346ae981408486aaf05da",
+  "method": "Executed original inventory AST block with object lacking getGlobalPlacement",
+  "errorType": "AttributeError",
+  "error": "'types.SimpleNamespace' object has no attribute 'getGlobalPlacement'",
+  "reproduced": true
+}

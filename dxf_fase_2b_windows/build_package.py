@@ -4,7 +4,7 @@ from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-ZIP_NAME = 'JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS.zip'
+ZIP_NAME = 'JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS_CORRECOES_R01.zip'
 PREFIX = ZIP_NAME[:-4]
 
 

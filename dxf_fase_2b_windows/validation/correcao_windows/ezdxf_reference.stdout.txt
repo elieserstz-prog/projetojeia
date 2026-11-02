@@ -1,0 +1,1 @@
+PASS: original DXF closed with 3 edges; all 5 differential references match ezdxf

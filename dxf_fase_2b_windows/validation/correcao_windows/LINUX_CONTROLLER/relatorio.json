@@ -1,0 +1,449 @@
+{
+  "format": "JEIA_DXF_WINDOWS_DIAGNOSTIC",
+  "version": "1.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "experimental": true,
+  "windowsValidationApproved": false,
+  "integrationApproved": false,
+  "schemaValidation": "not_run_no_jsonschema_dependency",
+  "freecadCmd": "/usr/bin/freecadcmd",
+  "cases": [
+    {
+      "file": "01_geometrias_mm.dxf",
+      "status": "failed",
+      "folder": "case_01",
+      "expected": {
+        "file": "01_geometrias_mm.dxf",
+        "geometries": [
+          {
+            "id": "line_10mm",
+            "type": "LINE",
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "arc_crossing_zero",
+            "type": "ARC",
+            "center": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "sweepRad": 0.3490658503988659,
+            "lengthMm": 1.7453292519943295,
+            "start": [
+              24.92403876506104,
+              -0.868240888334652,
+              0
+            ],
+            "end": [
+              24.92403876506104,
+              0.8682408883346495,
+              0
+            ],
+            "midpoint": [
+              25.0,
+              -1.2246467991473533e-15,
+              0
+            ]
+          },
+          {
+            "id": "circle_r3",
+            "type": "CIRCLE",
+            "center": [
+              40,
+              0,
+              0
+            ],
+            "radius": 3,
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "bulge_positive",
+            "type": "ARC",
+            "center": [
+              5,
+              20,
+              0
+            ],
+            "radius": 5,
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "sweepRad": 3.141592653589793,
+            "lengthMm": 15.707963267948966,
+            "start": [
+              0.0,
+              20.0,
+              0
+            ],
+            "end": [
+              10.0,
+              20.0,
+              0
+            ],
+            "midpoint": [
+              4.999999999999999,
+              15.0,
+              0
+            ]
+          },
+          {
+            "id": "bulge_negative",
+            "type": "ARC",
+            "center": [
+              15,
+              20,
+              0
+            ],
+            "radius": 5,
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "sweepRad": -3.141592653589793,
+            "lengthMm": 15.707963267948966,
+            "start": [
+              10.0,
+              20.0,
+              0
+            ],
+            "end": [
+              20.0,
+              20.0,
+              0
+            ],
+            "midpoint": [
+              15.0,
+              25.0,
+              0
+            ]
+          },
+          {
+            "id": "polyline_1",
+            "type": "LINE",
+            "start": [
+              0,
+              40,
+              0
+            ],
+            "end": [
+              10,
+              40,
+              0
+            ]
+          },
+          {
+            "id": "polyline_2",
+            "type": "LINE",
+            "start": [
+              10,
+              40,
+              0
+            ],
+            "end": [
+              10,
+              50,
+              0
+            ]
+          },
+          {
+            "id": "polyline_closing",
+            "type": "LINE",
+            "start": [
+              10,
+              50,
+              0
+            ],
+            "end": [
+              0,
+              40,
+              0
+            ]
+          }
+        ],
+        "exactAnalyticCount": true,
+        "pending": []
+      },
+      "reason": "RuntimeError: RuntimeError: <function _import at 0x7f9cb77519e0> returned a result with an exception set"
+    },
+    {
+      "file": "02_peca_folha_carimbo_cotas.dxf",
+      "status": "failed",
+      "folder": "case_02",
+      "expected": {
+        "file": "02_peca_folha_carimbo_cotas.dxf",
+        "geometries": [
+          {
+            "id": "model_lower",
+            "type": "LINE",
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              100,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "model_right",
+            "type": "LINE",
+            "start": [
+              100,
+              0,
+              0
+            ],
+            "end": [
+              100,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "model_upper",
+            "type": "LINE",
+            "start": [
+              100,
+              60,
+              0
+            ],
+            "end": [
+              0,
+              60,
+              0
+            ]
+          },
+          {
+            "id": "model_left",
+            "type": "LINE",
+            "start": [
+              0,
+              60,
+              0
+            ],
+            "end": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "model_circle",
+            "type": "CIRCLE",
+            "center": [
+              25,
+              30,
+              0
+            ],
+            "radius": 5,
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "exactAnalyticCount": false,
+        "pending": [
+          {
+            "id": "paper_and_annotations",
+            "reason": "Native shapes do not establish Model/Paper, viewport, dimension tolerance, title block or source-handle identity. Inspect inventory and packet; semantic reconciliation is pending."
+          }
+        ]
+      },
+      "reason": "RuntimeError: RuntimeError: <function _import at 0x7f6655b599e0> returned a result with an exception set"
+    },
+    {
+      "file": "03_blocos_polegadas_ocs.dxf",
+      "status": "failed",
+      "folder": "case_03",
+      "expected": {
+        "file": "03_blocos_polegadas_ocs.dxf",
+        "geometries": [
+          {
+            "id": "block_occurrence_1",
+            "type": "ELLIPSE",
+            "center": [
+              254,
+              457.2,
+              0
+            ],
+            "majorRadius": 50.8,
+            "minorRadius": 25.4,
+            "majorDirection": [
+              0,
+              1,
+              0
+            ],
+            "minorDirection": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "block_occurrence_2",
+            "type": "ELLIPSE",
+            "center": [
+              254,
+              584.2,
+              0
+            ],
+            "majorRadius": 50.8,
+            "minorRadius": 25.4,
+            "majorDirection": [
+              0,
+              1,
+              0
+            ],
+            "minorDirection": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "ocs_circle",
+            "type": "CIRCLE",
+            "center": [
+              -50.8,
+              101.6,
+              76.2
+            ],
+            "radius": 25.4,
+            "normal": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "exactAnalyticCount": true,
+        "pending": [
+          {
+            "id": "block_origin_mapping",
+            "reason": "Known geometric landmarks checked independently; occurrence/handle association remains unavailable in native adapter."
+          }
+        ]
+      },
+      "reason": "RuntimeError: RuntimeError: <function _import at 0x7f9326ddd9e0> returned a result with an exception set"
+    },
+    {
+      "file": "04_unidade_ausente.dxf",
+      "status": "failed",
+      "folder": "case_04",
+      "expected": {
+        "file": "04_unidade_ausente.dxf",
+        "geometries": [],
+        "exactAnalyticCount": false,
+        "pending": [
+          {
+            "id": "physical_units",
+            "reason": "INSUNITS=0; operator must confirm physical units. No factor 1 fallback."
+          },
+          {
+            "id": "text_and_spline_semantics",
+            "reason": "Inventory records available text and curves, without guaranteeing complete Unicode text or spline-source correspondence."
+          }
+        ]
+      },
+      "reason": "RuntimeError: RuntimeError: <function _import at 0x7f364a841ee0> returned a result with an exception set"
+    }
+  ],
+  "technicalOutcome": "failed",
+  "note": "Geometric diagnostic only. Pending operator review; no JEIA, STEP or manufacturing use.",
+  "freecadVersion": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "pythonVersion": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "isolation": {
+    "passed": true,
+    "effectivePaths": {
+      "UserParameter": "/tmp/jeia-windows-correcoes-driver-final/driver_profile/user.cfg",
+      "SystemParameter": "/tmp/jeia-windows-correcoes-driver-final/driver_profile/system.cfg",
+      "UserAppData": "/tmp/jeia-windows-correcoes-driver-final/driver_profile/data/",
+      "UserHomePath": "/tmp/jeia-windows-correcoes-driver-final/driver_profile/home"
+    }
+  },
+  "approvedAssetsIntegrity": {
+    "passed": true,
+    "mismatches": []
+  },
+  "kernelControl": {
+    "passed": true,
+    "brepChecks": [
+      {
+        "object": "ControlBox",
+        "kind": "rawObjectBrep",
+        "status": "passed",
+        "valid": true,
+        "counts": {
+          "edges": 12,
+          "faces": 6,
+          "vertices": 8,
+          "solids": 1
+        },
+        "sha256": "7fb040b6ac25112fd9bb3a483260bc10f702892ca0e79a1477a8bee4eb64fee8",
+        "bytes": 2746
+      },
+      {
+        "object": "ControlBox",
+        "kind": "globalBrep",
+        "status": "passed",
+        "valid": true,
+        "counts": {
+          "edges": 12,
+          "faces": 6,
+          "vertices": 8,
+          "solids": 1
+        },
+        "sha256": "e167169507dac31c5b3a4b8d7dcdc3d6866ab70313854cd015d1b2e47c4b5318",
+        "bytes": 2953
+      }
+    ],
+    "process": {
+      "exitCode": 0,
+      "timedOut": false,
+      "seconds": 0.315,
+      "stdout": "worker.stdout.txt",
+      "stderr": "worker.stderr.txt"
+    }
+  },
+  "polylineInvestigation": {
+    "status": "completed",
+    "folder": "polyline_probe",
+    "trials": 30,
+    "sourceUnchanged": true,
+    "changesOriginalCaseResults": false
+  },
+  "hostLimitation": "Non-Windows run cannot validate Windows FreeCADCmd"
+}

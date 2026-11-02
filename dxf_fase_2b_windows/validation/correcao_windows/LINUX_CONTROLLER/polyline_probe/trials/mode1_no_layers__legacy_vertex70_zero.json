@@ -1,0 +1,57 @@
+{
+  "profile": "mode1_no_layers",
+  "variant": "legacy_vertex70_zero",
+  "inputSha256": "23bbef4080f6975ef7cd4368c074b295050efa91c9098c5e3b75931867629f5f",
+  "expectedEdges": 3,
+  "requestedMode": 1,
+  "status": "failed",
+  "beforeAdapter": {
+    "objects": [
+      {
+        "name": "Compound",
+        "typeId": "Part::Feature",
+        "edges": [
+          {
+            "startLocal": [
+              0.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              50.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          }
+        ],
+        "edgeCountBeforeAdapter": 2
+      }
+    ],
+    "edgeCountBeforeAdapter": 2,
+    "closingLandmarkPresentBeforeAdapter": false,
+    "coordinateFrame": "native_local_only",
+    "countsMeaning": "observations, not physical quantities"
+  },
+  "importStatistics": null,
+  "afterAdapterEdgeCounts": {
+    "Compound": 2
+  },
+  "unresolvedAdapterObjects": [],
+  "collectorReadOnlyVerified": true
+}

@@ -1,0 +1,127 @@
+{
+  "profile": "mode3_no_layers",
+  "variant": "approved_original_full",
+  "inputSha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+  "expectedEdges": 8,
+  "requestedMode": 3,
+  "status": "failed",
+  "beforeAdapter": {
+    "objects": [
+      {
+        "name": "Compound",
+        "typeId": "Part::Feature",
+        "edges": [
+          {
+            "startLocal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              0.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              24.92403876506104,
+              -0.8682408883346567,
+              0.0
+            ],
+            "endLocal": [
+              24.92403876506104,
+              0.8682408883346499,
+              0.0
+            ],
+            "length": 1.7453292519943326,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              37.0,
+              0.0,
+              0.0
+            ],
+            "endLocal": [
+              37.0,
+              -7.347880794884119e-16,
+              0.0
+            ],
+            "length": 18.84955592153876,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              0.0,
+              20.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              20.0,
+              0.0
+            ],
+            "length": 15.707963267948966,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              10.0,
+              20.0,
+              0.0
+            ],
+            "endLocal": [
+              20.0,
+              20.0,
+              0.0
+            ],
+            "length": 15.707963267948966,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              0.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              50.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          }
+        ],
+        "edgeCountBeforeAdapter": 7
+      }
+    ],
+    "edgeCountBeforeAdapter": 7,
+    "closingLandmarkPresentBeforeAdapter": false,
+    "coordinateFrame": "native_local_only",
+    "countsMeaning": "observations, not physical quantities"
+  },
+  "importStatistics": null,
+  "afterAdapterEdgeCounts": {
+    "Compound": 7
+  },
+  "unresolvedAdapterObjects": [],
+  "collectorReadOnlyVerified": true
+}

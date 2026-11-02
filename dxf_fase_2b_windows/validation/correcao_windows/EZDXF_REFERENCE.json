@@ -1,0 +1,325 @@
+{
+  "kind": "ezdxf_existing_library_reference",
+  "ezdxfVersion": "1.4.4",
+  "inputSha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+  "originalRawPolyline": {
+    "handle": "33",
+    "flags": 1,
+    "vertices": [
+      {
+        "flags": 0,
+        "flagsPresent": true,
+        "point": [
+          0.0,
+          40.0,
+          0.0
+        ]
+      },
+      {
+        "flags": 0,
+        "flagsPresent": true,
+        "point": [
+          10.0,
+          40.0,
+          0.0
+        ]
+      },
+      {
+        "flags": 0,
+        "flagsPresent": true,
+        "point": [
+          10.0,
+          50.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "originalEzdxfEdges": [
+    {
+      "start": [
+        0.0,
+        40.0,
+        0.0
+      ],
+      "end": [
+        10.0,
+        40.0,
+        0.0
+      ]
+    },
+    {
+      "start": [
+        10.0,
+        40.0,
+        0.0
+      ],
+      "end": [
+        10.0,
+        50.0,
+        0.0
+      ]
+    },
+    {
+      "start": [
+        10.0,
+        50.0,
+        0.0
+      ],
+      "end": [
+        0.0,
+        40.0,
+        0.0
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "variant": "legacy_vertex70_zero",
+      "dxftype": "POLYLINE",
+      "closed": true,
+      "rawVirtualEdgeCount": 3,
+      "nondegenerateEdgeCount": 3,
+      "degenerateEdgesRetained": 0,
+      "edges": [
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            50.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            50.0,
+            0.0
+          ],
+          "end": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legacy_vertex70_omitted",
+      "dxftype": "POLYLINE",
+      "closed": true,
+      "rawVirtualEdgeCount": 3,
+      "nondegenerateEdgeCount": 3,
+      "degenerateEdgesRetained": 0,
+      "edges": [
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            50.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            50.0,
+            0.0
+          ],
+          "end": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "lwpolyline_closed",
+      "dxftype": "LWPOLYLINE",
+      "closed": true,
+      "rawVirtualEdgeCount": 3,
+      "nondegenerateEdgeCount": 3,
+      "degenerateEdgesRetained": 0,
+      "edges": [
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            50.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            50.0,
+            0.0
+          ],
+          "end": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legacy_explicit_endpoint",
+      "dxftype": "POLYLINE",
+      "closed": true,
+      "rawVirtualEdgeCount": 4,
+      "nondegenerateEdgeCount": 3,
+      "degenerateEdgesRetained": 1,
+      "edges": [
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            50.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            50.0,
+            0.0
+          ],
+          "end": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legacy_open_control",
+      "dxftype": "POLYLINE",
+      "closed": false,
+      "rawVirtualEdgeCount": 2,
+      "nondegenerateEdgeCount": 2,
+      "degenerateEdgesRetained": 0,
+      "edges": [
+        {
+          "type": "LINE",
+          "start": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "start": [
+            10.0,
+            40.0,
+            0.0
+          ],
+          "end": [
+            10.0,
+            50.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUnchanged": true,
+  "integrationApproved": false
+}

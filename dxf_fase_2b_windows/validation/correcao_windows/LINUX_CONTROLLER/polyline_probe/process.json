@@ -1,0 +1,7 @@
+{
+  "exitCode": 0,
+  "timedOut": false,
+  "seconds": 1.068,
+  "stdout": "worker.stdout.txt",
+  "stderr": "worker.stderr.txt"
+}

@@ -1,0 +1,57 @@
+{
+  "profile": "mode2_no_layers",
+  "variant": "legacy_open_control",
+  "inputSha256": "eea0559021318b45ca71128ce35f4e5aba91f6257b5c2716baf03d4e247eb565",
+  "expectedEdges": 2,
+  "requestedMode": 2,
+  "status": "passed",
+  "beforeAdapter": {
+    "objects": [
+      {
+        "name": "Compound",
+        "typeId": "Part::Feature",
+        "edges": [
+          {
+            "startLocal": [
+              0.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          },
+          {
+            "startLocal": [
+              10.0,
+              40.0,
+              0.0
+            ],
+            "endLocal": [
+              10.0,
+              50.0,
+              0.0
+            ],
+            "length": 10.0,
+            "closingLandmark": false
+          }
+        ],
+        "edgeCountBeforeAdapter": 2
+      }
+    ],
+    "edgeCountBeforeAdapter": 2,
+    "closingLandmarkPresentBeforeAdapter": false,
+    "coordinateFrame": "native_local_only",
+    "countsMeaning": "observations, not physical quantities"
+  },
+  "importStatistics": null,
+  "afterAdapterEdgeCounts": {
+    "Compound": 2
+  },
+  "unresolvedAdapterObjects": [],
+  "collectorReadOnlyVerified": true
+}

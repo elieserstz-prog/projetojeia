@@ -1,11 +1,13 @@
 # JEIA DXF Fase 2B — diagnóstico Windows experimental
 
+**Revisão R01:** leia primeiro [RELATORIO_CORRECOES_R01.md](RELATORIO_CORRECOES_R01.md). Trata objetos sem `getGlobalPlacement()` sem inventar WCS e acrescenta 30 ensaios diferenciais de fechamento de POLYLINE. As configurações adicionais são exclusivamente temporárias e não alteram os quatro casos originais. Sem frame conhecido, a comparação global fica pendente; sem aresta no shape original, o caso 01 continua falhando. Semântica do caso 02 e unidade do caso 04 continuam pendentes.
+
 Este pacote testa o **FreeCAD já instalado** e os quatro DXFs sintéticos da Fase 2B. Não integra resultados à JEIA. Não execute a JEIA CAD 04.1 durante o diagnóstico.
 
 ## Como executar no Windows
 
-1. Salve `JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS.zip` em **Downloads**. Use **Extrair tudo**; não execute de dentro do ZIP. Mantenha as subpastas juntas.
-2. Abra a pasta extraída `JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS` e dê dois cliques em **INICIAR_DIAGNOSTICO.cmd**. Não execute como administrador. Leia na janela o que será executado.
+1. Salve `JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS_CORRECOES_R01.zip` em **Downloads**. Use **Extrair tudo** em uma pasta nova; não execute de dentro do ZIP. Mantenha as subpastas juntas e preserve a sessão anterior.
+2. Abra a pasta extraída `JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS_CORRECOES_R01` e dê dois cliques em **INICIAR_DIAGNOSTICO.cmd**. Não execute como administrador. Leia na janela o que será executado.
 3. Aguarde a indicação da pasta `resultados\sessao_...`. Abra **RESUMO.txt** e **relatorio.json** nessa pasta. Guarde também `bootstrap.json`, logs e subpastas dos casos. A execução pode levar até dez minutos se houver travamento.
 
 O caminho absoluto dos resultados aparece na janela. Os arquivos não são colocados em `/workspace` no seu computador. Nenhum resultado é enviado pela rede automaticamente.
@@ -33,6 +35,7 @@ Se houver mais de um FreeCAD, edite apenas a variável `FREECAD_CMD` na macro fo
 - Busca somente de `FreeCADCmd.exe`: PATH, pastas FreeCAD em Program Files/Programs e metadados de desinstalação do FreeCAD no Registro, apenas para leitura. Instalações portáteis fora desses locais exigem caminho explícito. Não usa o comando de desinstalação.
 - Uma chamada `FreeCADCmd --version`, com timeout de 30 segundos e configuração isolada. Se falhar, os quatro DXFs ficam `not_run` e o erro é exportado.
 - Um controlador em outro `FreeCADCmd`, um controle sintético do kernel e quatro trabalhadores separados para importar os quatro DXFs. Cada importação usa `Import.readDXF(..., ignore_errors=False)`, o mesmo ponto de entrada da Fase 2B aprovada. Não há tentativa automática de outro importador, download ou instalação.
+- Depois dos quatro casos, um trabalhador adicional compara o original e cinco variantes sintéticas em cinco perfis de investigação (30 ensaios). Grava contagens antes/depois do adaptador, estatísticas e resultados incrementais em `polyline_probe/`. Não repara nem substitui os DXFs aprovados. As preferências desse trabalhador só afetam seu perfil temporário.
 - Perfis novos por processo: `--user-cfg`, `--system-cfg`, `--log-file`; variáveis de dados, configuração e temporários redirecionadas **somente nos processos filhos**. Nenhuma variável persistente é alterada. O controlador e os trabalhadores verificam os caminhos efetivos antes de importar. Se o isolamento não for reconhecido pela versão instalada, o teste para e registra a falha.
 - Documentos temporários criados e fechados nos processos filhos. Não salva projeto FCStd, não abre arquivos da JEIA e não modifica os DXFs fornecidos. Em timeout, encerra apenas o processo iniciado pelo diagnóstico e seus descendentes.
 - JSON, resumo, logs, arquivos de requisição/resposta e BREP na nova pasta da sessão. Os arquivos `user.cfg`/`system.cfg` produzidos são exclusivamente dessa sessão. Nada é apagado automaticamente fora dela. Para remover os resultados, exclua somente a pasta da sessão quando não precisar mais dela.
@@ -65,11 +68,11 @@ Envie a **pasta da sessão**, ou compacte-a pelo próprio Windows, incluindo JSO
 Compare o resultado abaixo com o arquivo `.zip.sha256` publicado ao lado do ZIP:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath "$env:USERPROFILE\Downloads\JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS.zip"
+Get-FileHash -Algorithm SHA256 -LiteralPath "$env:USERPROFILE\Downloads\JEIA_DXF_TECH_FASE_2B_DIAGNOSTICO_WINDOWS_CORRECOES_R01.zip"
 ```
 
 O manifesto `MANIFESTO_SHA256.txt` dentro do pacote permite conferir os arquivos internos. `APPROVED_FILES.json` identifica o commit de origem e os hashes do adaptador e dos exemplos preservados.
 
 ## Validação realizada pelo desenvolvedor
 
-Consulte `RELATORIO_TECNICO.md` e `validation/`. Os testes de lógica e os controles nativos em Linux não substituem a execução no Windows. PowerShell não está disponível neste ambiente e não foi instalado.
+Consulte `RELATORIO_CORRECOES_R01.md` e `validation/correcao_windows/`. `RELATORIO_TECNICO.md` e os demais resultados na pasta validation documentam a entrega inicial. A sessão Windows relatada pelo usuário está identificada como relato, pois seus arquivos completos não foram disponibilizados aqui. Os testes novos de lógica e os controles nativos em Linux não substituem a execução da R01 no Windows. PowerShell não está disponível neste ambiente e não foi instalado.

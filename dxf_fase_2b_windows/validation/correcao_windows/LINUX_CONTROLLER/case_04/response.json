@@ -1,0 +1,374 @@
+{
+  "workerError": "RuntimeError: <function _import at 0x7f364a841ee0> returned a result with an exception set",
+  "workerTrace": "Traceback (most recent call last):\n  File \"/workspace/projetojeia/dxf_fase_2b_windows/diagnostic/native_worker.py\", line 132, in collect\n    Import.readDXF(str(path), doc.Name, False)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: <function _import at 0x7f364a841ee0> returned a result with an exception set\n",
+  "partialImport": true,
+  "partialResultsAccepted": false,
+  "isolation": {
+    "passed": true,
+    "effectivePaths": {
+      "UserParameter": "/tmp/jeia-windows-correcoes-driver-final/case_04/profile/user.cfg",
+      "SystemParameter": "/tmp/jeia-windows-correcoes-driver-final/case_04/profile/system.cfg",
+      "UserAppData": "/tmp/jeia-windows-correcoes-driver-final/case_04/profile/data/",
+      "UserHomePath": "/tmp/jeia-windows-correcoes-driver-final/case_04/profile/home"
+    }
+  },
+  "partialDocumentInventory": [
+    {
+      "name": "Layer",
+      "typeId": "App::FeaturePython",
+      "hasShape": false
+    },
+    {
+      "name": "LayerContainer",
+      "typeId": "App::DocumentObjectGroupPython",
+      "hasShape": false
+    }
+  ],
+  "rejectedPartialPacket": {
+    "sources": [
+      {
+        "id": "source-2a8242884f4479789b7af796bdcf074a",
+        "kind": "dxf_original",
+        "version": "AC1015",
+        "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+        "options": {
+          "headerOnly": true
+        },
+        "capabilities": [
+          "input_identity"
+        ],
+        "validation": {
+          "state": "extracted",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      {
+        "id": "source-0287ecf58386ccca8166d436eaa929b6",
+        "kind": "freecad",
+        "version": "1.0.0",
+        "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+        "options": {
+          "shapeCoordinates": "FreeCAD internal mm",
+          "sourceUnitConversionVerified": false,
+          "maxEdges": 20000,
+          "maxFaces": 10000,
+          "maxBrepBytes": 16777216
+        },
+        "capabilities": [
+          "native_BREP",
+          "edge_curves",
+          "face_topology",
+          "source_object_metadata"
+        ],
+        "validation": {
+          "state": "extracted",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      }
+    ],
+    "frames": [
+      {
+        "id": "frame-33ccf6e64dda09ace97ae74011d88da5",
+        "kind": "document_wcs",
+        "unit": "mm",
+        "spaceId": null,
+        "description": "FreeCAD kernel coordinates in internal mm; correspondence to DXF units/layouts not verified"
+      }
+    ],
+    "transforms": [],
+    "spaces": [],
+    "viewports": [],
+    "layers": [],
+    "blockDefinitions": [],
+    "blockInstances": [],
+    "entities": [],
+    "occurrences": [],
+    "geometries": [],
+    "dimensionStyles": [],
+    "dimensions": [],
+    "tolerances": [],
+    "annotations": [],
+    "parts": [],
+    "views": [],
+    "evidence": [],
+    "classifications": [],
+    "observations": [],
+    "featureRelations": [],
+    "features": [],
+    "setups": [],
+    "operations": [],
+    "numericProfiles": [],
+    "reconciliations": [],
+    "decisions": [],
+    "diagnostics": [
+      {
+        "id": "diagnostic-becbb37568d7198c0360b45d6213d781",
+        "code": "EXPERIMENTAL_EXTRACTION_ONLY",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "No physical interpretation, reconciliation or JEIA integration.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-a26b49a1de50a3ad6b9e4dbed8da1609",
+        "code": "DXF_SPACE_AND_ORIGIN_MAPPING_UNAVAILABLE",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "Native shapes alone do not establish DXF handles, blocks, Model/Paper or view identity.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-75004ae80fa900503b2bef5bf7ea2eee",
+        "code": "NATIVE_IMPORT_SCALE_UNVERIFIED",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "FreeCAD kernel mm do not prove DXF unit conversion; do not apply another header factor.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-2e2ac07396d09ce6f10ac1c29600a78a",
+        "code": "DXF_UNITS_UNRESOLVED",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "Input DXF unit absent or unsupported; no factor 1 fallback.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-a6a2d224c2f4d2b3b56fe71e7e23c2a7",
+        "code": "OBJECT_WITHOUT_SHAPE",
+        "severity": "warning",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "Native object has no Shape.",
+        "details": {
+          "object": "Layer",
+          "type": "App::FeaturePython"
+        },
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-7d3dabd13fcb8401e1217fa5924b8dd1",
+        "code": "OBJECT_WITHOUT_SHAPE",
+        "severity": "warning",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "Native object has no Shape.",
+        "details": {
+          "object": "LayerContainer",
+          "type": "App::DocumentObjectGroupPython"
+        },
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      },
+      {
+        "id": "diagnostic-970a6342594ff002478b2712a29fd220",
+        "code": "NO_NATIVE_GEOMETRY",
+        "severity": "blocker",
+        "targets": [
+          {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          }
+        ],
+        "message": "No non-null shapes collected; empty observations are not successful geometric recognition.",
+        "details": null,
+        "blocksConsumers": [
+          "material",
+          "process",
+          "cost"
+        ],
+        "status": "open",
+        "evidenceIds": []
+      }
+    ],
+    "contract": "JEIA_DXF_TECH",
+    "version": "1.0",
+    "document": {
+      "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15",
+      "fileName": "04_unidade_ausente.dxf",
+      "sha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+      "byteLength": 14325,
+      "dxfVersion": "AC1015",
+      "encoding": null,
+      "units": {
+        "rawInsunits": 0,
+        "rawMeasurement": 1,
+        "resolvedUnit": null,
+        "mmPerDrawingUnit": null,
+        "resolutionMethod": "unknown",
+        "validation": {
+          "state": "unknown",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": "Header fact; native importer scale remains unverified"
+        }
+      },
+      "rawHeader": {
+        "$ACADVER": "AC1015",
+        "$MEASUREMENT": 1,
+        "$INSUNITS": 0
+      },
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    "context": {
+      "requestId": "diag-a702045142864bc99c6b915e3f64d625",
+      "selectionGeneration": 4,
+      "analysisRevision": 1,
+      "purpose": "production_analysis",
+      "producer": "experimental-freecad-adapter-0.1.0",
+      "createdAt": "2026-11-02T18:35:41.006703+00:00"
+    },
+    "validation": {
+      "stage": "extracted",
+      "schemaStatus": "not_checked",
+      "semanticStatus": "not_checked",
+      "eligibility": [
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          },
+          "consumer": "visualization",
+          "status": "not_assessed",
+          "blockingDiagnosticIds": [],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          },
+          "consumer": "material",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-becbb37568d7198c0360b45d6213d781",
+            "diagnostic-a26b49a1de50a3ad6b9e4dbed8da1609",
+            "diagnostic-75004ae80fa900503b2bef5bf7ea2eee",
+            "diagnostic-2e2ac07396d09ce6f10ac1c29600a78a",
+            "diagnostic-a6a2d224c2f4d2b3b56fe71e7e23c2a7",
+            "diagnostic-7d3dabd13fcb8401e1217fa5924b8dd1",
+            "diagnostic-970a6342594ff002478b2712a29fd220"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          },
+          "consumer": "process",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-becbb37568d7198c0360b45d6213d781",
+            "diagnostic-a26b49a1de50a3ad6b9e4dbed8da1609",
+            "diagnostic-75004ae80fa900503b2bef5bf7ea2eee",
+            "diagnostic-2e2ac07396d09ce6f10ac1c29600a78a",
+            "diagnostic-a6a2d224c2f4d2b3b56fe71e7e23c2a7",
+            "diagnostic-7d3dabd13fcb8401e1217fa5924b8dd1",
+            "diagnostic-970a6342594ff002478b2712a29fd220"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        },
+        {
+          "scope": {
+            "kind": "document",
+            "id": "document-cd4c9e1f8b763ccba5a4ebf47284bd15"
+          },
+          "consumer": "cost",
+          "status": "blocked",
+          "blockingDiagnosticIds": [
+            "diagnostic-becbb37568d7198c0360b45d6213d781",
+            "diagnostic-a26b49a1de50a3ad6b9e4dbed8da1609",
+            "diagnostic-75004ae80fa900503b2bef5bf7ea2eee",
+            "diagnostic-2e2ac07396d09ce6f10ac1c29600a78a",
+            "diagnostic-a6a2d224c2f4d2b3b56fe71e7e23c2a7",
+            "diagnostic-7d3dabd13fcb8401e1217fa5924b8dd1",
+            "diagnostic-970a6342594ff002478b2712a29fd220"
+          ],
+          "requiredDecisionIds": [],
+          "reason": "Experimental native observations; source semantics and physical recognition unapproved."
+        }
+      ],
+      "cncReleased": false
+    }
+  }
+}

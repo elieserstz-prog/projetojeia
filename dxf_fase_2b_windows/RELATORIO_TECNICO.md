@@ -1,5 +1,7 @@
 # Diagnóstico Windows da Fase 2B — entrega experimental
 
+> Relatório histórico da entrega inicial. Para a revisão atual, consulte `RELATORIO_CORRECOES_R01.md` e `validation/correcao_windows/`.
+
 Data: 2026-11-02. Branch de entrega: `diagnostico-windows-dxf-fase-2b`. Base: Fase 2B `a6aeed691cf4276a2e0f4c50bc723909e8712d8c`, cujo histórico preserva o original `456495402676e7b4bee023377d5fea0ddfa8230f`. Nenhuma implementação foi integrada à JEIA.
 
 ## Escopo e arquivos

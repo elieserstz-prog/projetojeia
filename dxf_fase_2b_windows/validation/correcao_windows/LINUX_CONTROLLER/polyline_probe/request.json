@@ -1,0 +1,6 @@
+{
+  "session": "/tmp/jeia-windows-correcoes-driver-final",
+  "mode": "polyline_probe",
+  "input": "/workspace/projetojeia/dxf_fase_2b_windows/examples/01_geometrias_mm.dxf",
+  "probeOutput": "/tmp/jeia-windows-correcoes-driver-final/polyline_probe/trials"
+}

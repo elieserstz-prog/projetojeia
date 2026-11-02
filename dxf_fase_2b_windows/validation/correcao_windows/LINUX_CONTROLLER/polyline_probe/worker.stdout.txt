@@ -1,0 +1,88 @@
+FreeCAD 1.0.0, Libs: 1.0.0R
+(C) 2001-2024 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Setting scaling to 1 DXF unit = 1mm based on MEASUREMENT and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on MEASUREMENT and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on MEASUREMENT and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on MEASUREMENT and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on MEASUREMENT and DXF scaling option
+Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									Setting scaling to 1 DXF unit = 1mm based on INSUNITS and DXF scaling option
+Recompute......
+						(100 %)									Recompute......
+						(100 %)									

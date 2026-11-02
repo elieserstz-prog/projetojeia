@@ -1,0 +1,16 @@
+{
+  "provenance": "User report in chat; raw session files not available locally or in discovered repository branches",
+  "session": "sessao_macro_e668d16bfe48",
+  "platform": "Windows",
+  "freecadVersion": "1.1.4",
+  "freecadCmdAndControllerWorked": true,
+  "reportedPassedBrepChecks": 24,
+  "cases": {
+    "01": "Closed DXF polyline: three segments expected, two imported",
+    "02": "Geometry imported, semantics pending",
+    "03": "AttributeError getGlobalPlacement in native_worker.py line 86",
+    "04": "Geometry imported, units correctly pending"
+  },
+  "independentlyRevalidatedOnWindows": false,
+  "integrationApproved": false
+}

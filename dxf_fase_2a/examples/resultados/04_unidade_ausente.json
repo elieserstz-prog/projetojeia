@@ -1,0 +1,1407 @@
+{
+  "sources": [
+    {
+      "id": "source-2a8242884f4479789b7af796bdcf074a",
+      "kind": "dxf_original",
+      "version": "AC1015",
+      "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-97e6901d8c0c4fb200fad59fc5d1b24d",
+      "kind": "ezdxf",
+      "version": "1.4.4",
+      "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-1324f772f5d8795ba97c866f35456d12",
+      "kind": "rule_engine",
+      "version": "0.1.0",
+      "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "kind": "document_wcs",
+      "unit": "drawing_unit",
+      "spaceId": "space-75a60ad6e2a64b3fcc356838c5cb890f",
+      "description": "Model"
+    },
+    {
+      "id": "frame-9caa5bdf3b477958665b4bb4b4962e51",
+      "kind": "paper",
+      "unit": "paper_unit",
+      "spaceId": "space-6a2253848f4c5a78bdf3c4dab6632dab",
+      "description": "Layout1"
+    },
+    {
+      "id": "frame-6e564158b889c88eea507b8d02601adb",
+      "kind": "entity_ocs",
+      "unit": "drawing_unit",
+      "spaceId": null,
+      "description": "entity-0ec2cd6affbd829bc6011b3f5734b26f"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "transform-03f09e7f15ab78b4284e46c99980c567",
+      "fromFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "toFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-85dd57c3246522e54111acabbe1f799f",
+      "fromFrameId": "frame-6e564158b889c88eea507b8d02601adb",
+      "toFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-07ce967f09035bc237429960d7cbe4f3",
+      "fromFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "toFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "space-75a60ad6e2a64b3fcc356838c5cb890f",
+      "kind": "model",
+      "name": "Model",
+      "frameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "paperUnit": "not_applicable",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "space-6a2253848f4c5a78bdf3c4dab6632dab",
+      "kind": "paper",
+      "name": "Layout1",
+      "frameId": "frame-9caa5bdf3b477958665b4bb4b4962e51",
+      "paperUnit": "mm",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "viewports": [],
+  "layers": [
+    {
+      "id": "layer-403146c38073ceab96e7926feb73738e",
+      "name": "0",
+      "color": 7,
+      "linetype": "Continuous",
+      "lineweight": -3,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {
+        "handle": "27",
+        "owner": "1",
+        "name": "0",
+        "flags": 0,
+        "color": 7,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "plotstyle_handle": "13",
+        "material_handle": "21"
+      }
+    },
+    {
+      "id": "layer-165f23f6683574af040a40c0d4732064",
+      "name": "Defpoints",
+      "color": 7,
+      "linetype": "Continuous",
+      "lineweight": -3,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": false,
+      "rawAttributes": {
+        "handle": "28",
+        "owner": "1",
+        "name": "Defpoints",
+        "flags": 0,
+        "color": 7,
+        "linetype": "Continuous",
+        "plot": 0,
+        "lineweight": -3,
+        "plotstyle_handle": "13",
+        "material_handle": "21"
+      }
+    }
+  ],
+  "blockDefinitions": [],
+  "blockInstances": [],
+  "entities": [
+    {
+      "id": "entity-baa24a471bd69389df2a18c54611a790",
+      "dxfType": "LINE",
+      "origin": {
+        "sourceId": "source-2a8242884f4479789b7af796bdcf074a",
+        "handle": "2F",
+        "ownerHandle": "17",
+        "ordinal": 59,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "space-75a60ad6e2a64b3fcc356838c5cb890f"
+      },
+      "layerId": "layer-403146c38073ceab96e7926feb73738e",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "geometryIds": [
+        "geometry-b2bc0b5981b9cc7c369f3bff76199610"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LINE",
+          "decodedValue": "LINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "2F",
+          "decodedValue": "2F"
+        },
+        {
+          "code": 330,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbLine",
+          "decodedValue": "AcDbLine"
+        },
+        {
+          "code": 10,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 20,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 30,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 11,
+          "rawValue": "10.0",
+          "decodedValue": 10.0
+        },
+        {
+          "code": 21,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 31,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "entity-0ec2cd6affbd829bc6011b3f5734b26f",
+      "dxfType": "TEXT",
+      "origin": {
+        "sourceId": "source-2a8242884f4479789b7af796bdcf074a",
+        "handle": "30",
+        "ownerHandle": "17",
+        "ordinal": 60,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "space-75a60ad6e2a64b3fcc356838c5cb890f"
+      },
+      "layerId": "layer-403146c38073ceab96e7926feb73738e",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-6e564158b889c88eea507b8d02601adb",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "TEXT",
+          "decodedValue": "TEXT"
+        },
+        {
+          "code": 5,
+          "rawValue": "30",
+          "decodedValue": "30"
+        },
+        {
+          "code": 330,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbText",
+          "decodedValue": "AcDbText"
+        },
+        {
+          "code": 10,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 20,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 30,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 40,
+          "rawValue": "2.5",
+          "decodedValue": 2.5
+        },
+        {
+          "code": 1,
+          "rawValue": "Revisão: peça sintética — não fabricar",
+          "decodedValue": "Revisão: peça sintética — não fabricar"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbText",
+          "decodedValue": "AcDbText"
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "entity-aa19137f0d860a18d3ec64c6be0c2e40",
+      "dxfType": "SPLINE",
+      "origin": {
+        "sourceId": "source-2a8242884f4479789b7af796bdcf074a",
+        "handle": "31",
+        "ownerHandle": "17",
+        "ordinal": 61,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "space-75a60ad6e2a64b3fcc356838c5cb890f"
+      },
+      "layerId": "layer-403146c38073ceab96e7926feb73738e",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "geometryIds": [
+        "geometry-eb1eaa64cc163a5bce6535f8f4395f4e"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "SPLINE",
+          "decodedValue": "SPLINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "31",
+          "decodedValue": "31"
+        },
+        {
+          "code": 330,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbSpline",
+          "decodedValue": "AcDbSpline"
+        },
+        {
+          "code": 70,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 71,
+          "rawValue": "3",
+          "decodedValue": 3
+        },
+        {
+          "code": 72,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 73,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 74,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 11,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 21,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 31,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 11,
+          "rawValue": "1.0",
+          "decodedValue": 1.0
+        },
+        {
+          "code": 21,
+          "rawValue": "2.0",
+          "decodedValue": 2.0
+        },
+        {
+          "code": 31,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 11,
+          "rawValue": "3.0",
+          "decodedValue": 3.0
+        },
+        {
+          "code": 21,
+          "rawValue": "4.0",
+          "decodedValue": 4.0
+        },
+        {
+          "code": 31,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 11,
+          "rawValue": "5.0",
+          "decodedValue": 5.0
+        },
+        {
+          "code": 21,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 31,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "occurrence-c20d3e996a9dce662a6964048d8acf89",
+      "entityId": "entity-baa24a471bd69389df2a18c54611a790",
+      "spaceId": "space-75a60ad6e2a64b3fcc356838c5cb890f",
+      "instancePath": [],
+      "transformToSpaceId": "transform-03f09e7f15ab78b4284e46c99980c567",
+      "effectiveLayerId": "layer-403146c38073ceab96e7926feb73738e",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "occurrence-507aa6123c8217e202e7565faa889656",
+      "entityId": "entity-0ec2cd6affbd829bc6011b3f5734b26f",
+      "spaceId": "space-75a60ad6e2a64b3fcc356838c5cb890f",
+      "instancePath": [],
+      "transformToSpaceId": "transform-85dd57c3246522e54111acabbe1f799f",
+      "effectiveLayerId": "layer-403146c38073ceab96e7926feb73738e",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "occurrence-1a8bccf0fc77fa6b2d19eeae6b46c377",
+      "entityId": "entity-aa19137f0d860a18d3ec64c6be0c2e40",
+      "spaceId": "space-75a60ad6e2a64b3fcc356838c5cb890f",
+      "instancePath": [],
+      "transformToSpaceId": "transform-07ce967f09035bc237429960d7cbe4f3",
+      "effectiveLayerId": "layer-403146c38073ceab96e7926feb73738e",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "id": "geometry-b2bc0b5981b9cc7c369f3bff76199610",
+      "sourceId": "source-97e6901d8c0c4fb200fad59fc5d1b24d",
+      "entityId": "entity-baa24a471bd69389df2a18c54611a790",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          10.0,
+          0.0,
+          0.0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-eb1eaa64cc163a5bce6535f8f4395f4e",
+      "sourceId": "source-97e6901d8c0c4fb200fad59fc5d1b24d",
+      "entityId": "entity-aa19137f0d860a18d3ec64c6be0c2e40",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "frame-eb9a380f4b5684709f9c463f689ed0c6",
+      "payload": {
+        "type": "UNSUPPORTED",
+        "originalType": "SPLINE",
+        "reason": "Geometry type not supported in Fase 2A: SPLINE"
+      },
+      "approximation": "unsupported",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "unsupported",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Geometry type not supported in Fase 2A: SPLINE"
+      }
+    }
+  ],
+  "dimensionStyles": [
+    {
+      "id": "dimension-style-3804743805a5c92a4322cbfbac571848",
+      "name": "Standard",
+      "rawAttributes": {
+        "handle": "2B",
+        "owner": "4",
+        "name": "Standard",
+        "flags": 0,
+        "dimpost": "",
+        "dimapost": "",
+        "dimscale": 1.0,
+        "dimasz": 2.5,
+        "dimexo": 0.625,
+        "dimdli": 3.75,
+        "dimexe": 1.25,
+        "dimrnd": 0.0,
+        "dimdle": 0.0,
+        "dimtp": 0.0,
+        "dimtm": 0.0,
+        "dimtxt": 2.5,
+        "dimcen": 2.5,
+        "dimtsz": 0.0,
+        "dimaltf": 0.03937007874,
+        "dimlfac": 1.0,
+        "dimtvp": 0.0,
+        "dimtfac": 1.0,
+        "dimgap": 0.625,
+        "dimaltrnd": 0.0,
+        "dimtol": 0,
+        "dimlim": 0,
+        "dimtih": 0,
+        "dimtoh": 0,
+        "dimse1": 0,
+        "dimse2": 0,
+        "dimtad": 1,
+        "dimzin": 8,
+        "dimazin": 3,
+        "dimalt": 0,
+        "dimaltd": 3,
+        "dimtofl": 1,
+        "dimsah": 0,
+        "dimtix": 0,
+        "dimsoxd": 0,
+        "dimclrd": 0,
+        "dimclre": 0,
+        "dimclrt": 0,
+        "dimadec": 2,
+        "dimdec": 2,
+        "dimtdec": 2,
+        "dimaltu": 2,
+        "dimalttd": 3,
+        "dimaunit": 0,
+        "dimfrac": 0,
+        "dimlunit": 2,
+        "dimdsep": 44,
+        "dimtmove": 0,
+        "dimjust": 0,
+        "dimsd1": 0,
+        "dimsd2": 0,
+        "dimtolj": 0,
+        "dimtzin": 8,
+        "dimaltz": 0,
+        "dimalttz": 0,
+        "dimupt": 0,
+        "dimatfit": 3,
+        "dimlwd": -2,
+        "dimlwe": -2,
+        "dimblk": "",
+        "dimblk1": "",
+        "dimblk2": "",
+        "dimldrblk": ""
+      },
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [
+    {
+      "id": "annotation-2b4098e0a038b260e844e4644537c853",
+      "entityId": "entity-0ec2cd6affbd829bc6011b3f5734b26f",
+      "occurrenceId": "occurrence-507aa6123c8217e202e7565faa889656",
+      "kind": "text",
+      "rawText": "Revisão: peça sintética — não fabricar",
+      "plainText": "Revisão: peça sintética — não fabricar",
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frameId": "frame-6e564158b889c88eea507b8d02601adb",
+      "associatedOccurrenceIds": [],
+      "interpretation": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "parts": [],
+  "views": [],
+  "evidence": [],
+  "classifications": [
+    {
+      "id": "classification-b0576379a790b4f8f6a47d8012736a94",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-c20d3e996a9dce662a6964048d8acf89"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    },
+    {
+      "id": "classification-e556d6b4cfbbc2d7f4ecbb2648cc7024",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-507aa6123c8217e202e7565faa889656"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    },
+    {
+      "id": "classification-d99781b96d51ee494f31dba047f80f63",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-1a8bccf0fc77fa6b2d19eeae6b46c377"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    }
+  ],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [],
+  "reconciliations": [],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diagnostic-bdbfa13e2517d88cc3f350648bc00035",
+      "code": "EXTRACTION_ONLY",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        }
+      ],
+      "message": "No physical part/feature/operation inference or JEIA integration in Fase 2A.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-e250224cdc20026f6465ca73e5330081",
+      "code": "FREECAD_NOT_RUN",
+      "severity": "info",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        }
+      ],
+      "message": "Only ezdxf was executed; FreeCAD observations and reconciliation are not fabricated.",
+      "details": null,
+      "blocksConsumers": [],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-5e5ab0ae244ee283e2c8084033881739",
+      "code": "UNITS_UNRESOLVED",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        }
+      ],
+      "message": "No conversion factor 1 fallback for absent or unsupported INSUNITS.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-d75bd2fde670ebae7d9b6710b8bb092f",
+      "code": "GEOMETRY_UNSUPPORTED",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-1a8bccf0fc77fa6b2d19eeae6b46c377"
+        }
+      ],
+      "message": "Geometry type not supported in Fase 2A: SPLINE",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "context": {
+    "requestId": "req-ee30302ab2af49c2a1bfc509b8b1c96d",
+    "selectionGeneration": 0,
+    "analysisRevision": 1,
+    "purpose": "production_analysis",
+    "producer": "experimental-ezdxf-adapter-0.1.0",
+    "createdAt": "2026-11-02T14:20:53.325585+00:00"
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "valid",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        },
+        "consumer": "visualization",
+        "status": "not_assessed",
+        "blockingDiagnosticIds": [],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bdbfa13e2517d88cc3f350648bc00035",
+          "diagnostic-5e5ab0ae244ee283e2c8084033881739",
+          "diagnostic-d75bd2fde670ebae7d9b6710b8bb092f"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bdbfa13e2517d88cc3f350648bc00035",
+          "diagnostic-5e5ab0ae244ee283e2c8084033881739",
+          "diagnostic-d75bd2fde670ebae7d9b6710b8bb092f"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-bdbfa13e2517d88cc3f350648bc00035",
+          "diagnostic-5e5ab0ae244ee283e2c8084033881739",
+          "diagnostic-d75bd2fde670ebae7d9b6710b8bb092f"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      }
+    ],
+    "cncReleased": false
+  },
+  "document": {
+    "id": "document-2aa2c51cbfcbb331cefe1b5926a6cca0",
+    "fileName": "04_unidade_ausente.dxf",
+    "sha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+    "byteLength": 14325,
+    "dxfVersion": "AC1015",
+    "encoding": "cp1252",
+    "units": {
+      "rawInsunits": 0,
+      "rawMeasurement": 1,
+      "resolvedUnit": null,
+      "mmPerDrawingUnit": null,
+      "resolutionMethod": "unknown",
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Read from DXF header; no physical scale inferred"
+      }
+    },
+    "rawHeader": {
+      "$ACADVER": "AC1015",
+      "$ACADMAINTVER": 6,
+      "$DWGCODEPAGE": "ANSI_1252",
+      "$INSBASE": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$EXTMIN": [
+        1e+20,
+        1e+20,
+        1e+20
+      ],
+      "$EXTMAX": [
+        -1e+20,
+        -1e+20,
+        -1e+20
+      ],
+      "$LIMMIN": [
+        0.0,
+        0.0
+      ],
+      "$LIMMAX": [
+        420.0,
+        297.0
+      ],
+      "$ORTHOMODE": 0,
+      "$REGENMODE": 1,
+      "$FILLMODE": 1,
+      "$QTEXTMODE": 0,
+      "$MIRRTEXT": 1,
+      "$LTSCALE": 1.0,
+      "$ATTMODE": 1,
+      "$TEXTSIZE": 2.5,
+      "$TRACEWID": 1.0,
+      "$TEXTSTYLE": "Standard",
+      "$CLAYER": "0",
+      "$CELTYPE": "ByLayer",
+      "$CECOLOR": 256,
+      "$CELTSCALE": 1.0,
+      "$DISPSILH": 0,
+      "$DIMSCALE": 1.0,
+      "$DIMASZ": 2.5,
+      "$DIMEXO": 0.625,
+      "$DIMDLI": 3.75,
+      "$DIMRND": 0.0,
+      "$DIMDLE": 0.0,
+      "$DIMEXE": 1.25,
+      "$DIMTP": 0.0,
+      "$DIMTM": 0.0,
+      "$DIMTXT": 2.5,
+      "$DIMCEN": 2.5,
+      "$DIMTSZ": 0.0,
+      "$DIMTOL": 0,
+      "$DIMLIM": 0,
+      "$DIMTIH": 0,
+      "$DIMTOH": 0,
+      "$DIMSE1": 0,
+      "$DIMSE2": 0,
+      "$DIMTAD": 1,
+      "$DIMZIN": 8,
+      "$DIMBLK": "",
+      "$DIMASO": 1,
+      "$DIMSHO": 1,
+      "$DIMPOST": "",
+      "$DIMAPOST": "",
+      "$DIMALT": 0,
+      "$DIMALTD": 3,
+      "$DIMALTF": 0.03937007874,
+      "$DIMLFAC": 1.0,
+      "$DIMTOFL": 1,
+      "$DIMTVP": 0.0,
+      "$DIMTIX": 0,
+      "$DIMSOXD": 0,
+      "$DIMSAH": 0,
+      "$DIMBLK1": "",
+      "$DIMBLK2": "",
+      "$DIMSTYLE": "ISO-25",
+      "$DIMCLRD": 0,
+      "$DIMCLRE": 0,
+      "$DIMCLRT": 0,
+      "$DIMTFAC": 1.0,
+      "$DIMGAP": 0.625,
+      "$DIMJUST": 0,
+      "$DIMSD1": 0,
+      "$DIMSD2": 0,
+      "$DIMTOLJ": 0,
+      "$DIMTZIN": 8,
+      "$DIMALTZ": 0,
+      "$DIMALTTZ": 0,
+      "$DIMUPT": 0,
+      "$DIMDEC": 2,
+      "$DIMTDEC": 2,
+      "$DIMALTU": 2,
+      "$DIMALTTD": 3,
+      "$DIMTXSTY": "Standard",
+      "$DIMAUNIT": 0,
+      "$DIMADEC": 0,
+      "$DIMALTRND": 0.0,
+      "$DIMAZIN": 0,
+      "$DIMDSEP": 44,
+      "$DIMATFIT": 3,
+      "$DIMFRAC": 0,
+      "$DIMLDRBLK": "",
+      "$DIMLUNIT": 2,
+      "$DIMLWD": -2,
+      "$DIMLWE": -2,
+      "$DIMTMOVE": 0,
+      "$LUNITS": 2,
+      "$LUPREC": 4,
+      "$SKETCHINC": 1.0,
+      "$FILLETRAD": 10.0,
+      "$AUNITS": 0,
+      "$AUPREC": 2,
+      "$MENU": ".",
+      "$ELEVATION": 0.0,
+      "$PELEVATION": 0.0,
+      "$THICKNESS": 0.0,
+      "$LIMCHECK": 0,
+      "$CHAMFERA": 0.0,
+      "$CHAMFERB": 0.0,
+      "$CHAMFERC": 0.0,
+      "$CHAMFERD": 0.0,
+      "$SKPOLY": 0,
+      "$TDCREATE": 2461347.5978356483,
+      "$TDUCREATE": 2458532.153996898,
+      "$TDUPDATE": 2461347.5927546294,
+      "$TDUUPDATE": 2458532.1544311,
+      "$TDINDWG": 0.0,
+      "$TDUSRTIMER": 0.0,
+      "$USRTIMER": 1,
+      "$ANGBASE": 0.0,
+      "$ANGDIR": 0,
+      "$PDMODE": 0,
+      "$PDSIZE": 0.0,
+      "$PLINEWID": 0.0,
+      "$SPLFRAME": 0,
+      "$SPLINETYPE": 6,
+      "$SPLINESEGS": 8,
+      "$HANDSEED": "35",
+      "$SURFTAB1": 6,
+      "$SURFTAB2": 6,
+      "$SURFTYPE": 6,
+      "$SURFU": 6,
+      "$SURFV": 6,
+      "$UCSBASE": "",
+      "$UCSNAME": "",
+      "$UCSORG": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSXDIR": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "$UCSYDIR": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "$UCSORTHOREF": "",
+      "$UCSORTHOVIEW": 0,
+      "$UCSORGTOP": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGBOTTOM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGLEFT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGRIGHT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGFRONT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGBACK": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSBASE": "",
+      "$PUCSNAME": "",
+      "$PUCSORG": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSXDIR": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSYDIR": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "$PUCSORTHOREF": "",
+      "$PUCSORTHOVIEW": 0,
+      "$PUCSORGTOP": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGBOTTOM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGLEFT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGRIGHT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGFRONT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGBACK": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$USERI1": 0,
+      "$USERI2": 0,
+      "$USERI3": 0,
+      "$USERI4": 0,
+      "$USERI5": 0,
+      "$USERR1": 0.0,
+      "$USERR2": 0.0,
+      "$USERR3": 0.0,
+      "$USERR4": 0.0,
+      "$USERR5": 0.0,
+      "$WORLDVIEW": 1,
+      "$SHADEDGE": 3,
+      "$SHADEDIF": 70,
+      "$TILEMODE": 1,
+      "$MAXACTVP": 64,
+      "$PINSBASE": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PLIMCHECK": 0,
+      "$PEXTMIN": [
+        1e+20,
+        1e+20,
+        1e+20
+      ],
+      "$PEXTMAX": [
+        -1e+20,
+        -1e+20,
+        -1e+20
+      ],
+      "$PLIMMIN": [
+        0.0,
+        0.0
+      ],
+      "$PLIMMAX": [
+        420.0,
+        297.0
+      ],
+      "$UNITMODE": 0,
+      "$VISRETAIN": 1,
+      "$PLINEGEN": 0,
+      "$PSLTSCALE": 1,
+      "$TREEDEPTH": 3020,
+      "$CMLSTYLE": "Standard",
+      "$CMLJUST": 0,
+      "$CMLSCALE": 20.0,
+      "$PROXYGRAPHICS": 1,
+      "$MEASUREMENT": 1,
+      "$CELWEIGHT": -1,
+      "$ENDCAPS": 0,
+      "$JOINSTYLE": 0,
+      "$LWDISPLAY": 0,
+      "$INSUNITS": 0,
+      "$HYPERLINKBASE": "",
+      "$STYLESHEET": "",
+      "$XEDIT": 1,
+      "$CEPSNTYPE": 0,
+      "$PSTYLEMODE": 1,
+      "$FINGERPRINTGUID": "{298CAA50-C3D9-4E70-92E6-AEBBAEA20575}",
+      "$VERSIONGUID": "{DD4DEE91-9F72-4324-B177-056CCC872118}",
+      "$EXTNAMES": 1,
+      "$PSVPSCALE": 0.0,
+      "$OLESTARTUP": 0
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  }
+}

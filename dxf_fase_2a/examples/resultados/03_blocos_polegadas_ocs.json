@@ -1,0 +1,1888 @@
+{
+  "sources": [
+    {
+      "id": "source-d56f6c538b187c301f6812b09a34da0a",
+      "kind": "dxf_original",
+      "version": "AC1024",
+      "inputSha256": "40d19b26d2416582a2209caea779357de9d8f2470e8014673f4c9ccab4d07d45",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-d59d68f0029ee76dce50539d60565660",
+      "kind": "ezdxf",
+      "version": "1.4.4",
+      "inputSha256": "40d19b26d2416582a2209caea779357de9d8f2470e8014673f4c9ccab4d07d45",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "source-04aca5a6a77ec9aa77bf49a19062e362",
+      "kind": "rule_engine",
+      "version": "0.1.0",
+      "inputSha256": "40d19b26d2416582a2209caea779357de9d8f2470e8014673f4c9ccab4d07d45",
+      "options": {
+        "maxBytes": 67108864,
+        "maxEntities": 100000,
+        "maxDepth": 32,
+        "maxOccurrences": 100000,
+        "automaticRepair": false,
+        "experimental": true
+      },
+      "capabilities": [
+        "ascii_dxf_extraction_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "kind": "document_wcs",
+      "unit": "drawing_unit",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "description": "Model"
+    },
+    {
+      "id": "frame-0e86dbcf80849fac5fb75a069f9c808b",
+      "kind": "paper",
+      "unit": "paper_unit",
+      "spaceId": "space-29382d2654d3239fb0b95c610636b9c5",
+      "description": "Layout1"
+    },
+    {
+      "id": "frame-36cdcde3472a842ddebf2eabddaa24f5",
+      "kind": "block_definition",
+      "unit": "drawing_unit",
+      "spaceId": null,
+      "description": "block:CIRCULO"
+    },
+    {
+      "id": "frame-f5ae1482ca99c191eec58ec019a2896f",
+      "kind": "entity_ocs",
+      "unit": "drawing_unit",
+      "spaceId": null,
+      "description": "entity-e47d122a7663703c93f3d2c996925b09"
+    },
+    {
+      "id": "frame-8b8b7c5e9adbc981d3e21faad55dc7b1",
+      "kind": "entity_ocs",
+      "unit": "drawing_unit",
+      "spaceId": null,
+      "description": "entity-dd0d7ba60e16b9fbcc223c6dc78bd96b"
+    },
+    {
+      "id": "frame-e318b86028b9090eafd76391ecb6559d",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "description": "mm:space-5246809c6dfdbb6a0849f35226c28392"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "transform-9a0b2ee04321280ad3aab3204551d30d",
+      "fromFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-ede48ba757616ee88559213f594701f1",
+      "fromFrameId": "frame-36cdcde3472a842ddebf2eabddaa24f5",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          0.0,
+          -1.0,
+          0.0,
+          10.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "block_instance",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-35ec299f7a95e4f55a3a56c5a9112201",
+      "fromFrameId": "frame-f5ae1482ca99c191eec58ec019a2896f",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          0.0,
+          -1.0,
+          0.0,
+          10.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-9cd105e43e7ce908bdec47ad8dee43ae",
+      "fromFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "toFrameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "matrix": [
+        [
+          25.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          25.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.4,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "unit_conversion",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-6c44a90aebfe5f853e2086c69c54a1fb",
+      "fromFrameId": "frame-36cdcde3472a842ddebf2eabddaa24f5",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          0.0,
+          -1.0,
+          0.0,
+          10.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "block_instance",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-2a864eece8afddae0921c7da134ab074",
+      "fromFrameId": "frame-f5ae1482ca99c191eec58ec019a2896f",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          0.0,
+          -1.0,
+          0.0,
+          10.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-d6d7319e0e7f1a938b8f049adfd1ffe9",
+      "fromFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "toFrameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "matrix": [
+        [
+          25.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          25.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.4,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "unit_conversion",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-273029d7e4b7bdb1b48e3be001cf8f1b",
+      "fromFrameId": "frame-8b8b7c5e9adbc981d3e21faad55dc7b1",
+      "toFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "transform-d8461cc1f2b6387dbe14590186618d9a",
+      "fromFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "toFrameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "matrix": [
+        [
+          25.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          25.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.4,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "unit_conversion",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "space-5246809c6dfdbb6a0849f35226c28392",
+      "kind": "model",
+      "name": "Model",
+      "frameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "paperUnit": "not_applicable",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "space-29382d2654d3239fb0b95c610636b9c5",
+      "kind": "paper",
+      "name": "Layout1",
+      "frameId": "frame-0e86dbcf80849fac5fb75a069f9c808b",
+      "paperUnit": "mm",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "viewports": [],
+  "layers": [
+    {
+      "id": "layer-e57a115c11a81cdc91a45625173eda0d",
+      "name": "0",
+      "color": 7,
+      "linetype": "Continuous",
+      "lineweight": -3,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {
+        "handle": "27",
+        "owner": "1",
+        "name": "0",
+        "flags": 0,
+        "color": 7,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "plotstyle_handle": "13",
+        "material_handle": "21"
+      }
+    },
+    {
+      "id": "layer-fa6ef5c448ff9c81a99dd86afeae7121",
+      "name": "Defpoints",
+      "color": 7,
+      "linetype": "Continuous",
+      "lineweight": -3,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": false,
+      "rawAttributes": {
+        "handle": "28",
+        "owner": "1",
+        "name": "Defpoints",
+        "flags": 0,
+        "color": 7,
+        "linetype": "Continuous",
+        "plot": 0,
+        "lineweight": -3,
+        "plotstyle_handle": "13",
+        "material_handle": "21"
+      }
+    },
+    {
+      "id": "layer-c631774ba75992b9fe082b04044dfa56",
+      "name": "PECA",
+      "color": 7,
+      "linetype": "Continuous",
+      "lineweight": -3,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {
+        "handle": "33",
+        "owner": "1",
+        "name": "PECA",
+        "flags": 0,
+        "color": 7,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "plotstyle_handle": "13",
+        "material_handle": "21"
+      }
+    }
+  ],
+  "blockDefinitions": [
+    {
+      "id": "block-5203fe1419e9513f8ee9f43f8b95f4e3",
+      "name": "CIRCULO",
+      "basePoint": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frameId": "frame-36cdcde3472a842ddebf2eabddaa24f5",
+      "declaredInsunits": 0,
+      "entityIds": [
+        "entity-e47d122a7663703c93f3d2c996925b09"
+      ],
+      "externalReference": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "blockInstances": [
+    {
+      "id": "instance-cb9635917fff01f12d6d2a9b7448f533",
+      "insertEntityId": "entity-edb84070c7fcec1587db80aa02900deb",
+      "definitionId": "block-5203fe1419e9513f8ee9f43f8b95f4e3",
+      "parentInstanceId": null,
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "row": 0,
+      "column": 0,
+      "insertPoint": [
+        10.0,
+        20.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        1,
+        1
+      ],
+      "rotationRad": 1.5707963267948966,
+      "extrusion": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rowSpacing": 0.0,
+      "columnSpacing": 5.0,
+      "transformId": "transform-ede48ba757616ee88559213f594701f1",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "instance-943beae5fa989ee7d4b2d03e89aa8235",
+      "insertEntityId": "entity-edb84070c7fcec1587db80aa02900deb",
+      "definitionId": "block-5203fe1419e9513f8ee9f43f8b95f4e3",
+      "parentInstanceId": null,
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "row": 0,
+      "column": 1,
+      "insertPoint": [
+        10.0,
+        20.0,
+        0.0
+      ],
+      "scale": [
+        2.0,
+        1,
+        1
+      ],
+      "rotationRad": 1.5707963267948966,
+      "extrusion": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rowSpacing": 0.0,
+      "columnSpacing": 5.0,
+      "transformId": "transform-6c44a90aebfe5f853e2086c69c54a1fb",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-e47d122a7663703c93f3d2c996925b09",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "source-d56f6c538b187c301f6812b09a34da0a",
+        "handle": "32",
+        "ownerHandle": "2F",
+        "ordinal": 60,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "block_definition",
+        "id": "block-5203fe1419e9513f8ee9f43f8b95f4e3"
+      },
+      "layerId": "layer-e57a115c11a81cdc91a45625173eda0d",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-f5ae1482ca99c191eec58ec019a2896f",
+      "geometryIds": [
+        "geometry-21cadef63c638cd49412e1a46597213c",
+        "geometry-4dcf57ae4700cf43c38c8ffb38c0f55e",
+        "geometry-a0ed7305f7ef37e14fa711bcb8dfe4d2"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "32",
+          "decodedValue": "32"
+        },
+        {
+          "code": 330,
+          "rawValue": "2F",
+          "decodedValue": "2F"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbCircle",
+          "decodedValue": "AcDbCircle"
+        },
+        {
+          "code": 10,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 20,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 30,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 40,
+          "rawValue": "1.0",
+          "decodedValue": 1.0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "entity-edb84070c7fcec1587db80aa02900deb",
+      "dxfType": "INSERT",
+      "origin": {
+        "sourceId": "source-d56f6c538b187c301f6812b09a34da0a",
+        "handle": "34",
+        "ownerHandle": "17",
+        "ordinal": 64,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "space-5246809c6dfdbb6a0849f35226c28392"
+      },
+      "layerId": "layer-c631774ba75992b9fe082b04044dfa56",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-06136c69392fcb82af8bc37629eb53d9",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "INSERT",
+          "decodedValue": "INSERT"
+        },
+        {
+          "code": 5,
+          "rawValue": "34",
+          "decodedValue": "34"
+        },
+        {
+          "code": 330,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbMInsertBlock",
+          "decodedValue": "AcDbMInsertBlock"
+        },
+        {
+          "code": 2,
+          "rawValue": "CIRCULO",
+          "decodedValue": "CIRCULO"
+        },
+        {
+          "code": 10,
+          "rawValue": "10.0",
+          "decodedValue": 10.0
+        },
+        {
+          "code": 20,
+          "rawValue": "20.0",
+          "decodedValue": 20.0
+        },
+        {
+          "code": 30,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 41,
+          "rawValue": "2.0",
+          "decodedValue": 2.0
+        },
+        {
+          "code": 50,
+          "rawValue": "90.0",
+          "decodedValue": 90.0
+        },
+        {
+          "code": 70,
+          "rawValue": "2",
+          "decodedValue": 2
+        },
+        {
+          "code": 44,
+          "rawValue": "5.0",
+          "decodedValue": 5.0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "entity-dd0d7ba60e16b9fbcc223c6dc78bd96b",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "source-d56f6c538b187c301f6812b09a34da0a",
+        "handle": "36",
+        "ownerHandle": "17",
+        "ordinal": 65,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "space-5246809c6dfdbb6a0849f35226c28392"
+      },
+      "layerId": "layer-e57a115c11a81cdc91a45625173eda0d",
+      "linetype": "BYLAYER",
+      "rawFrameId": "frame-8b8b7c5e9adbc981d3e21faad55dc7b1",
+      "geometryIds": [
+        "geometry-1d0a769eab0bba32703c5f6569632992",
+        "geometry-20244858a4ed8fc66313dd2c509e2480"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "36",
+          "decodedValue": "36"
+        },
+        {
+          "code": 330,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbEntity",
+          "decodedValue": "AcDbEntity"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 100,
+          "rawValue": "AcDbCircle",
+          "decodedValue": "AcDbCircle"
+        },
+        {
+          "code": 10,
+          "rawValue": "2.0",
+          "decodedValue": 2.0
+        },
+        {
+          "code": 20,
+          "rawValue": "3.0",
+          "decodedValue": 3.0
+        },
+        {
+          "code": 30,
+          "rawValue": "4.0",
+          "decodedValue": 4.0
+        },
+        {
+          "code": 40,
+          "rawValue": "1.0",
+          "decodedValue": 1.0
+        },
+        {
+          "code": 210,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        },
+        {
+          "code": 220,
+          "rawValue": "1.0",
+          "decodedValue": 1.0
+        },
+        {
+          "code": 230,
+          "rawValue": "0.0",
+          "decodedValue": 0.0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "occurrence-8b41f98481b5ce7b51316c8c1c2fac67",
+      "entityId": "entity-edb84070c7fcec1587db80aa02900deb",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "instancePath": [],
+      "transformToSpaceId": "transform-9a0b2ee04321280ad3aab3204551d30d",
+      "effectiveLayerId": "layer-c631774ba75992b9fe082b04044dfa56",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "occurrence-41f06db2cffa806ace70052a9ddc43db",
+      "entityId": "entity-e47d122a7663703c93f3d2c996925b09",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "instancePath": [
+        "instance-cb9635917fff01f12d6d2a9b7448f533"
+      ],
+      "transformToSpaceId": "transform-35ec299f7a95e4f55a3a56c5a9112201",
+      "effectiveLayerId": "layer-c631774ba75992b9fe082b04044dfa56",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "geometry-4dcf57ae4700cf43c38c8ffb38c0f55e",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "occurrence-f41762b62fbe51f506cb3aa398818894",
+      "entityId": "entity-e47d122a7663703c93f3d2c996925b09",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "instancePath": [
+        "instance-943beae5fa989ee7d4b2d03e89aa8235"
+      ],
+      "transformToSpaceId": "transform-2a864eece8afddae0921c7da134ab074",
+      "effectiveLayerId": "layer-c631774ba75992b9fe082b04044dfa56",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "geometry-a0ed7305f7ef37e14fa711bcb8dfe4d2",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "occurrence-c36ef75df2f6bd663bc3e738caf534a8",
+      "entityId": "entity-dd0d7ba60e16b9fbcc223c6dc78bd96b",
+      "spaceId": "space-5246809c6dfdbb6a0849f35226c28392",
+      "instancePath": [],
+      "transformToSpaceId": "transform-273029d7e4b7bdb1b48e3be001cf8f1b",
+      "effectiveLayerId": "layer-e57a115c11a81cdc91a45625173eda0d",
+      "effectiveLinetype": "Continuous",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "geometry-20244858a4ed8fc66313dd2c509e2480",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "id": "geometry-21cadef63c638cd49412e1a46597213c",
+      "sourceId": "source-d59d68f0029ee76dce50539d60565660",
+      "entityId": "entity-e47d122a7663703c93f3d2c996925b09",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "frame-f5ae1482ca99c191eec58ec019a2896f",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1.0
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-4dcf57ae4700cf43c38c8ffb38c0f55e",
+      "sourceId": "source-d59d68f0029ee76dce50539d60565660",
+      "entityId": "entity-e47d122a7663703c93f3d2c996925b09",
+      "occurrenceId": "occurrence-41f06db2cffa806ace70052a9ddc43db",
+      "sourceObjectKey": null,
+      "frameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "payload": {
+        "type": "ELLIPSE",
+        "center": [
+          254.0,
+          457.2,
+          0.0
+        ],
+        "majorAxis": [
+          0.0,
+          50.8,
+          0.0
+        ],
+        "minorAxis": [
+          -25.4,
+          0.0,
+          0.0
+        ],
+        "startRad": 0.0,
+        "sweepRad": 6.283185307179586
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "geometry-21cadef63c638cd49412e1a46597213c"
+      ],
+      "appliedTransformIds": [
+        "transform-35ec299f7a95e4f55a3a56c5a9112201",
+        "transform-9cd105e43e7ce908bdec47ad8dee43ae"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-a0ed7305f7ef37e14fa711bcb8dfe4d2",
+      "sourceId": "source-d59d68f0029ee76dce50539d60565660",
+      "entityId": "entity-e47d122a7663703c93f3d2c996925b09",
+      "occurrenceId": "occurrence-f41762b62fbe51f506cb3aa398818894",
+      "sourceObjectKey": null,
+      "frameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "payload": {
+        "type": "ELLIPSE",
+        "center": [
+          254.0,
+          584.1999999999999,
+          0.0
+        ],
+        "majorAxis": [
+          0.0,
+          50.8,
+          0.0
+        ],
+        "minorAxis": [
+          -25.4,
+          0.0,
+          0.0
+        ],
+        "startRad": 0.0,
+        "sweepRad": 6.283185307179586
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "geometry-21cadef63c638cd49412e1a46597213c"
+      ],
+      "appliedTransformIds": [
+        "transform-2a864eece8afddae0921c7da134ab074",
+        "transform-d6d7319e0e7f1a938b8f049adfd1ffe9"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-1d0a769eab0bba32703c5f6569632992",
+      "sourceId": "source-d59d68f0029ee76dce50539d60565660",
+      "entityId": "entity-dd0d7ba60e16b9fbcc223c6dc78bd96b",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "frame-8b8b7c5e9adbc981d3e21faad55dc7b1",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1.0
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "geometry-20244858a4ed8fc66313dd2c509e2480",
+      "sourceId": "source-d59d68f0029ee76dce50539d60565660",
+      "entityId": "entity-dd0d7ba60e16b9fbcc223c6dc78bd96b",
+      "occurrenceId": "occurrence-c36ef75df2f6bd663bc3e738caf534a8",
+      "sourceObjectKey": null,
+      "frameId": "frame-e318b86028b9090eafd76391ecb6559d",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          -50.8,
+          101.6,
+          76.19999999999999
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        "radius": 25.4
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "geometry-1d0a769eab0bba32703c5f6569632992"
+      ],
+      "appliedTransformIds": [
+        "transform-273029d7e4b7bdb1b48e3be001cf8f1b",
+        "transform-d8461cc1f2b6387dbe14590186618d9a"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [
+    {
+      "id": "dimension-style-0813cf34f7963995ed08b89c5c4573b8",
+      "name": "Standard",
+      "rawAttributes": {
+        "handle": "2B",
+        "owner": "4",
+        "name": "Standard",
+        "flags": 0,
+        "dimscale": 1.0,
+        "dimasz": 2.5,
+        "dimexo": 0.625,
+        "dimdli": 3.75,
+        "dimexe": 1.25,
+        "dimrnd": 0.0,
+        "dimdle": 0.0,
+        "dimtp": 0.0,
+        "dimtm": 0.0,
+        "dimfxl": 2.5,
+        "dimtxt": 2.5,
+        "dimcen": 2.5,
+        "dimtsz": 0.0,
+        "dimaltf": 0.03937007874,
+        "dimlfac": 1.0,
+        "dimtvp": 0.0,
+        "dimtfac": 1.0,
+        "dimgap": 0.625,
+        "dimaltrnd": 0.0,
+        "dimtfill": 0,
+        "dimtfillclr": 0,
+        "dimtol": 0,
+        "dimlim": 0,
+        "dimtih": 0,
+        "dimtoh": 0,
+        "dimse1": 0,
+        "dimse2": 0,
+        "dimtad": 1,
+        "dimzin": 8,
+        "dimazin": 3,
+        "dimalt": 0,
+        "dimaltd": 3,
+        "dimtofl": 1,
+        "dimsah": 0,
+        "dimtix": 0,
+        "dimsoxd": 0,
+        "dimclrd": 0,
+        "dimclre": 0,
+        "dimclrt": 0,
+        "dimadec": 2,
+        "dimdec": 2,
+        "dimtdec": 2,
+        "dimaltu": 2,
+        "dimalttd": 3,
+        "dimaunit": 0,
+        "dimfrac": 0,
+        "dimlunit": 2,
+        "dimdsep": 44,
+        "dimtmove": 0,
+        "dimjust": 0,
+        "dimsd1": 0,
+        "dimsd2": 0,
+        "dimtolj": 0,
+        "dimtzin": 8,
+        "dimaltz": 0,
+        "dimalttz": 0,
+        "dimupt": 0,
+        "dimatfit": 3,
+        "dimfxlon": 0,
+        "dimlwd": -2,
+        "dimlwe": -2,
+        "dimblk": "",
+        "dimblk1": "",
+        "dimblk2": "",
+        "dimldrblk": ""
+      },
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [],
+  "views": [],
+  "evidence": [],
+  "classifications": [
+    {
+      "id": "classification-a02ef91292c1e9459f82fb6ed23120a9",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-8b41f98481b5ce7b51316c8c1c2fac67"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    },
+    {
+      "id": "classification-74e8893befea894b8a2439ff195a47a0",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-41f06db2cffa806ace70052a9ddc43db"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    },
+    {
+      "id": "classification-9e046a016dd4a75cc09f6a2c70b20ec5",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-f41762b62fbe51f506cb3aa398818894"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    },
+    {
+      "id": "classification-312413617d85ceb99d56be0a85013544",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "occurrence-c36ef75df2f6bd663bc3e738caf534a8"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "unknown",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "unknown",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Fase 2A does not classify physical meaning."
+      }
+    }
+  ],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [],
+  "reconciliations": [],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diagnostic-0cfe3495dd43e9f22741ca0ed89b63de",
+      "code": "EXTRACTION_ONLY",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        }
+      ],
+      "message": "No physical part/feature/operation inference or JEIA integration in Fase 2A.",
+      "details": null,
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diagnostic-d8ab927695604d446bbb640c2aa2469e",
+      "code": "FREECAD_NOT_RUN",
+      "severity": "info",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        }
+      ],
+      "message": "Only ezdxf was executed; FreeCAD observations and reconciliation are not fabricated.",
+      "details": null,
+      "blocksConsumers": [],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "context": {
+    "requestId": "req-afd28948faf7477b82b2740400fd1ec1",
+    "selectionGeneration": 0,
+    "analysisRevision": 1,
+    "purpose": "production_analysis",
+    "producer": "experimental-ezdxf-adapter-0.1.0",
+    "createdAt": "2026-11-02T14:20:53.299564+00:00"
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "valid",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        },
+        "consumer": "visualization",
+        "status": "not_assessed",
+        "blockingDiagnosticIds": [],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-0cfe3495dd43e9f22741ca0ed89b63de"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-0cfe3495dd43e9f22741ca0ed89b63de"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "document-a476b8c2de392e1c8974ae61fef54519"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diagnostic-0cfe3495dd43e9f22741ca0ed89b63de"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Experimental extraction only; no physical recognition or operational integration."
+      }
+    ],
+    "cncReleased": false
+  },
+  "document": {
+    "id": "document-a476b8c2de392e1c8974ae61fef54519",
+    "fileName": "03_blocos_polegadas_ocs.dxf",
+    "sha256": "40d19b26d2416582a2209caea779357de9d8f2470e8014673f4c9ccab4d07d45",
+    "byteLength": 16050,
+    "dxfVersion": "AC1024",
+    "encoding": "utf-8",
+    "units": {
+      "rawInsunits": 1,
+      "rawMeasurement": 1,
+      "resolvedUnit": "Inches",
+      "mmPerDrawingUnit": 25.4,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Read from DXF header; no physical scale inferred"
+      }
+    },
+    "rawHeader": {
+      "$ACADVER": "AC1024",
+      "$ACADMAINTVER": 6,
+      "$DWGCODEPAGE": "ANSI_1252",
+      "$LASTSAVEDBY": "ezdxf",
+      "$INSBASE": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$EXTMIN": [
+        1e+20,
+        1e+20,
+        1e+20
+      ],
+      "$EXTMAX": [
+        -1e+20,
+        -1e+20,
+        -1e+20
+      ],
+      "$LIMMIN": [
+        0.0,
+        0.0
+      ],
+      "$LIMMAX": [
+        420.0,
+        297.0
+      ],
+      "$ORTHOMODE": 0,
+      "$REGENMODE": 1,
+      "$FILLMODE": 1,
+      "$QTEXTMODE": 0,
+      "$MIRRTEXT": 1,
+      "$LTSCALE": 1.0,
+      "$ATTMODE": 1,
+      "$TEXTSIZE": 2.5,
+      "$TRACEWID": 1.0,
+      "$TEXTSTYLE": "Standard",
+      "$CLAYER": "0",
+      "$CELTYPE": "ByLayer",
+      "$CECOLOR": 256,
+      "$CELTSCALE": 1.0,
+      "$DISPSILH": 0,
+      "$DIMSCALE": 1.0,
+      "$DIMASZ": 2.5,
+      "$DIMEXO": 0.625,
+      "$DIMDLI": 3.75,
+      "$DIMRND": 0.0,
+      "$DIMDLE": 0.0,
+      "$DIMEXE": 1.25,
+      "$DIMTP": 0.0,
+      "$DIMTM": 0.0,
+      "$DIMTXT": 2.5,
+      "$DIMCEN": 2.5,
+      "$DIMTSZ": 0.0,
+      "$DIMTOL": 0,
+      "$DIMLIM": 0,
+      "$DIMTIH": 0,
+      "$DIMTOH": 0,
+      "$DIMSE1": 0,
+      "$DIMSE2": 0,
+      "$DIMTAD": 1,
+      "$DIMZIN": 8,
+      "$DIMBLK": "",
+      "$DIMASO": 1,
+      "$DIMSHO": 1,
+      "$DIMPOST": "",
+      "$DIMAPOST": "",
+      "$DIMALT": 0,
+      "$DIMALTD": 3,
+      "$DIMALTF": 0.03937007874,
+      "$DIMLFAC": 1.0,
+      "$DIMTOFL": 1,
+      "$DIMTVP": 0.0,
+      "$DIMTIX": 0,
+      "$DIMSOXD": 0,
+      "$DIMSAH": 0,
+      "$DIMBLK1": "",
+      "$DIMBLK2": "",
+      "$DIMSTYLE": "ISO-25",
+      "$DIMCLRD": 0,
+      "$DIMCLRE": 0,
+      "$DIMCLRT": 0,
+      "$DIMTFAC": 1.0,
+      "$DIMGAP": 0.625,
+      "$DIMJUST": 0,
+      "$DIMSD1": 0,
+      "$DIMSD2": 0,
+      "$DIMTOLJ": 0,
+      "$DIMTZIN": 8,
+      "$DIMALTZ": 0,
+      "$DIMALTTZ": 0,
+      "$DIMUPT": 0,
+      "$DIMDEC": 2,
+      "$DIMTDEC": 2,
+      "$DIMALTU": 2,
+      "$DIMALTTD": 3,
+      "$DIMTXSTY": "Standard",
+      "$DIMAUNIT": 0,
+      "$DIMADEC": 0,
+      "$DIMALTRND": 0.0,
+      "$DIMAZIN": 0,
+      "$DIMDSEP": 44,
+      "$DIMATFIT": 3,
+      "$DIMFRAC": 0,
+      "$DIMLDRBLK": "",
+      "$DIMLUNIT": 2,
+      "$DIMLWD": -2,
+      "$DIMLWE": -2,
+      "$DIMTMOVE": 0,
+      "$DIMFXL": 1.0,
+      "$DIMFXLON": 0,
+      "$DIMJOGANG": 0.785398163397,
+      "$DIMTFILL": 0,
+      "$DIMTFILLCLR": 0,
+      "$DIMARCSYM": 0,
+      "$DIMLTYPE": "",
+      "$DIMLTEX1": "",
+      "$DIMLTEX2": "",
+      "$DIMTXTDIRECTION": 0,
+      "$LUNITS": 2,
+      "$LUPREC": 4,
+      "$SKETCHINC": 1.0,
+      "$FILLETRAD": 10.0,
+      "$AUNITS": 0,
+      "$AUPREC": 2,
+      "$MENU": ".",
+      "$ELEVATION": 0.0,
+      "$PELEVATION": 0.0,
+      "$THICKNESS": 0.0,
+      "$LIMCHECK": 0,
+      "$CHAMFERA": 0.0,
+      "$CHAMFERB": 0.0,
+      "$CHAMFERC": 0.0,
+      "$CHAMFERD": 0.0,
+      "$SKPOLY": 0,
+      "$TDCREATE": 2461347.5978356483,
+      "$TDUCREATE": 2458532.153996898,
+      "$TDUPDATE": 2461347.5927546294,
+      "$TDUUPDATE": 2458532.1544311,
+      "$TDINDWG": 0.0,
+      "$TDUSRTIMER": 0.0,
+      "$USRTIMER": 1,
+      "$ANGBASE": 0.0,
+      "$ANGDIR": 0,
+      "$PDMODE": 0,
+      "$PDSIZE": 0.0,
+      "$PLINEWID": 0.0,
+      "$SPLFRAME": 0,
+      "$SPLINETYPE": 6,
+      "$SPLINESEGS": 8,
+      "$HANDSEED": "3A",
+      "$SURFTAB1": 6,
+      "$SURFTAB2": 6,
+      "$SURFTYPE": 6,
+      "$SURFU": 6,
+      "$SURFV": 6,
+      "$UCSBASE": "",
+      "$UCSNAME": "",
+      "$UCSORG": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSXDIR": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "$UCSYDIR": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "$UCSORTHOREF": "",
+      "$UCSORTHOVIEW": 0,
+      "$UCSORGTOP": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGBOTTOM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGLEFT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGRIGHT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGFRONT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$UCSORGBACK": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSBASE": "",
+      "$PUCSNAME": "",
+      "$PUCSORG": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSXDIR": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSYDIR": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "$PUCSORTHOREF": "",
+      "$PUCSORTHOVIEW": 0,
+      "$PUCSORGTOP": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGBOTTOM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGLEFT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGRIGHT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGFRONT": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PUCSORGBACK": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$USERI1": 0,
+      "$USERI2": 0,
+      "$USERI3": 0,
+      "$USERI4": 0,
+      "$USERI5": 0,
+      "$USERR1": 0.0,
+      "$USERR2": 0.0,
+      "$USERR3": 0.0,
+      "$USERR4": 0.0,
+      "$USERR5": 0.0,
+      "$WORLDVIEW": 1,
+      "$SHADEDGE": 3,
+      "$SHADEDIF": 70,
+      "$TILEMODE": 1,
+      "$MAXACTVP": 64,
+      "$PINSBASE": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "$PLIMCHECK": 0,
+      "$PEXTMIN": [
+        1e+20,
+        1e+20,
+        1e+20
+      ],
+      "$PEXTMAX": [
+        -1e+20,
+        -1e+20,
+        -1e+20
+      ],
+      "$PLIMMIN": [
+        0.0,
+        0.0
+      ],
+      "$PLIMMAX": [
+        420.0,
+        297.0
+      ],
+      "$UNITMODE": 0,
+      "$VISRETAIN": 1,
+      "$PLINEGEN": 0,
+      "$PSLTSCALE": 1,
+      "$TREEDEPTH": 3020,
+      "$CMLSTYLE": "Standard",
+      "$CMLJUST": 0,
+      "$CMLSCALE": 20.0,
+      "$PROXYGRAPHICS": 1,
+      "$MEASUREMENT": 1,
+      "$CELWEIGHT": -1,
+      "$ENDCAPS": 0,
+      "$JOINSTYLE": 0,
+      "$LWDISPLAY": 0,
+      "$INSUNITS": 1,
+      "$HYPERLINKBASE": "",
+      "$STYLESHEET": "",
+      "$XEDIT": 1,
+      "$CEPSNTYPE": 0,
+      "$PSTYLEMODE": 1,
+      "$FINGERPRINTGUID": "{52C0DE46-3E28-4A39-903B-3FE3C46EF0B0}",
+      "$VERSIONGUID": "{15E04679-A3DA-4937-91E6-D2E74F2A4642}",
+      "$EXTNAMES": 1,
+      "$PSVPSCALE": 0.0,
+      "$OLESTARTUP": 0,
+      "$SORTENTS": 127,
+      "$INDEXCTL": 0,
+      "$HIDETEXT": 1,
+      "$XCLIPFRAME": 1,
+      "$HALOGAP": 0,
+      "$OBSCOLOR": 257,
+      "$OBSLTYPE": 0,
+      "$INTERSECTIONDISPLAY": 0,
+      "$INTERSECTIONCOLOR": 257,
+      "$DIMASSOC": 2,
+      "$PROJECTNAME": "",
+      "$CAMERADISPLAY": 0,
+      "$LENSLENGTH": 50.0,
+      "$CAMERAHEIGHT": 0.0,
+      "$STEPSPERSEC": 24.0,
+      "$STEPSIZE": 100.0,
+      "$3DDWFPREC": 2.0,
+      "$PSOLWIDTH": 0.005,
+      "$PSOLHEIGHT": 0.08,
+      "$LOFTANG1": 1.570796326795,
+      "$LOFTANG2": 1.570796326795,
+      "$LOFTMAG1": 0.0,
+      "$LOFTMAG2": 0.0,
+      "$LOFTPARAM": 7,
+      "$LOFTNORMALS": 1,
+      "$LATITUDE": 37.795,
+      "$LONGITUDE": -122.394,
+      "$NORTHDIRECTION": 0.0,
+      "$TIMEZONE": -8000,
+      "$LIGHTGLYPHDISPLAY": 1,
+      "$TILEMODELIGHTSYNCH": 1,
+      "$CMATERIAL": "20",
+      "$SOLIDHIST": 0,
+      "$SHOWHIST": 1,
+      "$DWFFRAME": 2,
+      "$DGNFRAME": 2,
+      "$REALWORLDSCALE": 1,
+      "$INTERFERECOLOR": 256,
+      "$CSHADOW": 0,
+      "$SHADOWPLANELOCATION": 0.0
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  }
+}

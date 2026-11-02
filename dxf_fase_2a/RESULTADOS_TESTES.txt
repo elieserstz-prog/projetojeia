@@ -1,0 +1,69 @@
+Python 3.12.14 / ezdxf 1.4.4 / jsonschema 4.26.0 — Linux
+Comando: python3 -m unittest discover -s tests -v
+
+test_501_dimensions_not_truncated (test_adapter.AdapterTests.test_501_dimensions_not_truncated) ... ok
+test_arc_crossing_zero (test_adapter.AdapterTests.test_arc_crossing_zero) ... ok
+test_astronomical_units_blocked (test_adapter.AdapterTests.test_astronomical_units_blocked) ... ok
+test_binary_dxf_rejected (test_adapter.AdapterTests.test_binary_dxf_rejected) ... ok
+test_block_name_case_insensitive (test_adapter.AdapterTests.test_block_name_case_insensitive) ... ok
+test_circle_ocs (test_adapter.AdapterTests.test_circle_ocs) ... ok
+test_classic_polyline_preserves_vertex_handles (test_adapter.AdapterTests.test_classic_polyline_preserves_vertex_handles) ... ok
+test_cli_input_cannot_be_output (test_adapter.AdapterTests.test_cli_input_cannot_be_output) ... ok
+test_cli_json_and_no_overwrite (test_adapter.AdapterTests.test_cli_json_and_no_overwrite) ... ok
+test_closed_curved_wire (test_adapter.AdapterTests.test_closed_curved_wire) ... ok
+test_coincident_cells_preserved (test_adapter.AdapterTests.test_coincident_cells_preserved) ... ok
+test_cycle_is_diagnosed (test_adapter.AdapterTests.test_cycle_is_diagnosed) ... ok
+test_decoded_numeric_groups_preserve_original_text (test_adapter.AdapterTests.test_decoded_numeric_groups_preserve_original_text) ... ok
+test_degenerate_line_is_diagnosed (test_adapter.AdapterTests.test_degenerate_line_is_diagnosed) ... ok
+test_degenerate_polyline_not_given_guessed_orientation (test_adapter.AdapterTests.test_degenerate_polyline_not_given_guessed_orientation) ... ok
+test_depth_limit_is_explicit (test_adapter.AdapterTests.test_depth_limit_is_explicit) ... ok
+test_dimension_computed_without_group42 (test_adapter.AdapterTests.test_dimension_computed_without_group42) ... ok
+test_dimension_style_override_preserved (test_adapter.AdapterTests.test_dimension_style_override_preserved) ... ok
+test_dimensions_inside_blocks_preserved (test_adapter.AdapterTests.test_dimensions_inside_blocks_preserved) ... ok
+test_duplicate_handles_rejected (test_adapter.AdapterTests.test_duplicate_handles_rejected) ... ok
+test_entity_limit_fails (test_adapter.AdapterTests.test_entity_limit_fails) ... ok
+test_examples_are_extracted (test_adapter.AdapterTests.test_examples_are_extracted) ... ok
+test_frozen_layer_visibility (test_adapter.AdapterTests.test_frozen_layer_visibility) ... ok
+test_identity_stable_across_requests (test_adapter.AdapterTests.test_identity_stable_across_requests) ... ok
+test_ids_and_basic_references (test_adapter.AdapterTests.test_ids_and_basic_references) ... ok
+test_inches (test_adapter.AdapterTests.test_inches) ... ok
+test_invalid_and_empty_inputs (test_adapter.AdapterTests.test_invalid_and_empty_inputs) ... ok
+test_invalid_options (test_adapter.AdapterTests.test_invalid_options) ... ok
+test_kilometers (test_adapter.AdapterTests.test_kilometers) ... ok
+test_layer_zero_and_byblock_inheritance (test_adapter.AdapterTests.test_layer_zero_and_byblock_inheritance) ... ok
+test_legacy_encoding (test_adapter.AdapterTests.test_legacy_encoding) ... ok
+test_line_coordinates (test_adapter.AdapterTests.test_line_coordinates) ... ok
+test_major_bulge (test_adapter.AdapterTests.test_major_bulge) ... ok
+test_matrix_convention_roundtrip (test_adapter.AdapterTests.test_matrix_convention_roundtrip) ... ok
+test_minsert_grid_not_scaled (test_adapter.AdapterTests.test_minsert_grid_not_scaled) ... ok
+test_mirrored_arc_endpoints (test_adapter.AdapterTests.test_mirrored_arc_endpoints) ... ok
+test_missing_block (test_adapter.AdapterTests.test_missing_block) ... ok
+test_model_and_paper_separate (test_adapter.AdapterTests.test_model_and_paper_separate) ... ok
+test_negative_bulge_orientation (test_adapter.AdapterTests.test_negative_bulge_orientation) ... ok
+test_nested_blocks (test_adapter.AdapterTests.test_nested_blocks) ... ok
+test_no_freecad_observations_fabricated (test_adapter.AdapterTests.test_no_freecad_observations_fabricated) ... ok
+test_nonuniform_bulge_converts_to_ellipse (test_adapter.AdapterTests.test_nonuniform_bulge_converts_to_ellipse) ... ok
+test_nonuniform_rotated_block (test_adapter.AdapterTests.test_nonuniform_rotated_block) ... ok
+test_occurrence_limit_is_explicit (test_adapter.AdapterTests.test_occurrence_limit_is_explicit) ... ok
+test_paper_dimension_preserved (test_adapter.AdapterTests.test_paper_dimension_preserved) ... ok
+test_paper_does_not_inherit_model_inches (test_adapter.AdapterTests.test_paper_does_not_inherit_model_inches) ... ok
+test_parent_visibility_propagates (test_adapter.AdapterTests.test_parent_visibility_propagates) ... ok
+test_polyline3d_preserves_z (test_adapter.AdapterTests.test_polyline3d_preserves_z) ... ok
+test_polyline_elevation_once (test_adapter.AdapterTests.test_polyline_elevation_once) ... ok
+test_raw_groups_keep_spaces_and_codes (test_adapter.AdapterTests.test_raw_groups_keep_spaces_and_codes) ... ok
+test_raw_record_type_matches_entity (test_adapter.AdapterTests.test_raw_record_type_matches_entity) ... ok
+test_same_name_different_bytes_different_identity (test_adapter.AdapterTests.test_same_name_different_bytes_different_identity) ... ok
+test_schema_required_generation (test_adapter.AdapterTests.test_schema_required_generation) ... ok
+test_schema_unknown_field_rejected (test_adapter.AdapterTests.test_schema_unknown_field_rejected) ... ok
+test_size_limit_fails (test_adapter.AdapterTests.test_size_limit_fails) ... ok
+test_sparse_bulge_attaches_to_correct_vertex (test_adapter.AdapterTests.test_sparse_bulge_attaches_to_correct_vertex) ... ok
+test_title_text_and_attributes (test_adapter.AdapterTests.test_title_text_and_attributes) ... ok
+test_unitless (test_adapter.AdapterTests.test_unitless) ... ok
+test_unsupported_spline_is_explicit (test_adapter.AdapterTests.test_unsupported_spline_is_explicit) ... ok
+test_viewport_camera_retained_without_mapping (test_adapter.AdapterTests.test_viewport_camera_retained_without_mapping) ... ok
+test_widths_and_thickness_not_silently_dropped (test_adapter.AdapterTests.test_widths_and_thickness_not_silently_dropped) ... ok
+
+----------------------------------------------------------------------
+Ran 61 tests in 7.036s
+
+OK

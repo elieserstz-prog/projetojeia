@@ -1,0 +1,3605 @@
+{
+  "sources": [
+    {
+      "id": "src-dxf",
+      "kind": "dxf_original",
+      "version": "AC1027",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-ezdxf",
+      "kind": "ezdxf",
+      "version": "1.4.4",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-freecad",
+      "kind": "freecad",
+      "version": "1.1.3",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-operator",
+      "kind": "operator",
+      "version": "exemplo",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-rules",
+      "kind": "rule_engine",
+      "version": "proposta-1.0",
+      "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "f-model",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-model"
+    },
+    {
+      "id": "f-paper",
+      "kind": "paper",
+      "unit": "mm",
+      "spaceId": "paper",
+      "description": "Frame ilustrativo f-paper"
+    },
+    {
+      "id": "f-title",
+      "kind": "block_definition",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "Frame ilustrativo f-title"
+    },
+    {
+      "id": "f-v1",
+      "kind": "view",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-v1"
+    },
+    {
+      "id": "f-v2",
+      "kind": "view",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-v2"
+    },
+    {
+      "id": "f-part",
+      "kind": "part",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "Frame ilustrativo f-part"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "t-model",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-model"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-paper",
+      "fromFrameId": "f-paper",
+      "toFrameId": "f-paper",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-paper"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-title",
+      "fromFrameId": "f-title",
+      "toFrameId": "f-paper",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          270
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "block_instance",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-title"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-v1",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-v1",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "space_to_view",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-v1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-v2",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-v2",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          -200
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "space_to_view",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-v2"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-v1-part",
+      "fromFrameId": "f-v1",
+      "toFrameId": "f-part",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "view_to_part",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-v1-part"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-v2-part",
+      "fromFrameId": "f-v2",
+      "toFrameId": "f-part",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "view_to_part",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-v2-part"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "model",
+      "kind": "model",
+      "name": "Model",
+      "frameId": "f-model",
+      "paperUnit": "not_applicable",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "paper",
+      "kind": "paper",
+      "name": "Folha A3",
+      "frameId": "f-paper",
+      "paperUnit": "mm",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "viewports": [],
+  "layers": [
+    {
+      "id": "layer-piece",
+      "name": "PECA",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-frame",
+      "name": "FOLHA",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-title",
+      "name": "CARIMBO",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-zero",
+      "name": "0",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-dim",
+      "name": "COTAS",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    }
+  ],
+  "blockDefinitions": [
+    {
+      "id": "block-title",
+      "name": "CARIMBO_A3",
+      "basePoint": [
+        0,
+        0,
+        0
+      ],
+      "frameId": "f-title",
+      "declaredInsunits": 4,
+      "entityIds": [
+        "e-title-table",
+        "e-title-text"
+      ],
+      "externalReference": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "blockInstances": [
+    {
+      "id": "inst-title-0-0",
+      "insertEntityId": "e-title-insert",
+      "definitionId": "block-title",
+      "parentInstanceId": null,
+      "spaceId": "paper",
+      "row": 0,
+      "column": 0,
+      "insertPoint": [
+        270,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotationRad": 0,
+      "extrusion": [
+        0,
+        0,
+        1
+      ],
+      "rowSpacing": 0,
+      "columnSpacing": 0,
+      "transformId": "t-title",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "e-outline1",
+      "dxfType": "LWPOLYLINE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "10",
+        "ownerHandle": null,
+        "ordinal": 0,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-outline1"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LWPOLYLINE",
+          "decodedValue": "LWPOLYLINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "10",
+          "decodedValue": "10"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 90,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 70,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "100",
+          "decodedValue": 100
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "100",
+          "decodedValue": 100
+        },
+        {
+          "code": 20,
+          "rawValue": "60",
+          "decodedValue": 60
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "60",
+          "decodedValue": 60
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-hole1",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "11",
+        "ownerHandle": null,
+        "ordinal": 1,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-hole1",
+        "g-hole-freecad"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "11",
+          "decodedValue": "11"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 10,
+          "rawValue": "25",
+          "decodedValue": 25
+        },
+        {
+          "code": 20,
+          "rawValue": "30",
+          "decodedValue": 30
+        },
+        {
+          "code": 30,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 40,
+          "rawValue": "5",
+          "decodedValue": 5
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-outline2",
+      "dxfType": "LWPOLYLINE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "12",
+        "ownerHandle": null,
+        "ordinal": 2,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-outline2"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LWPOLYLINE",
+          "decodedValue": "LWPOLYLINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "12",
+          "decodedValue": "12"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 90,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 70,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 10,
+          "rawValue": "200",
+          "decodedValue": 200
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "300",
+          "decodedValue": 300
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "300",
+          "decodedValue": 300
+        },
+        {
+          "code": 20,
+          "rawValue": "60",
+          "decodedValue": 60
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "200",
+          "decodedValue": 200
+        },
+        {
+          "code": 20,
+          "rawValue": "60",
+          "decodedValue": 60
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-hole2",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "13",
+        "ownerHandle": null,
+        "ordinal": 3,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-hole2"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "13",
+          "decodedValue": "13"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 10,
+          "rawValue": "225",
+          "decodedValue": 225
+        },
+        {
+          "code": 20,
+          "rawValue": "30",
+          "decodedValue": 30
+        },
+        {
+          "code": 30,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 40,
+          "rawValue": "5",
+          "decodedValue": 5
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-frame",
+      "dxfType": "LWPOLYLINE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "14",
+        "ownerHandle": null,
+        "ordinal": 4,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "paper"
+      },
+      "layerId": "layer-frame",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-paper",
+      "geometryIds": [
+        "g-frame"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LWPOLYLINE",
+          "decodedValue": "LWPOLYLINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "14",
+          "decodedValue": "14"
+        },
+        {
+          "code": 8,
+          "rawValue": "FOLHA",
+          "decodedValue": "FOLHA"
+        },
+        {
+          "code": 90,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 70,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 10,
+          "rawValue": "-10",
+          "decodedValue": -10
+        },
+        {
+          "code": 20,
+          "rawValue": "-10",
+          "decodedValue": -10
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "410",
+          "decodedValue": 410
+        },
+        {
+          "code": 20,
+          "rawValue": "-10",
+          "decodedValue": -10
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "410",
+          "decodedValue": 410
+        },
+        {
+          "code": 20,
+          "rawValue": "287",
+          "decodedValue": 287
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "-10",
+          "decodedValue": -10
+        },
+        {
+          "code": 20,
+          "rawValue": "287",
+          "decodedValue": 287
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-title-table",
+      "dxfType": "LWPOLYLINE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "15",
+        "ownerHandle": null,
+        "ordinal": 5,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "block_definition",
+        "id": "block-title"
+      },
+      "layerId": "layer-zero",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-title",
+      "geometryIds": [
+        "g-title-table"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LWPOLYLINE",
+          "decodedValue": "LWPOLYLINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "15",
+          "decodedValue": "15"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 90,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 70,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "130",
+          "decodedValue": 130
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "130",
+          "decodedValue": 130
+        },
+        {
+          "code": 20,
+          "rawValue": "35",
+          "decodedValue": 35
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "35",
+          "decodedValue": 35
+        },
+        {
+          "code": 42,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-title-text",
+      "dxfType": "TEXT",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "16",
+        "ownerHandle": null,
+        "ordinal": 6,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "block_definition",
+        "id": "block-title"
+      },
+      "layerId": "layer-zero",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-title",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "TEXT",
+          "decodedValue": "TEXT"
+        },
+        {
+          "code": 5,
+          "rawValue": "16",
+          "decodedValue": "16"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 1,
+          "rawValue": "DESENHO: EX-001 / REV: 01",
+          "decodedValue": "DESENHO: EX-001 / REV: 01"
+        },
+        {
+          "code": 10,
+          "rawValue": "2",
+          "decodedValue": 2
+        },
+        {
+          "code": 20,
+          "rawValue": "2",
+          "decodedValue": 2
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-title-insert",
+      "dxfType": "INSERT",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "17",
+        "ownerHandle": null,
+        "ordinal": 7,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "paper"
+      },
+      "layerId": "layer-title",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-paper",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "INSERT",
+          "decodedValue": "INSERT"
+        },
+        {
+          "code": 5,
+          "rawValue": "17",
+          "decodedValue": "17"
+        },
+        {
+          "code": 8,
+          "rawValue": "CARIMBO",
+          "decodedValue": "CARIMBO"
+        },
+        {
+          "code": 2,
+          "rawValue": "CARIMBO_A3",
+          "decodedValue": "CARIMBO_A3"
+        },
+        {
+          "code": 10,
+          "rawValue": "270",
+          "decodedValue": 270
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-dim",
+      "dxfType": "DIMENSION",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "18",
+        "ownerHandle": null,
+        "ordinal": 8,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-dim",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "DIMENSION",
+          "decodedValue": "DIMENSION"
+        },
+        {
+          "code": 5,
+          "rawValue": "18",
+          "decodedValue": "18"
+        },
+        {
+          "code": 8,
+          "rawValue": "COTAS",
+          "decodedValue": "COTAS"
+        },
+        {
+          "code": 70,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 42,
+          "rawValue": "100",
+          "decodedValue": 100
+        },
+        {
+          "code": 1,
+          "rawValue": "<>",
+          "decodedValue": "<>"
+        },
+        {
+          "code": 13,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 23,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 14,
+          "rawValue": "100",
+          "decodedValue": 100
+        },
+        {
+          "code": 24,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "o-outline1",
+      "entityId": "e-outline1",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-outline1",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-hole1",
+      "entityId": "e-hole1",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-hole1",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-outline2",
+      "entityId": "e-outline2",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-outline2",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-hole2",
+      "entityId": "e-hole2",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-hole2",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-frame",
+      "entityId": "e-frame",
+      "spaceId": "paper",
+      "instancePath": [],
+      "transformToSpaceId": "t-paper",
+      "effectiveLayerId": "layer-frame",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-frame",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-title-table",
+      "entityId": "e-title-table",
+      "spaceId": "paper",
+      "instancePath": [
+        "inst-title-0-0"
+      ],
+      "transformToSpaceId": "t-title",
+      "effectiveLayerId": "layer-title",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-title-text",
+      "entityId": "e-title-text",
+      "spaceId": "paper",
+      "instancePath": [
+        "inst-title-0-0"
+      ],
+      "transformToSpaceId": "t-title",
+      "effectiveLayerId": "layer-title",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-title-insert",
+      "entityId": "e-title-insert",
+      "spaceId": "paper",
+      "instancePath": [],
+      "transformToSpaceId": "t-paper",
+      "effectiveLayerId": "layer-title",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-dim",
+      "entityId": "e-dim",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-dim",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "id": "g-outline1",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-outline1",
+      "occurrenceId": "o-outline1",
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              100,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              100,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              0,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-outline1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-hole1",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-hole1",
+      "occurrenceId": "o-hole1",
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          25,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-hole1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-outline2",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-outline2",
+      "occurrenceId": "o-outline2",
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              200,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              300,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              300,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              200,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-outline2"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-hole2",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-hole2",
+      "occurrenceId": "o-hole2",
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          225,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-hole2"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-frame",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-frame",
+      "occurrenceId": "o-frame",
+      "sourceObjectKey": null,
+      "frameId": "f-paper",
+      "payload": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              -10,
+              -10,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              410,
+              -10,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              410,
+              287,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              -10,
+              287,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-frame"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-title-table",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-title-table",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "f-title",
+      "payload": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              130,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              130,
+              35,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              0,
+              35,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-title-table"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-hole-freecad",
+      "sourceId": "src-freecad",
+      "entityId": "e-hole1",
+      "occurrenceId": "o-hole1",
+      "sourceObjectKey": "native:g-hole-freecad",
+      "frameId": "f-model",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          25,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-hole-freecad"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [
+    {
+      "id": "style-main",
+      "name": "JEIA_EXEMPLO",
+      "rawAttributes": {
+        "DIMLFAC": 1,
+        "DIMSCALE": 1,
+        "DIMTOL": 1,
+        "DIMTP": 0.1,
+        "DIMTM": 0.1
+      },
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "dim-length",
+      "entityId": "e-dim",
+      "occurrenceId": "o-dim",
+      "kind": "linear",
+      "styleId": "style-main",
+      "rawMeasurement": {
+        "value": 100,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-dim"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "computedMeasurement": {
+        "value": 100,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-dim"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "displayMeasurement": {
+        "value": 100,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-dim"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "rawText": "<>",
+      "displayText": "100 ±0.1 mm",
+      "rawOverrides": {},
+      "resolvedStyle": {
+        "DIMLFAC": 1,
+        "DIMSCALE": 1,
+        "DIMTOL": 1,
+        "DIMTP": 0.1,
+        "DIMTM": 0.1
+      },
+      "definitionPoints": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          0,
+          0
+        ]
+      ],
+      "pointFrameId": "f-model",
+      "associatedOccurrenceIds": [
+        "o-outline1"
+      ],
+      "toleranceIds": [
+        "tol-length"
+      ],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-dim"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "tolerances": [
+    {
+      "id": "tol-length",
+      "targetDimensionIds": [
+        "dim-length"
+      ],
+      "targetFeatureIds": [],
+      "kind": "bilateral",
+      "interpretation": "signed_deviation",
+      "lower": {
+        "value": -0.1,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-dim"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "upper": {
+        "value": 0.1,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-dim"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "rawText": "±0.1",
+      "standardReference": null,
+      "datumAnnotationIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-dim"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": "ann-title",
+      "entityId": "e-title-text",
+      "occurrenceId": "o-title-text",
+      "kind": "text",
+      "rawText": "DESENHO: EX-001 / REV: 01",
+      "plainText": "DESENHO: EX-001 / REV: 01",
+      "anchor": [
+        2,
+        2,
+        0
+      ],
+      "frameId": "f-title",
+      "associatedOccurrenceIds": [
+        "o-title-table"
+      ],
+      "interpretation": {
+        "drawing": "EX-001",
+        "revision": "01"
+      },
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "parts": [
+    {
+      "id": "part-plate",
+      "label": "Placa EX-001 — representacao e detalhe repetido",
+      "viewIds": [
+        "v-front",
+        "v-detail"
+      ],
+      "featureIds": [
+        "feature-hole"
+      ],
+      "referenceViewId": "v-front",
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "v-front",
+      "spaceId": "model",
+      "frameId": "f-v1",
+      "partId": "part-plate",
+      "occurrenceIds": [
+        "o-outline1",
+        "o-hole1",
+        "o-dim"
+      ],
+      "viewportId": null,
+      "role": "front",
+      "scale": {
+        "drawingPerPart": 1,
+        "method": "operator",
+        "validation": {
+          "state": "confirmed",
+          "evidenceIds": [
+            "ev-view"
+          ],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      "viewToPartTransformId": "t-v1-part",
+      "spaceToViewTransformId": "t-v1",
+      "enabledForPlanning": true,
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "v-detail",
+      "spaceId": "model",
+      "frameId": "f-v2",
+      "partId": "part-plate",
+      "occurrenceIds": [
+        "o-outline2",
+        "o-hole2"
+      ],
+      "viewportId": null,
+      "role": "detail",
+      "scale": {
+        "drawingPerPart": 1,
+        "method": "operator",
+        "validation": {
+          "state": "confirmed",
+          "evidenceIds": [
+            "ev-view"
+          ],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      "viewToPartTransformId": "t-v2-part",
+      "spaceToViewTransformId": "t-v2",
+      "enabledForPlanning": true,
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-units",
+      "sourceId": "src-dxf",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-units",
+      "method": "HEADER.INSUNITS",
+      "description": "Evidencia exclusivamente ilustrativa: HEADER.INSUNITS",
+      "value": {
+        "rawInsunits": 4
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-dim",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "dimension",
+          "id": "dim-length"
+        }
+      ],
+      "family": "dimensional",
+      "independenceKey": "ev-dim",
+      "method": "comparison_definition_points",
+      "description": "Evidencia exclusivamente ilustrativa: comparison_definition_points",
+      "value": {
+        "geometric": 100,
+        "nominal": 100
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-view",
+      "sourceId": "src-operator",
+      "targets": [
+        {
+          "kind": "view",
+          "id": "v-front"
+        },
+        {
+          "kind": "view",
+          "id": "v-detail"
+        }
+      ],
+      "family": "operator",
+      "independenceKey": "ev-view",
+      "method": "operator_associates_same_part_and_scale",
+      "description": "Evidencia exclusivamente ilustrativa: operator_associates_same_part_and_scale",
+      "value": {
+        "samePart": true,
+        "scale": 1
+      },
+      "reliability": "confirmed"
+    },
+    {
+      "id": "ev-same-hole",
+      "sourceId": "src-operator",
+      "targets": [
+        {
+          "kind": "feature",
+          "id": "feature-hole"
+        }
+      ],
+      "family": "operator",
+      "independenceKey": "ev-same-hole",
+      "method": "same_physical_hole_confirmation",
+      "description": "Evidencia exclusivamente ilustrativa: same_physical_hole_confirmation",
+      "value": {
+        "observations": [
+          "obs-hole-front",
+          "obs-hole-detail"
+        ]
+      },
+      "reliability": "confirmed"
+    },
+    {
+      "id": "ev-frame-top",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-frame"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-frame-top",
+      "method": "closed_sheet_boundary",
+      "description": "Evidencia exclusivamente ilustrativa: closed_sheet_boundary",
+      "value": true,
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-frame-template",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-frame"
+        }
+      ],
+      "family": "template_verified",
+      "independenceKey": "ev-frame-template",
+      "method": "verified_sheet_template",
+      "description": "Evidencia exclusivamente ilustrativa: verified_sheet_template",
+      "value": true,
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-title-struct",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-title-table"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-title-struct",
+      "method": "table_and_block_structure",
+      "description": "Evidencia exclusivamente ilustrativa: table_and_block_structure",
+      "value": true,
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-title-text",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "annotation",
+          "id": "ann-title"
+        }
+      ],
+      "family": "text_semantics",
+      "independenceKey": "ev-title-text",
+      "method": "drawing_and_revision_fields",
+      "description": "Evidencia exclusivamente ilustrativa: drawing_and_revision_fields",
+      "value": true,
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-piece",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-outline1"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-outline2"
+        }
+      ],
+      "family": "dimensional",
+      "independenceKey": "ev-piece",
+      "method": "dimension_and_projection_links",
+      "description": "Evidencia exclusivamente ilustrativa: dimension_and_projection_links",
+      "value": true,
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-outline1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-outline1"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-outline1",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              100,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              100,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              0,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-hole1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-hole1"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-hole1",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          25,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-outline2",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-outline2"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-outline2",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              200,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              300,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              300,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              200,
+              60,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-hole2",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-hole2"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-hole2",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          225,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-frame",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-frame"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-frame",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              -10,
+              -10,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              410,
+              -10,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              410,
+              287,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              -10,
+              287,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-title-table",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-title-table"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-title-table",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "POLYLINE",
+        "vertices": [
+          {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              130,
+              0,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              130,
+              35,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          },
+          {
+            "point": [
+              0,
+              35,
+              0
+            ],
+            "bulge": 0,
+            "startWidth": 0,
+            "endWidth": 0
+          }
+        ],
+        "closed": true,
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "elevation": 0,
+        "is3d": false
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-hole-freecad",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-hole-freecad"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-hole-freecad",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          25,
+          30,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-model",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-model"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-model",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-paper",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-paper"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-paper",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-title",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-title"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-title",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          270
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-v1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-v1"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-v1",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-v2",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-v2"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-v2",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          -200
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-v1-part",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-v1-part"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-v1-part",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-v2-part",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-v2-part"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-v2-part",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-piece-topology",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-outline1"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-outline2"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "piece_contours",
+      "method": "closed_profiles_with_internal_circles",
+      "description": "Estrutura sintetica de dois perfis fechados, com cotas e associacao de vistas preservadas.",
+      "value": {
+        "closed": true
+      },
+      "reliability": "observed"
+    }
+  ],
+  "classifications": [
+    {
+      "id": "class-frame",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-frame"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "sheet_frame",
+          "evidenceIds": [
+            "ev-frame-top",
+            "ev-frame-template"
+          ],
+          "score": null
+        }
+      ],
+      "selectedClass": "sheet_frame",
+      "inclusion": "excluded",
+      "decisionId": null,
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-frame-top",
+          "ev-frame-template"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "class-title",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-title-table"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-title-text"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "title_block",
+          "evidenceIds": [
+            "ev-title-struct",
+            "ev-title-text"
+          ],
+          "score": null
+        }
+      ],
+      "selectedClass": "title_block",
+      "inclusion": "excluded",
+      "decisionId": null,
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-title-struct",
+          "ev-title-text"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "class-piece",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-outline1"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-outline2"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-hole1"
+        },
+        {
+          "kind": "occurrence",
+          "id": "o-hole2"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "piece_geometry",
+          "evidenceIds": [
+            "ev-piece",
+            "ev-piece-topology"
+          ],
+          "score": null
+        }
+      ],
+      "selectedClass": "piece_geometry",
+      "inclusion": "included",
+      "decisionId": null,
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-piece",
+          "ev-piece-topology"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-hole-front",
+      "partId": "part-plate",
+      "viewId": "v-front",
+      "occurrenceIds": [
+        "o-hole1"
+      ],
+      "kind": "hole_candidate",
+      "quantities": {
+        "diameter": {
+          "value": 10,
+          "unit": "mm",
+          "validation": {
+            "state": "verified",
+            "evidenceIds": [
+              "ev-view"
+            ],
+            "diagnosticIds": [],
+            "reason": "Exemplo sintetico"
+          }
+        },
+        "depth": {
+          "value": null,
+          "unit": "mm",
+          "validation": {
+            "state": "unknown",
+            "evidenceIds": [],
+            "diagnosticIds": [],
+            "reason": "Nao determinado"
+          }
+        }
+      },
+      "axisFrameId": null,
+      "accessOccurrenceIds": [],
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "obs-hole-detail",
+      "partId": "part-plate",
+      "viewId": "v-detail",
+      "occurrenceIds": [
+        "o-hole2"
+      ],
+      "kind": "hole_candidate",
+      "quantities": {
+        "diameter": {
+          "value": 10,
+          "unit": "mm",
+          "validation": {
+            "state": "verified",
+            "evidenceIds": [
+              "ev-view"
+            ],
+            "diagnosticIds": [],
+            "reason": "Exemplo sintetico"
+          }
+        },
+        "depth": {
+          "value": null,
+          "unit": "mm",
+          "validation": {
+            "state": "unknown",
+            "evidenceIds": [],
+            "diagnosticIds": [],
+            "reason": "Nao determinado"
+          }
+        }
+      },
+      "axisFrameId": null,
+      "accessOccurrenceIds": [],
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "featureRelations": [
+    {
+      "id": "relation-hole",
+      "leftObservationId": "obs-hole-front",
+      "rightObservationId": "obs-hole-detail",
+      "relation": "same_feature",
+      "decisionId": "decision-same-hole",
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-same-hole"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "feature-hole",
+      "partId": "part-plate",
+      "kind": "hole",
+      "observationIds": [
+        "obs-hole-front",
+        "obs-hole-detail"
+      ],
+      "identityState": "confirmed",
+      "quantities": {
+        "diameter": {
+          "value": 10,
+          "unit": "mm",
+          "validation": {
+            "state": "verified",
+            "evidenceIds": [
+              "ev-same-hole"
+            ],
+            "diagnosticIds": [],
+            "reason": "Exemplo sintetico"
+          }
+        },
+        "depth": {
+          "value": null,
+          "unit": "mm",
+          "validation": {
+            "state": "unknown",
+            "evidenceIds": [],
+            "diagnosticIds": [],
+            "reason": "Nao determinado"
+          }
+        }
+      },
+      "axisFrameId": null,
+      "throughState": "unknown",
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-same-hole"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "setups": [],
+  "operations": [
+    {
+      "id": "op-drill",
+      "partId": "part-plate",
+      "featureIds": [
+        "feature-hole"
+      ],
+      "stage": "drilling",
+      "processVariant": "drill_standard",
+      "passGroup": "whole",
+      "setupId": null,
+      "status": "blocked",
+      "quantity": 1,
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [
+          "diag-depth"
+        ],
+        "reason": null
+      }
+    },
+    {
+      "id": "op-drill-duplicada",
+      "partId": "part-plate",
+      "featureIds": [
+        "feature-hole"
+      ],
+      "stage": "drilling",
+      "processVariant": "drill_standard",
+      "passGroup": "whole",
+      "setupId": null,
+      "status": "blocked",
+      "quantity": 1,
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [
+          "diag-depth"
+        ],
+        "reason": null
+      }
+    }
+  ],
+  "numericProfiles": [
+    {
+      "id": "profile-analytic",
+      "lengthAbsMm": 1e-06,
+      "lengthRel": 1e-09,
+      "angleAbsRad": 1e-09,
+      "volumeAbsMm3": 1e-06,
+      "volumeRel": 1e-09,
+      "purpose": "software_comparison_only",
+      "description": "Perfil ilustrativo de fixtures analiticas; nao e tolerancia de fabricacao."
+    }
+  ],
+  "reconciliations": [
+    {
+      "id": "reconcile-hole",
+      "subject": {
+        "kind": "occurrence",
+        "id": "o-hole1"
+      },
+      "property": "diameter",
+      "observations": [
+        {
+          "id": "recon-obs-ezdxf",
+          "sourceId": "src-ezdxf",
+          "geometryId": "g-hole1",
+          "quantity": {
+            "value": 10,
+            "unit": "mm",
+            "validation": {
+              "state": "verified",
+              "evidenceIds": [
+                "ev-piece"
+              ],
+              "diagnosticIds": [],
+              "reason": "Exemplo sintetico"
+            }
+          },
+          "sourceObjectKey": null
+        },
+        {
+          "id": "recon-obs-freecad",
+          "sourceId": "src-freecad",
+          "geometryId": "g-hole-freecad",
+          "quantity": {
+            "value": 10,
+            "unit": "mm",
+            "validation": {
+              "state": "verified",
+              "evidenceIds": [
+                "ev-piece"
+              ],
+              "diagnosticIds": [],
+              "reason": "Exemplo sintetico"
+            }
+          },
+          "sourceObjectKey": "native:g-hole-freecad"
+        }
+      ],
+      "outcome": "agree",
+      "numericProfileId": "profile-analytic",
+      "maxAbsoluteDelta": 0,
+      "deltaUnit": "mm",
+      "selectedObservationId": "recon-obs-ezdxf",
+      "decisionId": null,
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-piece"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-views",
+      "actor": {
+        "id": "example-operator",
+        "kind": "synthetic_operator"
+      },
+      "time": "2026-11-02T12:00:00Z",
+      "action": "associate_views",
+      "targets": [
+        {
+          "kind": "view",
+          "id": "v-front"
+        },
+        {
+          "kind": "view",
+          "id": "v-detail"
+        },
+        {
+          "kind": "part",
+          "id": "part-plate"
+        }
+      ],
+      "evidenceIds": [
+        "ev-view"
+      ],
+      "reason": "Confirmacao simulada para demonstrar o contrato; nao e aprovacao real.",
+      "binding": {
+        "documentSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "analysisRevision": 1,
+        "affectedIds": [
+          "v-front",
+          "v-detail",
+          "part-plate"
+        ],
+        "dependentPropertyPaths": [
+          "/views",
+          "/features"
+        ]
+      },
+      "supersedesDecisionId": null
+    },
+    {
+      "id": "decision-same-hole",
+      "actor": {
+        "id": "example-operator",
+        "kind": "synthetic_operator"
+      },
+      "time": "2026-11-02T12:00:00Z",
+      "action": "associate_features",
+      "targets": [
+        {
+          "kind": "feature",
+          "id": "feature-hole"
+        },
+        {
+          "kind": "feature_relation",
+          "id": "relation-hole"
+        }
+      ],
+      "evidenceIds": [
+        "ev-same-hole"
+      ],
+      "reason": "Confirmacao simulada para demonstrar o contrato; nao e aprovacao real.",
+      "binding": {
+        "documentSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "analysisRevision": 1,
+        "affectedIds": [
+          "feature-hole",
+          "relation-hole"
+        ],
+        "dependentPropertyPaths": [
+          "/views",
+          "/features"
+        ]
+      },
+      "supersedesDecisionId": null
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-synthetic",
+      "code": "SYNTHETIC_DATA",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "message": "Instancia sintetica: hash ficticio e nenhum DXF real anexado.",
+      "details": {
+        "hashIsPlaceholder": true,
+        "byteLengthIsPlaceholder": true
+      },
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diag-depth",
+      "code": "DEPTH_AND_ACCESS_UNKNOWN",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "feature",
+          "id": "feature-hole"
+        },
+        {
+          "kind": "operation",
+          "id": "op-drill"
+        }
+      ],
+      "message": "Profundidade, passancia e montagem ainda nao determinadas.",
+      "details": null,
+      "blocksConsumers": [
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "context": {
+    "requestId": "req-example-a",
+    "selectionGeneration": 1,
+    "analysisRevision": 1,
+    "purpose": "synthetic_example",
+    "producer": "documentacao-fase-1",
+    "createdAt": "2026-11-02T12:00:00Z"
+  },
+  "document": {
+    "id": "doc",
+    "fileName": "EXEMPLO_SINTETICO_a.dxf",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "byteLength": 0,
+    "dxfVersion": "AC1027",
+    "encoding": "utf-8",
+    "units": {
+      "rawInsunits": 4,
+      "rawMeasurement": 1,
+      "resolvedUnit": "mm",
+      "mmPerDrawingUnit": 1,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-units"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    "rawHeader": {
+      "$INSUNITS": 4
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      }
+    ],
+    "cncReleased": false
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "sources": [
+    {
+      "id": "src-dxf",
+      "kind": "dxf_original",
+      "version": "AC1027",
+      "inputSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-ezdxf",
+      "kind": "ezdxf",
+      "version": "1.4.4",
+      "inputSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-freecad",
+      "kind": "freecad",
+      "version": "1.1.3",
+      "inputSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-operator",
+      "kind": "operator",
+      "version": "exemplo",
+      "inputSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-rules",
+      "kind": "rule_engine",
+      "version": "proposta-1.0",
+      "inputSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "f-model",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-model"
+    },
+    {
+      "id": "f-v1",
+      "kind": "view",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-v1"
+    },
+    {
+      "id": "f-part",
+      "kind": "part",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "Frame ilustrativo f-part"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "t-model",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-model"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-view",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-v1",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "space_to_view",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "model",
+      "kind": "model",
+      "name": "Model",
+      "frameId": "f-model",
+      "paperUnit": "not_applicable",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "viewports": [],
+  "layers": [
+    {
+      "id": "layer-piece",
+      "name": "0",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    }
+  ],
+  "blockDefinitions": [],
+  "blockInstances": [],
+  "entities": [
+    {
+      "id": "e-circle",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "10",
+        "ownerHandle": null,
+        "ordinal": 0,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-ezdxf",
+        "g-freecad"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "10",
+          "decodedValue": "10"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 40,
+          "rawValue": "5",
+          "decodedValue": 5
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "o-circle",
+      "entityId": "e-circle",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "id": "g-ezdxf",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle",
+      "occurrenceId": "o-circle",
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-ezdxf"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-freecad",
+      "sourceId": "src-freecad",
+      "entityId": "e-circle",
+      "occurrenceId": "o-circle",
+      "sourceObjectKey": "native:g-freecad",
+      "frameId": "f-model",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 6
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-freecad"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [],
+  "views": [
+    {
+      "id": "v-unresolved",
+      "spaceId": "model",
+      "frameId": "f-v1",
+      "partId": null,
+      "occurrenceIds": [
+        "o-circle"
+      ],
+      "viewportId": null,
+      "role": "unknown",
+      "scale": {
+        "drawingPerPart": null,
+        "method": "unknown",
+        "validation": {
+          "state": "unknown",
+          "evidenceIds": [],
+          "diagnosticIds": [],
+          "reason": "Escala fisica ainda nao determinada"
+        }
+      },
+      "viewToPartTransformId": null,
+      "spaceToViewTransformId": "t-view",
+      "enabledForPlanning": false,
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-units",
+      "sourceId": "src-dxf",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-units",
+      "method": "HEADER.INSUNITS",
+      "description": "Evidencia exclusivamente ilustrativa: HEADER.INSUNITS",
+      "value": {
+        "rawInsunits": 4
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-compare",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-circle"
+        }
+      ],
+      "family": "dimensional",
+      "independenceKey": "ev-compare",
+      "method": "same_identity_same_frame_comparison",
+      "description": "Evidencia exclusivamente ilustrativa: same_identity_same_frame_comparison",
+      "value": {
+        "ezdxfDiameterMm": 10,
+        "freecadDiameterMm": 12
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-ezdxf",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-ezdxf"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-ezdxf",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 5
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-freecad",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-freecad"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-freecad",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 6
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-model",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-model"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-model",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-view",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-view"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-view",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    }
+  ],
+  "classifications": [
+    {
+      "id": "class-ambiguous",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-circle"
+        }
+      ],
+      "candidates": [
+        {
+          "class": "piece_geometry",
+          "evidenceIds": [
+            "ev-compare"
+          ],
+          "score": null
+        },
+        {
+          "class": "construction",
+          "evidenceIds": [],
+          "score": null
+        }
+      ],
+      "selectedClass": null,
+      "inclusion": "pending",
+      "decisionId": null,
+      "validation": {
+        "state": "interpreted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": "Circulo pode ser furo, perfil externo ou construcao; falta contexto funcional."
+      }
+    }
+  ],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [
+    {
+      "id": "profile-analytic",
+      "lengthAbsMm": 1e-06,
+      "lengthRel": 1e-09,
+      "angleAbsRad": 1e-09,
+      "volumeAbsMm3": 1e-06,
+      "volumeRel": 1e-09,
+      "purpose": "software_comparison_only",
+      "description": "Perfil ilustrativo de fixtures analiticas; nao e tolerancia de fabricacao."
+    }
+  ],
+  "reconciliations": [
+    {
+      "id": "reconcile-conflict",
+      "subject": {
+        "kind": "occurrence",
+        "id": "o-circle"
+      },
+      "property": "diameter",
+      "observations": [
+        {
+          "id": "conf-obs-e",
+          "sourceId": "src-ezdxf",
+          "geometryId": "g-ezdxf",
+          "quantity": {
+            "value": 10,
+            "unit": "mm",
+            "validation": {
+              "state": "verified",
+              "evidenceIds": [
+                "ev-compare"
+              ],
+              "diagnosticIds": [],
+              "reason": "Exemplo sintetico"
+            }
+          },
+          "sourceObjectKey": null
+        },
+        {
+          "id": "conf-obs-f",
+          "sourceId": "src-freecad",
+          "geometryId": "g-freecad",
+          "quantity": {
+            "value": 12,
+            "unit": "mm",
+            "validation": {
+              "state": "verified",
+              "evidenceIds": [
+                "ev-compare"
+              ],
+              "diagnosticIds": [],
+              "reason": "Exemplo sintetico"
+            }
+          },
+          "sourceObjectKey": "native:g-freecad"
+        }
+      ],
+      "outcome": "differ",
+      "numericProfileId": "profile-analytic",
+      "maxAbsoluteDelta": 2,
+      "deltaUnit": "mm",
+      "selectedObservationId": null,
+      "decisionId": null,
+      "validation": {
+        "state": "conflicting",
+        "evidenceIds": [
+          "ev-compare"
+        ],
+        "diagnosticIds": [
+          "diag-conflict"
+        ],
+        "reason": null
+      }
+    }
+  ],
+  "decisions": [],
+  "diagnostics": [
+    {
+      "id": "diag-synthetic",
+      "code": "SYNTHETIC_DATA",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "message": "Instancia sintetica: hash ficticio e nenhum DXF real anexado.",
+      "details": {
+        "hashIsPlaceholder": true,
+        "byteLengthIsPlaceholder": true
+      },
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    },
+    {
+      "id": "diag-conflict",
+      "code": "ENGINE_GEOMETRY_CONFLICT",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "occurrence",
+          "id": "o-circle"
+        }
+      ],
+      "message": "Diametro divergente: 10 mm vs 12 mm; nenhum valor canonico selecionado.",
+      "details": {
+        "deltaMm": 2
+      },
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": [
+        "ev-compare"
+      ]
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "context": {
+    "requestId": "req-example-c",
+    "selectionGeneration": 1,
+    "analysisRevision": 1,
+    "purpose": "synthetic_example",
+    "producer": "documentacao-fase-1",
+    "createdAt": "2026-11-02T12:00:00Z"
+  },
+  "document": {
+    "id": "doc",
+    "fileName": "EXEMPLO_SINTETICO_c.dxf",
+    "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "byteLength": 0,
+    "dxfVersion": "AC1027",
+    "encoding": "utf-8",
+    "units": {
+      "rawInsunits": 4,
+      "rawMeasurement": 1,
+      "resolvedUnit": "mm",
+      "mmPerDrawingUnit": 1,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-units"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    "rawHeader": {
+      "$INSUNITS": 4
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      }
+    ],
+    "cncReleased": false
+  }
+}

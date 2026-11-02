@@ -1,0 +1,2439 @@
+{
+  "sources": [
+    {
+      "id": "src-dxf",
+      "kind": "dxf_original",
+      "version": "AC1027",
+      "inputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-ezdxf",
+      "kind": "ezdxf",
+      "version": "1.4.4",
+      "inputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-freecad",
+      "kind": "freecad",
+      "version": "1.1.3",
+      "inputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-operator",
+      "kind": "operator",
+      "version": "exemplo",
+      "inputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "src-rules",
+      "kind": "rule_engine",
+      "version": "proposta-1.0",
+      "inputSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "options": {
+        "synthetic": true
+      },
+      "capabilities": [
+        "example_only"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "f-model",
+      "kind": "document_wcs",
+      "unit": "drawing_unit",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-model"
+    },
+    {
+      "id": "f-mm",
+      "kind": "document_wcs",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-mm"
+    },
+    {
+      "id": "f-block",
+      "kind": "block_definition",
+      "unit": "drawing_unit",
+      "spaceId": null,
+      "description": "Frame ilustrativo f-block"
+    },
+    {
+      "id": "f-ocs",
+      "kind": "entity_ocs",
+      "unit": "drawing_unit",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-ocs"
+    },
+    {
+      "id": "f-paper",
+      "kind": "paper",
+      "unit": "mm",
+      "spaceId": "paper",
+      "description": "Frame ilustrativo f-paper"
+    },
+    {
+      "id": "f-v1",
+      "kind": "view",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-v1"
+    },
+    {
+      "id": "f-v2",
+      "kind": "view",
+      "unit": "mm",
+      "spaceId": "model",
+      "description": "Frame ilustrativo f-v2"
+    },
+    {
+      "id": "f-part",
+      "kind": "part",
+      "unit": "mm",
+      "spaceId": null,
+      "description": "Frame ilustrativo f-part"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "t-model",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "occurrence_to_space",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-model"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-units",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-mm",
+      "matrix": [
+        [
+          25.4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "unit_conversion",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-units"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-cell0",
+      "fromFrameId": "f-block",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          0,
+          -1,
+          0,
+          10
+        ],
+        [
+          2,
+          0,
+          0,
+          18
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "block_instance",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-cell0"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-cell1",
+      "fromFrameId": "f-block",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          0,
+          -1,
+          0,
+          10
+        ],
+        [
+          2,
+          0,
+          0,
+          23
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "block_instance",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-cell1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-ocs",
+      "fromFrameId": "f-ocs",
+      "toFrameId": "f-model",
+      "matrix": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "ocs_to_wcs",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-ocs"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-space-v1",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-v1",
+      "matrix": [
+        [
+          25.4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "space_to_view",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-space-v1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-space-v2",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-v2",
+      "matrix": [
+        [
+          25.4,
+          0,
+          0,
+          -762
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "space_to_view",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-space-v2"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-part-v1",
+      "fromFrameId": "f-v1",
+      "toFrameId": "f-part",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "view_to_part",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-part-v1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-part-v2",
+      "fromFrameId": "f-v2",
+      "toFrameId": "f-part",
+      "matrix": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "view_to_part",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-part-v2"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "t-vp",
+      "fromFrameId": "f-model",
+      "toFrameId": "f-paper",
+      "matrix": [
+        [
+          5.08,
+          0,
+          0,
+          100
+        ],
+        [
+          0,
+          5.08,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          5.08,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "kind": "orthographic_viewport",
+      "componentTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-t-vp"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "model",
+      "kind": "model",
+      "name": "Model",
+      "frameId": "f-model",
+      "paperUnit": "not_applicable",
+      "viewportIds": [],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "paper",
+      "kind": "paper",
+      "name": "Layout 1",
+      "frameId": "f-paper",
+      "paperUnit": "mm",
+      "viewportIds": [
+        "viewport-1"
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "id": "viewport-1",
+      "entityId": "e-vp",
+      "modelSpaceId": "model",
+      "paperFrameId": "f-paper",
+      "viewCenter": [
+        0,
+        0,
+        0
+      ],
+      "viewTarget": [
+        0,
+        0,
+        0
+      ],
+      "viewDirection": [
+        0,
+        0,
+        1
+      ],
+      "twistRad": 0,
+      "paperCenter": [
+        100,
+        100,
+        0
+      ],
+      "paperHeight": {
+        "value": 50.8,
+        "unit": "mm",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-units"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "modelViewHeight": {
+        "value": 10,
+        "unit": "drawing_unit",
+        "validation": {
+          "state": "verified",
+          "evidenceIds": [
+            "ev-units"
+          ],
+          "diagnosticIds": [],
+          "reason": "Exemplo sintetico"
+        }
+      },
+      "projection": "orthographic",
+      "modelToPaperTransformId": "t-vp",
+      "projectionMatrix": null,
+      "clipBoundaryOccurrenceIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-units"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer-piece",
+      "name": "PECA",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-zero",
+      "name": "0",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    },
+    {
+      "id": "layer-vp",
+      "name": "VIEWPORT",
+      "color": 7,
+      "linetype": "CONTINUOUS",
+      "lineweight": null,
+      "visible": true,
+      "frozen": false,
+      "locked": false,
+      "plotEnabled": true,
+      "rawAttributes": {}
+    }
+  ],
+  "blockDefinitions": [
+    {
+      "id": "block-ellipse",
+      "name": "ELLIPSE_BY_TRANSFORM",
+      "basePoint": [
+        1,
+        0,
+        0
+      ],
+      "frameId": "f-block",
+      "declaredInsunits": 1,
+      "entityIds": [
+        "e-circle-def"
+      ],
+      "externalReference": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "blockInstances": [
+    {
+      "id": "inst-array-0-0",
+      "insertEntityId": "e-array",
+      "definitionId": "block-ellipse",
+      "parentInstanceId": null,
+      "spaceId": "model",
+      "row": 0,
+      "column": 0,
+      "insertPoint": [
+        10,
+        20,
+        0
+      ],
+      "scale": [
+        2,
+        1,
+        1
+      ],
+      "rotationRad": 1.5707963267948966,
+      "extrusion": [
+        0,
+        0,
+        1
+      ],
+      "rowSpacing": 0,
+      "columnSpacing": 5,
+      "transformId": "t-cell0",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "inst-array-0-1",
+      "insertEntityId": "e-array",
+      "definitionId": "block-ellipse",
+      "parentInstanceId": null,
+      "spaceId": "model",
+      "row": 0,
+      "column": 1,
+      "insertPoint": [
+        10,
+        20,
+        0
+      ],
+      "scale": [
+        2,
+        1,
+        1
+      ],
+      "rotationRad": 1.5707963267948966,
+      "extrusion": [
+        0,
+        0,
+        1
+      ],
+      "rowSpacing": 0,
+      "columnSpacing": 5,
+      "transformId": "t-cell1",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "e-circle-def",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "10",
+        "ownerHandle": null,
+        "ordinal": 0,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "block_definition",
+        "id": "block-ellipse"
+      },
+      "layerId": "layer-zero",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-block",
+      "geometryIds": [
+        "g-circle-local",
+        "g-ellipse-0",
+        "g-ellipse-1"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "10",
+          "decodedValue": "10"
+        },
+        {
+          "code": 8,
+          "rawValue": "0",
+          "decodedValue": "0"
+        },
+        {
+          "code": 10,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 40,
+          "rawValue": "1",
+          "decodedValue": 1
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-array",
+      "dxfType": "INSERT",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "11",
+        "ownerHandle": null,
+        "ordinal": 1,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "INSERT",
+          "decodedValue": "INSERT"
+        },
+        {
+          "code": 5,
+          "rawValue": "11",
+          "decodedValue": "11"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 2,
+          "rawValue": "ELLIPSE_BY_TRANSFORM",
+          "decodedValue": "ELLIPSE_BY_TRANSFORM"
+        },
+        {
+          "code": 10,
+          "rawValue": "10",
+          "decodedValue": 10
+        },
+        {
+          "code": 20,
+          "rawValue": "20",
+          "decodedValue": 20
+        },
+        {
+          "code": 41,
+          "rawValue": "2",
+          "decodedValue": 2
+        },
+        {
+          "code": 42,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 50,
+          "rawValue": "90",
+          "decodedValue": 90
+        },
+        {
+          "code": 70,
+          "rawValue": "2",
+          "decodedValue": 2
+        },
+        {
+          "code": 71,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 44,
+          "rawValue": "5",
+          "decodedValue": 5
+        },
+        {
+          "code": 45,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-circle-ocs",
+      "dxfType": "CIRCLE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "12",
+        "ownerHandle": null,
+        "ordinal": 2,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-ocs",
+      "geometryIds": [
+        "g-circle-ocs-raw",
+        "g-circle-ocs-mm"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "CIRCLE",
+          "decodedValue": "CIRCLE"
+        },
+        {
+          "code": 5,
+          "rawValue": "12",
+          "decodedValue": "12"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 10,
+          "rawValue": "2",
+          "decodedValue": 2
+        },
+        {
+          "code": 20,
+          "rawValue": "3",
+          "decodedValue": 3
+        },
+        {
+          "code": 30,
+          "rawValue": "4",
+          "decodedValue": 4
+        },
+        {
+          "code": 40,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 210,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 220,
+          "rawValue": "1",
+          "decodedValue": 1
+        },
+        {
+          "code": 230,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-detail",
+      "dxfType": "LINE",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "13",
+        "ownerHandle": null,
+        "ordinal": 3,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "model"
+      },
+      "layerId": "layer-piece",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-model",
+      "geometryIds": [
+        "g-detail-raw",
+        "g-detail"
+      ],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "LINE",
+          "decodedValue": "LINE"
+        },
+        {
+          "code": 5,
+          "rawValue": "13",
+          "decodedValue": "13"
+        },
+        {
+          "code": 8,
+          "rawValue": "PECA",
+          "decodedValue": "PECA"
+        },
+        {
+          "code": 10,
+          "rawValue": "30",
+          "decodedValue": 30
+        },
+        {
+          "code": 20,
+          "rawValue": "0",
+          "decodedValue": 0
+        },
+        {
+          "code": 11,
+          "rawValue": "31",
+          "decodedValue": 31
+        },
+        {
+          "code": 21,
+          "rawValue": "0",
+          "decodedValue": 0
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "e-vp",
+      "dxfType": "VIEWPORT",
+      "origin": {
+        "sourceId": "src-dxf",
+        "handle": "14",
+        "ownerHandle": null,
+        "ordinal": 4,
+        "identityMethod": "dxf_handle"
+      },
+      "owner": {
+        "kind": "space",
+        "id": "paper"
+      },
+      "layerId": "layer-vp",
+      "linetype": "BYLAYER",
+      "rawFrameId": "f-paper",
+      "geometryIds": [],
+      "rawGroups": [
+        {
+          "code": 0,
+          "rawValue": "VIEWPORT",
+          "decodedValue": "VIEWPORT"
+        },
+        {
+          "code": 5,
+          "rawValue": "14",
+          "decodedValue": "14"
+        },
+        {
+          "code": 8,
+          "rawValue": "VIEWPORT",
+          "decodedValue": "VIEWPORT"
+        },
+        {
+          "code": 40,
+          "rawValue": "80",
+          "decodedValue": 80
+        },
+        {
+          "code": 41,
+          "rawValue": "50.8",
+          "decodedValue": 50.8
+        },
+        {
+          "code": 45,
+          "rawValue": "10",
+          "decodedValue": 10
+        }
+      ],
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "o-ellipse-0",
+      "entityId": "e-circle-def",
+      "spaceId": "model",
+      "instancePath": [
+        "inst-array-0-0"
+      ],
+      "transformToSpaceId": "t-cell0",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-ellipse-0",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-ellipse-1",
+      "entityId": "e-circle-def",
+      "spaceId": "model",
+      "instancePath": [
+        "inst-array-0-1"
+      ],
+      "transformToSpaceId": "t-cell1",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-ellipse-1",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-array",
+      "entityId": "e-array",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": null,
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-circle-ocs",
+      "entityId": "e-circle-ocs",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-ocs",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-circle-ocs-mm",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "o-detail",
+      "entityId": "e-detail",
+      "spaceId": "model",
+      "instancePath": [],
+      "transformToSpaceId": "t-model",
+      "effectiveLayerId": "layer-piece",
+      "effectiveLinetype": "CONTINUOUS",
+      "effectiveVisible": true,
+      "canonicalGeometryId": "g-detail",
+      "validation": {
+        "state": "extracted",
+        "evidenceIds": [],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "id": "g-circle-local",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle-def",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "f-block",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-circle-local"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-ellipse-0",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle-def",
+      "occurrenceId": "o-ellipse-0",
+      "sourceObjectKey": null,
+      "frameId": "f-mm",
+      "payload": {
+        "type": "ELLIPSE",
+        "center": [
+          254,
+          457.2,
+          0
+        ],
+        "majorAxis": [
+          0,
+          50.8,
+          0
+        ],
+        "minorAxis": [
+          -25.4,
+          0,
+          0
+        ],
+        "startRad": 0,
+        "sweepRad": 6.283185307179586
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "g-circle-local"
+      ],
+      "appliedTransformIds": [
+        "t-cell0",
+        "t-units"
+      ],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-ellipse-0"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-ellipse-1",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle-def",
+      "occurrenceId": "o-ellipse-1",
+      "sourceObjectKey": null,
+      "frameId": "f-mm",
+      "payload": {
+        "type": "ELLIPSE",
+        "center": [
+          254,
+          584.2,
+          0
+        ],
+        "majorAxis": [
+          0,
+          50.8,
+          0
+        ],
+        "minorAxis": [
+          -25.4,
+          0,
+          0
+        ],
+        "startRad": 0,
+        "sweepRad": 6.283185307179586
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "g-circle-local"
+      ],
+      "appliedTransformIds": [
+        "t-cell1",
+        "t-units"
+      ],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-ellipse-1"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-circle-ocs-raw",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle-ocs",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "f-ocs",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          2,
+          3,
+          4
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-circle-ocs-raw"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-circle-ocs-mm",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-circle-ocs",
+      "occurrenceId": "o-circle-ocs",
+      "sourceObjectKey": null,
+      "frameId": "f-mm",
+      "payload": {
+        "type": "CIRCLE",
+        "center": [
+          -50.8,
+          101.6,
+          76.2
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "radius": 25.4
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "g-circle-ocs-raw"
+      ],
+      "appliedTransformIds": [
+        "t-ocs",
+        "t-units"
+      ],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-circle-ocs-mm"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-detail-raw",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-detail",
+      "occurrenceId": null,
+      "sourceObjectKey": null,
+      "frameId": "f-model",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          30,
+          0,
+          0
+        ],
+        "end": [
+          31,
+          0,
+          0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [],
+      "appliedTransformIds": [],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-detail-raw"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "g-detail",
+      "sourceId": "src-ezdxf",
+      "entityId": "e-detail",
+      "occurrenceId": "o-detail",
+      "sourceObjectKey": null,
+      "frameId": "f-mm",
+      "payload": {
+        "type": "LINE",
+        "start": [
+          762,
+          0,
+          0
+        ],
+        "end": [
+          787.4,
+          0,
+          0
+        ]
+      },
+      "approximation": "analytic",
+      "derivedFromGeometryIds": [
+        "g-detail-raw"
+      ],
+      "appliedTransformIds": [
+        "t-units"
+      ],
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-g-detail"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "dimensionStyles": [],
+  "dimensions": [],
+  "tolerances": [],
+  "annotations": [],
+  "parts": [
+    {
+      "id": "part-fixture",
+      "label": "Fixture de transformacoes — sem interpretacao de furo liberada",
+      "viewIds": [
+        "v-main",
+        "v-detail"
+      ],
+      "featureIds": [],
+      "referenceViewId": "v-main",
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "v-main",
+      "spaceId": "model",
+      "frameId": "f-v1",
+      "partId": "part-fixture",
+      "occurrenceIds": [
+        "o-ellipse-0",
+        "o-ellipse-1"
+      ],
+      "viewportId": null,
+      "role": "front",
+      "scale": {
+        "drawingPerPart": 1,
+        "method": "operator",
+        "validation": {
+          "state": "confirmed",
+          "evidenceIds": [
+            "ev-view"
+          ],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      "viewToPartTransformId": "t-part-v1",
+      "spaceToViewTransformId": "t-space-v1",
+      "enabledForPlanning": true,
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    {
+      "id": "v-detail",
+      "spaceId": "model",
+      "frameId": "f-v2",
+      "partId": "part-fixture",
+      "occurrenceIds": [
+        "o-detail"
+      ],
+      "viewportId": null,
+      "role": "detail",
+      "scale": {
+        "drawingPerPart": 0.5,
+        "method": "operator",
+        "validation": {
+          "state": "confirmed",
+          "evidenceIds": [
+            "ev-view"
+          ],
+          "diagnosticIds": [],
+          "reason": null
+        }
+      },
+      "viewToPartTransformId": "t-part-v2",
+      "spaceToViewTransformId": "t-space-v2",
+      "enabledForPlanning": true,
+      "validation": {
+        "state": "confirmed",
+        "evidenceIds": [
+          "ev-view"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-units",
+      "sourceId": "src-dxf",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-units",
+      "method": "HEADER.INSUNITS",
+      "description": "Evidencia exclusivamente ilustrativa: HEADER.INSUNITS",
+      "value": {
+        "rawInsunits": 1
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-view",
+      "sourceId": "src-operator",
+      "targets": [
+        {
+          "kind": "view",
+          "id": "v-main"
+        },
+        {
+          "kind": "view",
+          "id": "v-detail"
+        }
+      ],
+      "family": "operator",
+      "independenceKey": "ev-view",
+      "method": "scales_verified_separately",
+      "description": "Evidencia exclusivamente ilustrativa: scales_verified_separately",
+      "value": {
+        "main": 1,
+        "detail": 0.5
+      },
+      "reliability": "confirmed"
+    },
+    {
+      "id": "ev-g-circle-local",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-circle-local"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-circle-local",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-ellipse-0",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-ellipse-0"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-ellipse-0",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "ELLIPSE",
+        "center": [
+          254,
+          457.2,
+          0
+        ],
+        "majorAxis": [
+          0,
+          50.8,
+          0
+        ],
+        "minorAxis": [
+          -25.4,
+          0,
+          0
+        ],
+        "startRad": 0,
+        "sweepRad": 6.283185307179586
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-ellipse-1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-ellipse-1"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-ellipse-1",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "ELLIPSE",
+        "center": [
+          254,
+          584.2,
+          0
+        ],
+        "majorAxis": [
+          0,
+          50.8,
+          0
+        ],
+        "minorAxis": [
+          -25.4,
+          0,
+          0
+        ],
+        "startRad": 0,
+        "sweepRad": 6.283185307179586
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-circle-ocs-raw",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-circle-ocs-raw"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-circle-ocs-raw",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          2,
+          3,
+          4
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "radius": 1
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-circle-ocs-mm",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-circle-ocs-mm"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-circle-ocs-mm",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "CIRCLE",
+        "center": [
+          -50.8,
+          101.6,
+          76.2
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "radius": 25.4
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-detail-raw",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-detail-raw"
+        }
+      ],
+      "family": "topology",
+      "independenceKey": "ev-g-detail",
+      "method": "synthetic_geometry_definition",
+      "description": "Definicao analitica ilustrativa, sem alegacao de execucao real dos motores.",
+      "value": {
+        "type": "LINE",
+        "start": [
+          30,
+          0,
+          0
+        ],
+        "end": [
+          31,
+          0,
+          0
+        ]
+      },
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-model",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-model"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-model",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-units",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-units"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-units",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          25.4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-cell0",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-cell0"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-cell0",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          0,
+          -1,
+          0,
+          10
+        ],
+        [
+          2,
+          0,
+          0,
+          18
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-cell1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-cell1"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-cell1",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          0,
+          -1,
+          0,
+          10
+        ],
+        [
+          2,
+          0,
+          0,
+          23
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-ocs",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-ocs"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-ocs",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-space-v1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-space-v1"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-space-v1",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          25.4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-space-v2",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-space-v2"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-space-v2",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          25.4,
+          0,
+          0,
+          -762
+        ],
+        [
+          0,
+          25.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25.4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-part-v1",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-part-v1"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-part-v1",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-part-v2",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-part-v2"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-part-v2",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-t-vp",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "transform",
+          "id": "t-vp"
+        }
+      ],
+      "family": "dxf_structure",
+      "independenceKey": "ev-t-vp",
+      "method": "worked_matrix_example",
+      "description": "Matriz ilustrativa derivada dos parametros descritos nas regras e exemplos.",
+      "value": [
+        [
+          5.08,
+          0,
+          0,
+          100
+        ],
+        [
+          0,
+          5.08,
+          0,
+          100
+        ],
+        [
+          0,
+          0,
+          5.08,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reliability": "observed"
+    },
+    {
+      "id": "ev-g-detail",
+      "sourceId": "src-rules",
+      "targets": [
+        {
+          "kind": "geometry",
+          "id": "g-detail"
+        }
+      ],
+      "family": "dimensional",
+      "independenceKey": "ev-g-detail",
+      "method": "worked_unit_conversion",
+      "description": "1 polegada representada corresponde a 25.4 mm representados, antes da escala fisica da vista.",
+      "value": {
+        "type": "LINE",
+        "start": [
+          762,
+          0,
+          0
+        ],
+        "end": [
+          787.4,
+          0,
+          0
+        ]
+      },
+      "reliability": "observed"
+    }
+  ],
+  "classifications": [],
+  "observations": [],
+  "featureRelations": [],
+  "features": [],
+  "setups": [],
+  "operations": [],
+  "numericProfiles": [
+    {
+      "id": "profile-analytic",
+      "lengthAbsMm": 1e-06,
+      "lengthRel": 1e-09,
+      "angleAbsRad": 1e-09,
+      "volumeAbsMm3": 1e-06,
+      "volumeRel": 1e-09,
+      "purpose": "software_comparison_only",
+      "description": "Perfil ilustrativo de fixtures analiticas; nao e tolerancia de fabricacao."
+    }
+  ],
+  "reconciliations": [],
+  "decisions": [
+    {
+      "id": "decision-views",
+      "actor": {
+        "id": "example-operator",
+        "kind": "synthetic_operator"
+      },
+      "time": "2026-11-02T12:00:00Z",
+      "action": "associate_views",
+      "targets": [
+        {
+          "kind": "view",
+          "id": "v-main"
+        },
+        {
+          "kind": "view",
+          "id": "v-detail"
+        },
+        {
+          "kind": "part",
+          "id": "part-fixture"
+        }
+      ],
+      "evidenceIds": [
+        "ev-view"
+      ],
+      "reason": "Confirmacao simulada para demonstrar o contrato; nao e aprovacao real.",
+      "binding": {
+        "documentSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "analysisRevision": 1,
+        "affectedIds": [
+          "v-main",
+          "v-detail",
+          "part-fixture"
+        ],
+        "dependentPropertyPaths": [
+          "/views",
+          "/features"
+        ]
+      },
+      "supersedesDecisionId": null
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-synthetic",
+      "code": "SYNTHETIC_DATA",
+      "severity": "blocker",
+      "targets": [
+        {
+          "kind": "document",
+          "id": "doc"
+        }
+      ],
+      "message": "Instancia sintetica: hash ficticio e nenhum DXF real anexado.",
+      "details": {
+        "hashIsPlaceholder": true,
+        "byteLengthIsPlaceholder": true
+      },
+      "blocksConsumers": [
+        "material",
+        "process",
+        "cost"
+      ],
+      "status": "open",
+      "evidenceIds": []
+    }
+  ],
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "context": {
+    "requestId": "req-example-b",
+    "selectionGeneration": 1,
+    "analysisRevision": 1,
+    "purpose": "synthetic_example",
+    "producer": "documentacao-fase-1",
+    "createdAt": "2026-11-02T12:00:00Z"
+  },
+  "document": {
+    "id": "doc",
+    "fileName": "EXEMPLO_SINTETICO_b.dxf",
+    "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "byteLength": 0,
+    "dxfVersion": "AC1027",
+    "encoding": "utf-8",
+    "units": {
+      "rawInsunits": 1,
+      "rawMeasurement": 1,
+      "resolvedUnit": "inch",
+      "mmPerDrawingUnit": 25.4,
+      "resolutionMethod": "header",
+      "validation": {
+        "state": "verified",
+        "evidenceIds": [
+          "ev-units"
+        ],
+        "diagnosticIds": [],
+        "reason": null
+      }
+    },
+    "rawHeader": {
+      "$INSUNITS": 1
+    },
+    "validation": {
+      "state": "extracted",
+      "evidenceIds": [],
+      "diagnosticIds": [],
+      "reason": null
+    }
+  },
+  "validation": {
+    "stage": "extracted",
+    "schemaStatus": "not_checked",
+    "semanticStatus": "not_checked",
+    "eligibility": [
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "material",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "process",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      },
+      {
+        "scope": {
+          "kind": "document",
+          "id": "doc"
+        },
+        "consumer": "cost",
+        "status": "blocked",
+        "blockingDiagnosticIds": [
+          "diag-synthetic"
+        ],
+        "requiredDecisionIds": [],
+        "reason": "Exemplo documental, nao consumir operacionalmente."
+      }
+    ],
+    "cncReleased": false
+  }
+}

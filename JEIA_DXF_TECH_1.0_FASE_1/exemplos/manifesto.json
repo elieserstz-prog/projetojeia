@@ -1,0 +1,82 @@
+{
+  "contract": "JEIA_DXF_TECH",
+  "version": "1.0",
+  "examplesAreSynthetic": true,
+  "cases": [
+    {
+      "file": "01_placa_folha_carimbo.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": true,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "CL-02",
+        "ID-03",
+        "FE-02",
+        "OP-03"
+      ]
+    },
+    {
+      "file": "02_transformacoes_layouts_escalas.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": true,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "TR-01",
+        "TR-02",
+        "BL-01",
+        "BL-02",
+        "VP-02",
+        "VI-02"
+      ]
+    },
+    {
+      "file": "03_conflito_e_ambiguidade.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": true,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "RC-05",
+        "CL-01"
+      ]
+    },
+    {
+      "file": "04_unidade_ausente.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": true,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "UN-02",
+        "EL-01"
+      ]
+    },
+    {
+      "file": "N01_estrutura_invalida.json",
+      "expectedSchemaValid": false,
+      "expectedSemanticValid": null,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "ID-07"
+      ]
+    },
+    {
+      "file": "N02_operacao_duplicada.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": false,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "OP-01"
+      ]
+    },
+    {
+      "file": "N03_unidade_ausente_liberada.json",
+      "expectedSchemaValid": true,
+      "expectedSemanticValid": false,
+      "expectedOperationalUse": "blocked",
+      "rules": [
+        "UN-02",
+        "EL-01",
+        "EL-03"
+      ]
+    }
+  ]
+}

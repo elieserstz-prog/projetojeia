@@ -1,0 +1,3451 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:jeia:dxf-tech:1.0",
+  "title": "JEIA_DXF_TECH 1.0 — Fase 1",
+  "description": "Especificacao documental. Nao implementa extracao, reconhecimento nem autorizacao CNC. Regras semanticas complementares em REGRAS_E_INVARIANTES.md.",
+  "type": "object",
+  "properties": {
+    "contract": {
+      "const": "JEIA_DXF_TECH"
+    },
+    "version": {
+      "const": "1.0"
+    },
+    "context": {
+      "$ref": "#/$defs/Context"
+    },
+    "document": {
+      "$ref": "#/$defs/Document"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "minItems": 1
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Frame"
+      },
+      "minItems": 0
+    },
+    "transforms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Transform"
+      },
+      "minItems": 0
+    },
+    "spaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Space"
+      },
+      "minItems": 0
+    },
+    "viewports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Viewport"
+      },
+      "minItems": 0
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Layer"
+      },
+      "minItems": 0
+    },
+    "blockDefinitions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/BlockDefinition"
+      },
+      "minItems": 0
+    },
+    "blockInstances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/BlockInstance"
+      },
+      "minItems": 0
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Entity"
+      },
+      "minItems": 0
+    },
+    "occurrences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Occurrence"
+      },
+      "minItems": 0
+    },
+    "geometries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Geometry"
+      },
+      "minItems": 0
+    },
+    "dimensionStyles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/DimensionStyle"
+      },
+      "minItems": 0
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Dimension"
+      },
+      "minItems": 0
+    },
+    "tolerances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Tolerance"
+      },
+      "minItems": 0
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Annotation"
+      },
+      "minItems": 0
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Part"
+      },
+      "minItems": 0
+    },
+    "views": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/View"
+      },
+      "minItems": 0
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "minItems": 0
+    },
+    "classifications": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Classification"
+      },
+      "minItems": 0
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Observation"
+      },
+      "minItems": 0
+    },
+    "featureRelations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/FeatureRelation"
+      },
+      "minItems": 0
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Feature"
+      },
+      "minItems": 0
+    },
+    "setups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Setup"
+      },
+      "minItems": 0
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Operation"
+      },
+      "minItems": 0
+    },
+    "numericProfiles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/NumericProfile"
+      },
+      "minItems": 0
+    },
+    "reconciliations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Reconciliation"
+      },
+      "minItems": 0
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Decision"
+      },
+      "minItems": 0
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Diagnostic"
+      },
+      "minItems": 0
+    },
+    "validation": {
+      "$ref": "#/$defs/PackageValidation"
+    }
+  },
+  "required": [
+    "contract",
+    "version",
+    "context",
+    "document",
+    "sources",
+    "frames",
+    "transforms",
+    "spaces",
+    "viewports",
+    "layers",
+    "blockDefinitions",
+    "blockInstances",
+    "entities",
+    "occurrences",
+    "geometries",
+    "dimensionStyles",
+    "dimensions",
+    "tolerances",
+    "annotations",
+    "parts",
+    "views",
+    "evidence",
+    "classifications",
+    "observations",
+    "featureRelations",
+    "features",
+    "setups",
+    "operations",
+    "numericProfiles",
+    "reconciliations",
+    "decisions",
+    "diagnostics",
+    "validation"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9._:/@+\\-]{0,255}$",
+      "description": "Identificador opaco, estavel no mesmo documento e revisao; unicidade global no pacote (ID-01)."
+    },
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "JsonValue": {
+      "anyOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/JsonValue"
+          },
+          "minItems": 0
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        }
+      ]
+    },
+    "Vec3": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "Matrix4": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 4,
+        "maxItems": 4
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "State": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "extracted",
+        "interpreted",
+        "verified",
+        "confirmed",
+        "conflicting",
+        "rejected",
+        "unsupported",
+        "not_applicable"
+      ]
+    },
+    "Target": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "document",
+            "source",
+            "space",
+            "frame",
+            "transform",
+            "layer",
+            "block_definition",
+            "block_instance",
+            "entity",
+            "occurrence",
+            "geometry",
+            "dimension_style",
+            "dimension",
+            "tolerance",
+            "annotation",
+            "view",
+            "part",
+            "observation",
+            "feature",
+            "feature_relation",
+            "setup",
+            "operation",
+            "classification",
+            "reconciliation",
+            "decision",
+            "evidence",
+            "diagnostic",
+            "numeric_profile"
+          ]
+        },
+        "id": {
+          "$ref": "#/$defs/Id"
+        }
+      },
+      "required": [
+        "kind",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "Validation": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/State"
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "diagnosticIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "state",
+        "evidenceIds",
+        "diagnosticIds",
+        "reason"
+      ],
+      "additionalProperties": false,
+      "description": "Estado de conhecimento; nao representa autorizacao de fabricacao. Estados possuem invariantes ST-01 a ST-05."
+    },
+    "Quantity": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "mm",
+            "rad",
+            "deg",
+            "drawing_unit",
+            "paper_unit",
+            "mm2",
+            "mm3",
+            "dimensionless",
+            "unknown"
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Escalar, com unidade e origem por evidencias. unknown/unsupported exigem value=null; zero valido nao significa ausencia."
+    },
+    "QuantityMap": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z][a-zA-Z0-9_]{0,63}$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/Quantity"
+      },
+      "description": "Grandezas nomeadas. Vocabulário e unidades em QT-01; chaves desconhecidas nao podem alimentar calculos automaticamente."
+    },
+    "Scale": {
+      "type": "object",
+      "properties": {
+        "drawingPerPart": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "model_1_to_1_verified",
+            "explicit_annotation",
+            "dimension_geometry_comparison",
+            "operator",
+            "unknown"
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "drawingPerPart",
+        "method",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Razao adimensional comprimento representado / comprimento fisico. Nao e escala de impressao nem INSERT."
+    },
+    "Units": {
+      "type": "object",
+      "properties": {
+        "rawInsunits": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 32767
+        },
+        "rawMeasurement": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resolvedUnit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mmPerDrawingUnit": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resolutionMethod": {
+          "type": "string",
+          "enum": [
+            "header",
+            "operator",
+            "documented_conversion",
+            "unknown"
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "rawInsunits",
+        "rawMeasurement",
+        "resolvedUnit",
+        "mmPerDrawingUnit",
+        "resolutionMethod",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Context": {
+      "type": "object",
+      "properties": {
+        "requestId": {
+          "$ref": "#/$defs/Id"
+        },
+        "selectionGeneration": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "analysisRevision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "production_analysis",
+            "synthetic_example"
+          ]
+        },
+        "producer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "requestId",
+        "selectionGeneration",
+        "analysisRevision",
+        "purpose",
+        "producer",
+        "createdAt"
+      ],
+      "additionalProperties": false
+    },
+    "Document": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "fileName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/Sha256"
+        },
+        "byteLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dxfVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "encoding": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "units": {
+          "$ref": "#/$defs/Units"
+        },
+        "rawHeader": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "fileName",
+        "sha256",
+        "byteLength",
+        "dxfVersion",
+        "encoding",
+        "units",
+        "rawHeader",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "dxf_original",
+            "ezdxf",
+            "freecad",
+            "operator",
+            "rule_engine"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputSha256": {
+          "$ref": "#/$defs/Sha256"
+        },
+        "options": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "version",
+        "inputSha256",
+        "options",
+        "capabilities",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Frame": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "entity_ocs",
+            "block_definition",
+            "document_wcs",
+            "paper",
+            "view",
+            "part",
+            "setup"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "drawing_unit",
+            "mm",
+            "paper_unit",
+            "dimensionless"
+          ]
+        },
+        "spaceId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "unit",
+        "spaceId",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "Transform": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "fromFrameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "toFrameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "matrix": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Matrix4"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "ocs_to_wcs",
+            "block_instance",
+            "occurrence_to_space",
+            "unit_conversion",
+            "orthographic_viewport",
+            "view_to_part",
+            "part_to_setup",
+            "space_to_view"
+          ]
+        },
+        "componentTransformIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "fromFrameId",
+        "toFrameId",
+        "matrix",
+        "kind",
+        "componentTransformIds",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Matriz afim 4x4 row-major, vetores-coluna: p_dest=M*p_origem. Sem transformacao numerica confiavel, matrix=null."
+    },
+    "Viewport": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "entityId": {
+          "$ref": "#/$defs/Id"
+        },
+        "modelSpaceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "paperFrameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "viewCenter": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "viewTarget": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "viewDirection": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "twistRad": {
+          "type": "number"
+        },
+        "paperCenter": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "paperHeight": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "modelViewHeight": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "projection": {
+          "type": "string",
+          "enum": [
+            "orthographic",
+            "perspective",
+            "unknown"
+          ]
+        },
+        "modelToPaperTransformId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "projectionMatrix": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Matrix4"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "clipBoundaryOccurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "modelSpaceId",
+        "paperFrameId",
+        "viewCenter",
+        "viewTarget",
+        "viewDirection",
+        "twistRad",
+        "paperCenter",
+        "paperHeight",
+        "modelViewHeight",
+        "projection",
+        "modelToPaperTransformId",
+        "projectionMatrix",
+        "clipBoundaryOccurrenceIds",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Viewport referencia geometria Model, nao cria nova peca nem duplica suas entidades. Perspectiva nao autoriza medicao inversa por fator escalar."
+    },
+    "Space": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "model",
+            "paper"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "paperUnit": {
+          "type": "string",
+          "enum": [
+            "mm",
+            "inch",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "viewportIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "frameId",
+        "paperUnit",
+        "viewportIds",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Layer": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "color": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/JsonValue"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "linetype": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lineweight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frozen": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locked": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "plotEnabled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawAttributes": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "color",
+        "linetype",
+        "lineweight",
+        "visible",
+        "frozen",
+        "locked",
+        "plotEnabled",
+        "rawAttributes"
+      ],
+      "additionalProperties": false
+    },
+    "BlockDefinition": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basePoint": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "frameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "declaredInsunits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "entityIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "externalReference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "basePoint",
+        "frameId",
+        "declaredInsunits",
+        "entityIds",
+        "externalReference",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "BlockInstance": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "insertEntityId": {
+          "$ref": "#/$defs/Id"
+        },
+        "definitionId": {
+          "$ref": "#/$defs/Id"
+        },
+        "parentInstanceId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "spaceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "row": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "insertPoint": {
+          "$ref": "#/$defs/Vec3",
+          "description": "Ponto de insercao bruto i do INSERT/array, antes do deslocamento da celula row/column; BL-02."
+        },
+        "scale": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "rotationRad": {
+          "type": "number"
+        },
+        "extrusion": {
+          "$ref": "#/$defs/Vec3"
+        },
+        "rowSpacing": {
+          "type": "number"
+        },
+        "columnSpacing": {
+          "type": "number"
+        },
+        "transformId": {
+          "$ref": "#/$defs/Id"
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "insertEntityId",
+        "definitionId",
+        "parentInstanceId",
+        "spaceId",
+        "row",
+        "column",
+        "insertPoint",
+        "scale",
+        "rotationRad",
+        "extrusion",
+        "rowSpacing",
+        "columnSpacing",
+        "transformId",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Uma instancia por celula de MINSERT. transformId mapeia frame da definicao para frame do pai; formulas BL-01/02."
+    },
+    "RawGroup": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "rawValue": {
+          "type": "string"
+        },
+        "decodedValue": {
+          "$ref": "#/$defs/JsonValue"
+        }
+      },
+      "required": [
+        "code",
+        "rawValue",
+        "decodedValue"
+      ],
+      "additionalProperties": false,
+      "description": "Preservar repeticoes e ordem. rawValue pode ser vazio; grupos desconhecidos sao mantidos."
+    },
+    "Origin": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "handle": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ownerHandle": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ordinal": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "identityMethod": {
+          "type": "string",
+          "enum": [
+            "dxf_handle",
+            "owner_and_ordinal"
+          ]
+        }
+      },
+      "required": [
+        "sourceId",
+        "handle",
+        "ownerHandle",
+        "ordinal",
+        "identityMethod"
+      ],
+      "additionalProperties": false
+    },
+    "Entity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "dxfType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "owner": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "space",
+                "block_definition",
+                "entity"
+              ]
+            },
+            "id": {
+              "$ref": "#/$defs/Id"
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        "layerId": {
+          "$ref": "#/$defs/Id"
+        },
+        "linetype": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawFrameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "geometryIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "rawGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RawGroup"
+          },
+          "minItems": 0
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        },
+        "rawRecordDigest": {
+          "$ref": "#/$defs/Sha256"
+        }
+      },
+      "required": [
+        "id",
+        "dxfType",
+        "origin",
+        "owner",
+        "layerId",
+        "linetype",
+        "rawFrameId",
+        "geometryIds",
+        "rawGroups",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "rawRecordDigest opcional auxilia comparacao; nunca substitui handle/caminho por identidade geometrica."
+    },
+    "Occurrence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "entityId": {
+          "$ref": "#/$defs/Id"
+        },
+        "spaceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "instancePath": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "effectiveLayerId": {
+          "$ref": "#/$defs/Id"
+        },
+        "effectiveLinetype": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effectiveVisible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canonicalGeometryId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        },
+        "transformToSpaceId": {
+          "$ref": "#/$defs/Id",
+          "description": "Mapeamento da entidade para o frame do proprio espaco: WCS do Model ou coordenadas de referencia do layout, nunca Paper -> Model implicitamente."
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "spaceId",
+        "instancePath",
+        "transformToSpaceId",
+        "effectiveLayerId",
+        "effectiveLinetype",
+        "effectiveVisible",
+        "canonicalGeometryId",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Uma ocorrencia por entidade posicionada; contexto de instancia preservado inclusive quando geometria coincide."
+    },
+    "GeometryPayload": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "POINT"
+            },
+            "point": {
+              "$ref": "#/$defs/Vec3"
+            }
+          },
+          "required": [
+            "type",
+            "point"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "LINE"
+            },
+            "start": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "end": {
+              "$ref": "#/$defs/Vec3"
+            }
+          },
+          "required": [
+            "type",
+            "start",
+            "end"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "CIRCLE"
+            },
+            "center": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "normal": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "radius": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "type",
+            "center",
+            "normal",
+            "radius"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ARC"
+            },
+            "center": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "normal": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "xAxis": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "radius": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "startRad": {
+              "type": "number"
+            },
+            "sweepRad": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "center",
+            "normal",
+            "xAxis",
+            "radius",
+            "startRad",
+            "sweepRad"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ELLIPSE"
+            },
+            "center": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "majorAxis": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "minorAxis": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "startRad": {
+              "type": "number"
+            },
+            "sweepRad": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "center",
+            "majorAxis",
+            "minorAxis",
+            "startRad",
+            "sweepRad"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "POLYLINE"
+            },
+            "vertices": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "point": {
+                    "$ref": "#/$defs/Vec3"
+                  },
+                  "bulge": {
+                    "type": "number"
+                  },
+                  "startWidth": {
+                    "type": "number"
+                  },
+                  "endWidth": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "point",
+                  "bulge",
+                  "startWidth",
+                  "endWidth"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 2
+            },
+            "closed": {
+              "type": "boolean"
+            },
+            "normal": {
+              "$ref": "#/$defs/Vec3"
+            },
+            "elevation": {
+              "type": "number"
+            },
+            "is3d": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "vertices",
+            "closed",
+            "normal",
+            "elevation",
+            "is3d"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "BSPLINE"
+            },
+            "degree": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "controlPoints": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Vec3"
+              },
+              "minItems": 2
+            },
+            "knots": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2
+            },
+            "multiplicities": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "minItems": 2
+            },
+            "weights": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "minItems": 2
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "periodic": {
+              "type": "boolean"
+            },
+            "closed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "degree",
+            "controlPoints",
+            "knots",
+            "multiplicities",
+            "weights",
+            "periodic",
+            "closed"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "BREP_SUMMARY"
+            },
+            "solids": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "faces": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "edges": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "valid": {
+              "type": "boolean"
+            },
+            "bboxMin": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Vec3"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "bboxMax": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Vec3"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "volume": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Quantity"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "solids",
+            "faces",
+            "edges",
+            "valid",
+            "bboxMin",
+            "bboxMax",
+            "volume"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "UNSUPPORTED"
+            },
+            "originalType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "type",
+            "originalType",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "COMPOSITE_CURVE"
+            },
+            "segments": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "geometryId": {
+                    "$ref": "#/$defs/Id"
+                  },
+                  "reversed": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "geometryId",
+                  "reversed"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "closed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "segments",
+            "closed"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "Geometry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "sourceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "entityId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "occurrenceId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceObjectKey": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "payload": {
+          "$ref": "#/$defs/GeometryPayload"
+        },
+        "approximation": {
+          "type": "string",
+          "enum": [
+            "analytic",
+            "summary",
+            "unsupported",
+            "approximate"
+          ]
+        },
+        "derivedFromGeometryIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        },
+        "appliedTransformIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "uniqueItems": true,
+          "description": "Transforms aplicados, do primeiro ao ultimo, entre os frames da geometria de origem e desta geometria; ordem normativa TR-01."
+        },
+        "approximationError": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Opcional para representacao exata; para approximate, campo obrigatorio (null indica erro nao quantificado e bloqueia uso dimensional)."
+        }
+      },
+      "required": [
+        "id",
+        "sourceId",
+        "entityId",
+        "occurrenceId",
+        "sourceObjectKey",
+        "frameId",
+        "payload",
+        "approximation",
+        "derivedFromGeometryIds",
+        "validation",
+        "appliedTransformIds"
+      ],
+      "additionalProperties": false,
+      "description": "Observacoes dos motores ficam separadas. Geometria FreeCAD sem identidade fica sem entityId/occurrenceId e com sourceObjectKey; nao fabricar vinculo.",
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "approximation": {
+                "const": "approximate"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "approximationError"
+            ]
+          }
+        }
+      ]
+    },
+    "DimensionStyle": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rawAttributes": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "rawAttributes",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Dimension": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "entityId": {
+          "$ref": "#/$defs/Id"
+        },
+        "occurrenceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "linear",
+            "aligned",
+            "angular",
+            "diameter",
+            "radius",
+            "ordinate",
+            "arc_length",
+            "unknown"
+          ]
+        },
+        "styleId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawMeasurement": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "computedMeasurement": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "displayMeasurement": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "rawText": {
+          "type": "string"
+        },
+        "displayText": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawOverrides": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        },
+        "resolvedStyle": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          }
+        },
+        "definitionPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Vec3"
+          },
+          "minItems": 0
+        },
+        "pointFrameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "associatedOccurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "toleranceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "occurrenceId",
+        "kind",
+        "styleId",
+        "rawMeasurement",
+        "computedMeasurement",
+        "displayMeasurement",
+        "rawText",
+        "displayText",
+        "rawOverrides",
+        "resolvedStyle",
+        "definitionPoints",
+        "pointFrameId",
+        "associatedOccurrenceIds",
+        "toleranceIds",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Tolerance": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "targetDimensionIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "targetFeatureIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "bilateral",
+            "unilateral",
+            "limits",
+            "geometric",
+            "general_note",
+            "unknown"
+          ]
+        },
+        "interpretation": {
+          "type": "string",
+          "enum": [
+            "signed_deviation",
+            "absolute_limits",
+            "geometric_zone",
+            "unparsed"
+          ]
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawText": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "standardReference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "datumAnnotationIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "targetDimensionIds",
+        "targetFeatureIds",
+        "kind",
+        "interpretation",
+        "lower",
+        "upper",
+        "rawText",
+        "standardReference",
+        "datumAnnotationIds",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Nao inventar tolerancia ausente. Nao confundir tolerancia numerica do software com requisito de fabricacao."
+    },
+    "Annotation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "entityId": {
+          "$ref": "#/$defs/Id"
+        },
+        "occurrenceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "text",
+            "mtext",
+            "attribute",
+            "attribute_definition",
+            "leader",
+            "surface_finish",
+            "datum",
+            "gdt",
+            "hatch",
+            "unknown"
+          ]
+        },
+        "rawText": {
+          "type": "string"
+        },
+        "plainText": {
+          "type": "string"
+        },
+        "anchor": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Vec3"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "associatedOccurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "interpretation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/JsonValue"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "occurrenceId",
+        "kind",
+        "rawText",
+        "plainText",
+        "anchor",
+        "frameId",
+        "associatedOccurrenceIds",
+        "interpretation",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "View": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "spaceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "frameId": {
+          "$ref": "#/$defs/Id"
+        },
+        "partId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "occurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "viewportId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "front",
+            "top",
+            "side",
+            "section",
+            "detail",
+            "auxiliary",
+            "unknown"
+          ]
+        },
+        "scale": {
+          "$ref": "#/$defs/Scale"
+        },
+        "viewToPartTransformId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "enabledForPlanning": {
+          "type": "boolean"
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        },
+        "spaceToViewTransformId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Mapeia coordenadas do espaco de origem para coordenadas locais representadas da vista; nao inclui escala fisica drawingPerPart."
+        }
+      },
+      "required": [
+        "id",
+        "spaceId",
+        "frameId",
+        "partId",
+        "occurrenceIds",
+        "viewportId",
+        "role",
+        "scale",
+        "viewToPartTransformId",
+        "enabledForPlanning",
+        "validation",
+        "spaceToViewTransformId"
+      ],
+      "additionalProperties": false
+    },
+    "Part": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "viewIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "featureIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "referenceViewId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "viewIds",
+        "featureIds",
+        "referenceViewId",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "sourceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Target"
+          },
+          "minItems": 1
+        },
+        "family": {
+          "type": "string",
+          "enum": [
+            "topology",
+            "dxf_structure",
+            "text_semantics",
+            "dimensional",
+            "projection_consistency",
+            "template_verified",
+            "layer_hint",
+            "position_hint",
+            "operator"
+          ]
+        },
+        "independenceKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "$ref": "#/$defs/JsonValue"
+        },
+        "reliability": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "heuristic",
+            "confirmed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "sourceId",
+        "targets",
+        "family",
+        "independenceKey",
+        "method",
+        "description",
+        "value",
+        "reliability"
+      ],
+      "additionalProperties": false
+    },
+    "CandidateClass": {
+      "type": "object",
+      "properties": {
+        "class": {
+          "type": "string",
+          "enum": [
+            "piece_geometry",
+            "sheet_frame",
+            "title_block",
+            "dimension_annotation",
+            "technical_annotation",
+            "centerline",
+            "hidden_geometry",
+            "hatch",
+            "construction",
+            "unknown"
+          ]
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "score": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "class",
+        "evidenceIds",
+        "score"
+      ],
+      "additionalProperties": false
+    },
+    "Classification": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Target"
+          },
+          "minItems": 1
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CandidateClass"
+          },
+          "minItems": 1
+        },
+        "selectedClass": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "piece_geometry",
+                "sheet_frame",
+                "title_block",
+                "dimension_annotation",
+                "technical_annotation",
+                "centerline",
+                "hidden_geometry",
+                "hatch",
+                "construction",
+                "unknown"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "inclusion": {
+          "type": "string",
+          "enum": [
+            "included",
+            "excluded",
+            "pending"
+          ]
+        },
+        "decisionId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "targets",
+        "candidates",
+        "selectedClass",
+        "inclusion",
+        "decisionId",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Score nao e probabilidade calibrada. Exclusao automatica exige evidencias independentes substantivas (CL-02)."
+    },
+    "Observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "partId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "viewId": {
+          "$ref": "#/$defs/Id"
+        },
+        "occurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "hole_candidate",
+            "slot_candidate",
+            "pocket_candidate",
+            "outer_profile",
+            "axis_candidate",
+            "shoulder_candidate",
+            "unknown"
+          ]
+        },
+        "quantities": {
+          "$ref": "#/$defs/QuantityMap"
+        },
+        "axisFrameId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessOccurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "partId",
+        "viewId",
+        "occurrenceIds",
+        "kind",
+        "quantities",
+        "axisFrameId",
+        "accessOccurrenceIds",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "FeatureRelation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "leftObservationId": {
+          "$ref": "#/$defs/Id"
+        },
+        "rightObservationId": {
+          "$ref": "#/$defs/Id"
+        },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "same_feature",
+            "different_feature",
+            "possible_same_feature"
+          ]
+        },
+        "decisionId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "leftObservationId",
+        "rightObservationId",
+        "relation",
+        "decisionId",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "partId": {
+          "$ref": "#/$defs/Id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "hole",
+            "slot",
+            "pocket",
+            "outer_profile",
+            "axis",
+            "shoulder",
+            "unknown"
+          ]
+        },
+        "observationIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "identityState": {
+          "type": "string",
+          "enum": [
+            "tentative",
+            "distinct",
+            "confirmed",
+            "ambiguous"
+          ]
+        },
+        "quantities": {
+          "$ref": "#/$defs/QuantityMap"
+        },
+        "axisFrameId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "throughState": {
+          "type": "string",
+          "enum": [
+            "through",
+            "blind",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "partId",
+        "kind",
+        "observationIds",
+        "identityState",
+        "quantities",
+        "axisFrameId",
+        "throughState",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Setup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "partId": {
+          "$ref": "#/$defs/Id"
+        },
+        "frameId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessOccurrenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "partId",
+        "frameId",
+        "accessOccurrenceIds",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Operation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "partId": {
+          "$ref": "#/$defs/Id"
+        },
+        "featureIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "marking",
+            "preparation",
+            "drilling",
+            "boring",
+            "reaming",
+            "threading",
+            "roughing",
+            "finishing",
+            "deburring",
+            "inspection",
+            "other"
+          ]
+        },
+        "processVariant": {
+          "type": "string",
+          "minLength": 1
+        },
+        "passGroup": {
+          "type": "string",
+          "minLength": 1
+        },
+        "setupId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "confirmed",
+            "blocked",
+            "rejected"
+          ]
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "partId",
+        "featureIds",
+        "stage",
+        "processVariant",
+        "passGroup",
+        "setupId",
+        "status",
+        "quantity",
+        "validation"
+      ],
+      "additionalProperties": false,
+      "description": "Intencao de planejamento, nao codigo executavel. Chave semantica OP-01 impede duplicacao mesmo com IDs distintos."
+    },
+    "NumericProfile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "lengthAbsMm": {
+          "type": "number",
+          "minimum": 0
+        },
+        "lengthRel": {
+          "type": "number",
+          "minimum": 0
+        },
+        "angleAbsRad": {
+          "type": "number",
+          "minimum": 0
+        },
+        "volumeAbsMm3": {
+          "type": "number",
+          "minimum": 0
+        },
+        "volumeRel": {
+          "type": "number",
+          "minimum": 0
+        },
+        "purpose": {
+          "const": "software_comparison_only"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "lengthAbsMm",
+        "lengthRel",
+        "angleAbsRad",
+        "volumeAbsMm3",
+        "volumeRel",
+        "purpose",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "SourceObservation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "sourceId": {
+          "$ref": "#/$defs/Id"
+        },
+        "geometryId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quantity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceObjectKey": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "sourceId",
+        "geometryId",
+        "quantity",
+        "sourceObjectKey"
+      ],
+      "additionalProperties": false
+    },
+    "Reconciliation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "subject": {
+          "$ref": "#/$defs/Target"
+        },
+        "property": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceObservation"
+          },
+          "minItems": 1
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "agree",
+            "differ",
+            "missing",
+            "ambiguous",
+            "not_comparable"
+          ]
+        },
+        "numericProfileId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxAbsoluteDelta": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deltaUnit": {
+          "type": "string",
+          "enum": [
+            "mm",
+            "rad",
+            "mm3",
+            "dimensionless",
+            "not_applicable"
+          ]
+        },
+        "selectedObservationId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decisionId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "id",
+        "subject",
+        "property",
+        "observations",
+        "outcome",
+        "numericProfileId",
+        "maxAbsoluteDelta",
+        "deltaUnit",
+        "selectedObservationId",
+        "decisionId",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "Decision": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "actor": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/Id"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "operator",
+                "automatic_rule",
+                "synthetic_operator"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        "time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "action": {
+          "type": "string",
+          "enum": [
+            "confirm",
+            "reject",
+            "resolve_conflict",
+            "set_units",
+            "set_scale",
+            "associate_views",
+            "associate_features",
+            "classify"
+          ]
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Target"
+          },
+          "minItems": 1
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "binding": {
+          "type": "object",
+          "properties": {
+            "documentSha256": {
+              "$ref": "#/$defs/Sha256"
+            },
+            "analysisRevision": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "affectedIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Id"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "dependentPropertyPaths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "documentSha256",
+            "analysisRevision",
+            "affectedIds",
+            "dependentPropertyPaths"
+          ],
+          "additionalProperties": false
+        },
+        "supersedesDecisionId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "actor",
+        "time",
+        "action",
+        "targets",
+        "evidenceIds",
+        "reason",
+        "binding",
+        "supersedesDecisionId"
+      ],
+      "additionalProperties": false
+    },
+    "Diagnostic": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{2,79}$"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "info",
+            "warning",
+            "error",
+            "blocker"
+          ]
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Target"
+          },
+          "minItems": 1
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "details": {
+          "$ref": "#/$defs/JsonValue"
+        },
+        "blocksConsumers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "visualization",
+              "material",
+              "process",
+              "cost"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "resolved",
+            "accepted_limitation"
+          ]
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "code",
+        "severity",
+        "targets",
+        "message",
+        "details",
+        "blocksConsumers",
+        "status",
+        "evidenceIds"
+      ],
+      "additionalProperties": false
+    },
+    "Eligibility": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "$ref": "#/$defs/Target"
+        },
+        "consumer": {
+          "type": "string",
+          "enum": [
+            "visualization",
+            "material",
+            "process",
+            "cost"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "eligible",
+            "provisional",
+            "blocked",
+            "not_assessed"
+          ]
+        },
+        "blockingDiagnosticIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "requiredDecisionIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "scope",
+        "consumer",
+        "status",
+        "blockingDiagnosticIds",
+        "requiredDecisionIds",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "PackageValidation": {
+      "type": "object",
+      "properties": {
+        "stage": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "extracted",
+            "reconciled",
+            "reviewed"
+          ]
+        },
+        "schemaStatus": {
+          "type": "string",
+          "enum": [
+            "not_checked",
+            "valid",
+            "invalid"
+          ]
+        },
+        "semanticStatus": {
+          "type": "string",
+          "enum": [
+            "not_checked",
+            "valid",
+            "invalid"
+          ]
+        },
+        "eligibility": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Eligibility"
+          },
+          "minItems": 0
+        },
+        "cncReleased": {
+          "const": false
+        }
+      },
+      "required": [
+        "stage",
+        "schemaStatus",
+        "semanticStatus",
+        "eligibility",
+        "cncReleased"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "Linux startup probe, not Windows",
+  "process": {
+    "exitCode": 0,
+    "timedOut": false,
+    "seconds": 0.065,
+    "stdout": "freecadcmd_linux.stdout.txt",
+    "stderr": "freecadcmd_linux.stderr.txt"
+  },
+  "windowsValidationApproved": false,
+  "integrationApproved": false
+}

@@ -1,0 +1,349 @@
+{
+  "version": "1.0",
+  "toleranceMm": 1e-05,
+  "angularToleranceRad": 1e-07,
+  "source": "Independent analytic values calculated from approved synthetic DXF definitions. No native engine output used as truth.",
+  "cases": [
+    {
+      "file": "01_geometrias_mm.dxf",
+      "geometries": [
+        {
+          "id": "line_10mm",
+          "type": "LINE",
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "end": [
+            10,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "arc_crossing_zero",
+          "type": "ARC",
+          "center": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "sweepRad": 0.3490658503988659,
+          "lengthMm": 1.7453292519943295,
+          "start": [
+            24.92403876506104,
+            -0.868240888334652,
+            0
+          ],
+          "end": [
+            24.92403876506104,
+            0.8682408883346495,
+            0
+          ],
+          "midpoint": [
+            25.0,
+            -1.2246467991473533e-15,
+            0
+          ]
+        },
+        {
+          "id": "circle_r3",
+          "type": "CIRCLE",
+          "center": [
+            40,
+            0,
+            0
+          ],
+          "radius": 3,
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "bulge_positive",
+          "type": "ARC",
+          "center": [
+            5,
+            20,
+            0
+          ],
+          "radius": 5,
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "sweepRad": 3.141592653589793,
+          "lengthMm": 15.707963267948966,
+          "start": [
+            0.0,
+            20.0,
+            0
+          ],
+          "end": [
+            10.0,
+            20.0,
+            0
+          ],
+          "midpoint": [
+            4.999999999999999,
+            15.0,
+            0
+          ]
+        },
+        {
+          "id": "bulge_negative",
+          "type": "ARC",
+          "center": [
+            15,
+            20,
+            0
+          ],
+          "radius": 5,
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "sweepRad": -3.141592653589793,
+          "lengthMm": 15.707963267948966,
+          "start": [
+            10.0,
+            20.0,
+            0
+          ],
+          "end": [
+            20.0,
+            20.0,
+            0
+          ],
+          "midpoint": [
+            15.0,
+            25.0,
+            0
+          ]
+        },
+        {
+          "id": "polyline_1",
+          "type": "LINE",
+          "start": [
+            0,
+            40,
+            0
+          ],
+          "end": [
+            10,
+            40,
+            0
+          ]
+        },
+        {
+          "id": "polyline_2",
+          "type": "LINE",
+          "start": [
+            10,
+            40,
+            0
+          ],
+          "end": [
+            10,
+            50,
+            0
+          ]
+        },
+        {
+          "id": "polyline_closing",
+          "type": "LINE",
+          "start": [
+            10,
+            50,
+            0
+          ],
+          "end": [
+            0,
+            40,
+            0
+          ]
+        }
+      ],
+      "exactAnalyticCount": true,
+      "pending": []
+    },
+    {
+      "file": "02_peca_folha_carimbo_cotas.dxf",
+      "geometries": [
+        {
+          "id": "model_lower",
+          "type": "LINE",
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "end": [
+            100,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "model_right",
+          "type": "LINE",
+          "start": [
+            100,
+            0,
+            0
+          ],
+          "end": [
+            100,
+            60,
+            0
+          ]
+        },
+        {
+          "id": "model_upper",
+          "type": "LINE",
+          "start": [
+            100,
+            60,
+            0
+          ],
+          "end": [
+            0,
+            60,
+            0
+          ]
+        },
+        {
+          "id": "model_left",
+          "type": "LINE",
+          "start": [
+            0,
+            60,
+            0
+          ],
+          "end": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "model_circle",
+          "type": "CIRCLE",
+          "center": [
+            25,
+            30,
+            0
+          ],
+          "radius": 5,
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "exactAnalyticCount": false,
+      "pending": [
+        {
+          "id": "paper_and_annotations",
+          "reason": "Native shapes do not establish Model/Paper, viewport, dimension tolerance, title block or source-handle identity. Inspect inventory and packet; semantic reconciliation is pending."
+        }
+      ]
+    },
+    {
+      "file": "03_blocos_polegadas_ocs.dxf",
+      "geometries": [
+        {
+          "id": "block_occurrence_1",
+          "type": "ELLIPSE",
+          "center": [
+            254,
+            457.2,
+            0
+          ],
+          "majorRadius": 50.8,
+          "minorRadius": 25.4,
+          "majorDirection": [
+            0,
+            1,
+            0
+          ],
+          "minorDirection": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "block_occurrence_2",
+          "type": "ELLIPSE",
+          "center": [
+            254,
+            584.2,
+            0
+          ],
+          "majorRadius": 50.8,
+          "minorRadius": 25.4,
+          "majorDirection": [
+            0,
+            1,
+            0
+          ],
+          "minorDirection": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "ocs_circle",
+          "type": "CIRCLE",
+          "center": [
+            -50.8,
+            101.6,
+            76.2
+          ],
+          "radius": 25.4,
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "exactAnalyticCount": true,
+      "pending": [
+        {
+          "id": "block_origin_mapping",
+          "reason": "Known geometric landmarks checked independently; occurrence/handle association remains unavailable in native adapter."
+        }
+      ]
+    },
+    {
+      "file": "04_unidade_ausente.dxf",
+      "geometries": [],
+      "exactAnalyticCount": false,
+      "pending": [
+        {
+          "id": "physical_units",
+          "reason": "INSUNITS=0; operator must confirm physical units. No factor 1 fallback."
+        },
+        {
+          "id": "text_and_spline_semantics",
+          "reason": "Inventory records available text and curves, without guaranteeing complete Unicode text or spline-source correspondence."
+        }
+      ]
+    }
+  ]
+}

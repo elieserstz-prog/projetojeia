@@ -1,0 +1,8 @@
+# FreeCADCmd treats .FCMacro as an executable script (.py may be imported only).
+import os
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from diagnostic.core import read_json
+from diagnostic.driver import run
+run(read_json(os.environ['JEIA_DIAG_SESSION']))

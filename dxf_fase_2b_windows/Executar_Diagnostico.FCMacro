@@ -1,0 +1,15 @@
+# Alternative for an existing PowerShell policy block; no policy changes.
+# Run in the installed FreeCAD: Macro > Macros > select this file > Execute.
+# If several installations exist, set ONLY the existing FreeCADCmd.exe path below.
+FREECAD_CMD = None
+# Example: FREECAD_CMD = r"C:\Program Files\FreeCAD 1.0\bin\FreeCADCmd.exe"
+
+import sys
+from pathlib import Path
+_jeia_package = str(Path(__file__).resolve().parent)
+sys.path.insert(0, _jeia_package)
+try:
+    from diagnostic.bootstrap import main
+    main(freecad_cmd=FREECAD_CMD)
+finally:
+    sys.path.remove(_jeia_package)

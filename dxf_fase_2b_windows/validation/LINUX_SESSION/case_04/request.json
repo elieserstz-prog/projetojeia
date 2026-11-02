@@ -1,0 +1,8 @@
+{
+  "session": "/tmp/jeia-windows-diagnostic-linux-final",
+  "input": "/workspace/projetojeia/dxf_fase_2b_windows/examples/04_unidade_ausente.dxf",
+  "inputSha256": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5",
+  "requestId": "diag-7a897e7310924a5b8fdc7d132aae9794",
+  "generation": 4,
+  "revision": 1
+}

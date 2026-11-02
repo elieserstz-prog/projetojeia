@@ -1,0 +1,11 @@
+JEIA DXF Fase 2B - diagnostico experimental
+Integracao ao JEIA: NAO AUTORIZADA. Aguardar revisao do operador.
+Sistema: Linux-6.18.57-x86_64-with-glibc2.41
+Resultado tecnico: failed
+01_geometrias_mm.dxf: failed - RuntimeError: RuntimeError: <function _import at 0x7fe47d239940> returned a result with an exception set
+02_peca_folha_carimbo_cotas.dxf: failed - RuntimeError: RuntimeError: <function _import at 0x7f6fa7e61940> returned a result with an exception set
+03_blocos_polegadas_ocs.dxf: failed - RuntimeError: RuntimeError: <function _import at 0x7f1c906ad940> returned a result with an exception set
+04_unidade_ausente.dxf: failed - RuntimeError: RuntimeError: <function _import at 0x7f2d6d465e40> returned a result with an exception set
+JSON detalhado: relatorio.json
+Configuracoes e arquivos gerados pertencem somente a esta sessao.
+Nenhum resultado autoriza integracao ou uso para fabricacao.

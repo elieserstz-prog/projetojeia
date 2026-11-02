@@ -1,0 +1,87 @@
+test_driver_timeout_is_failure (test_diagnostic.BootstrapTests.test_driver_timeout_is_failure) ... ok
+test_failed_version_probe_marks_all_dxf_not_run (test_diagnostic.BootstrapTests.test_failed_version_probe_marks_all_dxf_not_run) ... ok
+test_isolation_failure_prevents_worker_acceptance (test_diagnostic.BootstrapTests.test_isolation_failure_prevents_worker_acceptance) ... ok
+test_missing_installation_never_installs (test_diagnostic.BootstrapTests.test_missing_installation_never_installs) ... ok
+test_multiple_installations_require_explicit_selection (test_diagnostic.BootstrapTests.test_multiple_installations_require_explicit_selection) ... ok
+test_non_windows_does_not_start_native_process (test_diagnostic.BootstrapTests.test_non_windows_does_not_start_native_process) ... ok
+test_partial_worker_geometry_never_passes (test_diagnostic.BootstrapTests.test_partial_worker_geometry_never_passes) ... ok
+test_successful_startup_without_report_is_failure (test_diagnostic.BootstrapTests.test_successful_startup_without_report_is_failure) ... ok
+test_all_eight_basic_geometries (test_diagnostic.GeometryTests.test_all_eight_basic_geometries) ... ok
+test_changed_radius_rejected (test_diagnostic.GeometryTests.test_changed_radius_rejected) ... ok
+test_conflicting_geometry_never_passes (test_diagnostic.GeometryTests.test_conflicting_geometry_never_passes) ... ok
+test_datum_helpers_are_not_physical_geometry (test_diagnostic.GeometryTests.test_datum_helpers_are_not_physical_geometry) ... ok
+test_double_unit_conversion_rejected (test_diagnostic.GeometryTests.test_double_unit_conversion_rejected) ... ok
+test_extra_coincident_observation_is_not_silently_deduplicated (test_diagnostic.GeometryTests.test_extra_coincident_observation_is_not_silently_deduplicated) ... ok
+test_inches_ocs_and_two_ellipses (test_diagnostic.GeometryTests.test_inches_ocs_and_two_ellipses) ... ok
+test_mirrored_bulge_rejected (test_diagnostic.GeometryTests.test_mirrored_bulge_rejected) ... ok
+test_missing_array_occurrence_rejected (test_diagnostic.GeometryTests.test_missing_array_occurrence_rejected) ... ok
+test_missing_model_geometry_fails_despite_paper_pending (test_diagnostic.GeometryTests.test_missing_model_geometry_fails_despite_paper_pending) ... ok
+test_model_landmarks_do_not_approve_paper_semantics (test_diagnostic.GeometryTests.test_model_landmarks_do_not_approve_paper_semantics) ... ok
+test_nan_and_infinite_are_not_equal (test_diagnostic.GeometryTests.test_nan_and_infinite_are_not_equal) ... ok
+test_no_geometry_cannot_be_success (test_diagnostic.GeometryTests.test_no_geometry_cannot_be_success) ... ok
+test_nonuniform_scaling_cannot_become_circle (test_diagnostic.GeometryTests.test_nonuniform_scaling_cannot_become_circle) ... ok
+test_parent_container_is_not_summed_with_children (test_diagnostic.GeometryTests.test_parent_container_is_not_summed_with_children) ... ok
+test_reverse_line_orientation_preserved (test_diagnostic.GeometryTests.test_reverse_line_orientation_preserved) ... ok
+test_rotated_major_axis_rejected (test_diagnostic.GeometryTests.test_rotated_major_axis_rejected) ... ok
+test_same_circle_wrong_arc_sweep_rejected (test_diagnostic.GeometryTests.test_same_circle_wrong_arc_sweep_rejected) ... ok
+test_small_normal_rotation_beyond_angular_tolerance_rejected (test_diagnostic.GeometryTests.test_small_normal_rotation_beyond_angular_tolerance_rejected) ... ok
+test_unitless_never_passes_physical_calibration (test_diagnostic.GeometryTests.test_unitless_never_passes_physical_calibration) ... ok
+test_wrong_arc_endpoint_rejected (test_diagnostic.GeometryTests.test_wrong_arc_endpoint_rejected) ... ok
+test_wrong_ocs_plane_rejected (test_diagnostic.GeometryTests.test_wrong_ocs_plane_rejected) ... ok
+test_wrong_unit_conversion_rejected (test_diagnostic.GeometryTests.test_wrong_unit_conversion_rejected) ... ok
+test_analysis_revision_rejected (test_diagnostic.IdentityTests.test_analysis_revision_rejected) ... ok
+test_boolean_generation_rejected (test_diagnostic.IdentityTests.test_boolean_generation_rejected) ... ok
+test_budget_unblock_rejected (test_diagnostic.IdentityTests.test_budget_unblock_rejected) ... ok
+test_cnc_release_rejected (test_diagnostic.IdentityTests.test_cnc_release_rejected) ... ok
+test_engine_source_hash_rejected (test_diagnostic.IdentityTests.test_engine_source_hash_rejected) ... ok
+test_matching_request_accepted (test_diagnostic.IdentityTests.test_matching_request_accepted) ... ok
+test_same_filename_changed_bytes_rejected (test_diagnostic.IdentityTests.test_same_filename_changed_bytes_rejected) ... ok
+test_selection_generation_rejected (test_diagnostic.IdentityTests.test_selection_generation_rejected) ... ok
+test_stale_request_rejected (test_diagnostic.IdentityTests.test_stale_request_rejected) ... ok
+test_all_approved_assets_byte_identical (test_diagnostic.IsolationAndTransportTests.test_all_approved_assets_byte_identical) ... ok
+test_cmd_entry_points_execute_macros_instead_of_import_only_python (test_diagnostic.IsolationAndTransportTests.test_cmd_entry_points_execute_macros_instead_of_import_only_python) ... ok
+test_failed_driver_exports_json_and_all_four_not_run (test_diagnostic.IsolationAndTransportTests.test_failed_driver_exports_json_and_all_four_not_run) ... ok
+test_ignored_isolation_fails_closed (test_diagnostic.IsolationAndTransportTests.test_ignored_isolation_fails_closed) ... ok
+test_launcher_has_no_policy_or_install_commands (test_diagnostic.IsolationAndTransportTests.test_launcher_has_no_policy_or_install_commands) ... ok
+test_missing_executable_is_reported (test_diagnostic.IsolationAndTransportTests.test_missing_executable_is_reported) ... ok
+test_native_crash_is_not_success (test_diagnostic.IsolationAndTransportTests.test_native_crash_is_not_success) ... ok
+test_new_output_never_overwrites (test_diagnostic.IsolationAndTransportTests.test_new_output_never_overwrites) ... ok
+test_process_logs_and_success (test_diagnostic.IsolationAndTransportTests.test_process_logs_and_success) ... ok
+test_profile_writes_only_new_session_directories (test_diagnostic.IsolationAndTransportTests.test_profile_writes_only_new_session_directories) ... ok
+test_timeout_is_reported (test_diagnostic.IsolationAndTransportTests.test_timeout_is_reported) ... ok
+test_verified_isolation_accepted (test_diagnostic.IsolationAndTransportTests.test_verified_isolation_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.104s
+
+OK
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmpuqhr185i/sessao_macro_8677f3dfb916
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmp4euw0l2s/sessao_macro_41399db6875c
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmp541gery7/sessao_macro_7abad81797fd
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmpe6f3cw36/sessao_macro_96ab5ee13d01
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmprye72ium/sessao_macro_edcf9b4a4f64
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.
+JEIA: somente FreeCADCmd existente, perfis isolados e quatro DXFs sinteticos.
+Sem instalacoes, rede, alteracao de politica ou execucao do JEIA.
+Timeout encerra somente os processos iniciados por este diagnostico.
+Resultados: /tmp/tmp9sdo9p97/sessao_macro_7b4c6e7ef389
+Leia RESUMO.txt e relatorio.json. Integracao nao autorizada.

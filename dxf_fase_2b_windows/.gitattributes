@@ -1,0 +1,4 @@
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.stdout.txt -text -diff
+*.stderr.txt -text -diff

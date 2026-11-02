@@ -1,0 +1,305 @@
+{
+  "kind": "native_in_memory_reference_NOT_DXF",
+  "freecadVersion": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "windowsValidationApproved": false,
+  "integrationApproved": false,
+  "comparison": {
+    "status": "passed",
+    "checks": [
+      {
+        "id": "line_10mm",
+        "status": "passed",
+        "observation": "Reference0.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "arc_crossing_zero",
+        "status": "passed",
+        "observation": "Reference1.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "circle_r3",
+        "status": "passed",
+        "observation": "Reference2.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "bulge_positive",
+        "status": "passed",
+        "observation": "Reference3.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "bulge_negative",
+        "status": "passed",
+        "observation": "Reference4.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "polyline_1",
+        "status": "passed",
+        "observation": "Reference5.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "polyline_2",
+        "status": "passed",
+        "observation": "Reference6.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "polyline_closing",
+        "status": "passed",
+        "observation": "Reference7.Edge1",
+        "candidateCount": 1
+      },
+      {
+        "id": "analytic_multiplicity",
+        "status": "passed",
+        "extraObservations": []
+      }
+    ],
+    "unmatchedObservations": [],
+    "nativeShapeObjects": 8,
+    "analyticObservations": 8,
+    "meaning": "Geometric oracle only; no classification, operation or integration approval"
+  },
+  "brepChecks": [
+    {
+      "object": "Reference0",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "d62f627077fa6fcb4f5afcf15d813ea62a420b8e9d049e526381ab00e0554b2e",
+      "bytes": 482
+    },
+    {
+      "object": "Reference0",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "1e4284b3c7af5d3641ada3b72a10ba99906582df4c371a5a8cd654686b7bdb75",
+      "bytes": 689
+    },
+    {
+      "object": "Reference1",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "9f9d0ba54ed2fc67db02a021e71c2ca03a071b5b46dd9681e6b9f15323b702ff",
+      "bytes": 586
+    },
+    {
+      "object": "Reference1",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "a257c894909e5e78f89ab76369e5987ac07f0054988a126fed028aa731c8512f",
+      "bytes": 793
+    },
+    {
+      "object": "Reference2",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 1,
+        "solids": 0
+      },
+      "sha256": "80e16ae034fe5ba3e22c612bd31d833a06dc7e581dae4edef803e5f3a5f487c2",
+      "bytes": 482
+    },
+    {
+      "object": "Reference2",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 1,
+        "solids": 0
+      },
+      "sha256": "25f1b29d5ab2bc2b1d47ae8cd13f7ece9657a30ae83b71ef4efcb405f04cb7d9",
+      "bytes": 689
+    },
+    {
+      "object": "Reference3",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "497a65d1e29d69ba94a948ae800ea047a673480422860f1ece77e669c2592b67",
+      "bytes": 517
+    },
+    {
+      "object": "Reference3",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "e9519068b5b3db8624e1368ddaec9fe27bd74c0bba5fbd535236cde20778f55c",
+      "bytes": 724
+    },
+    {
+      "object": "Reference4",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "722fd9664f078f52e20f5081c8d62da8cd2d7d1c297f932230a8a98ece3e11a4",
+      "bytes": 516
+    },
+    {
+      "object": "Reference4",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "0c646b6edfe40036b7dac3d0d763380c847baabad705420212429cdb3a97ae11",
+      "bytes": 723
+    },
+    {
+      "object": "Reference5",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "2eeddbb6752b380820b8c47e243ba91bb5a52b174ff11ebea77b40f15cd658e7",
+      "bytes": 485
+    },
+    {
+      "object": "Reference5",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "00294c8eae76b3841c599aa268d20e4894f6d8da431b03fbdfdb60c12273f3d4",
+      "bytes": 692
+    },
+    {
+      "object": "Reference6",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "9f3896a70b56e97ce017c5155d73f69271f28c9e26959005c7b431fd2a67a1e6",
+      "bytes": 487
+    },
+    {
+      "object": "Reference6",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "e1b726d77b6a30f2b53c71bdf8d76bf931c05479a1d15efe00b6650fe10382d3",
+      "bytes": 694
+    },
+    {
+      "object": "Reference7",
+      "kind": "rawObjectBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "00d38d4613523fc37aa8976ce25ffc39ca96a5a7f85a8de7614c83b92581c2d1",
+      "bytes": 537
+    },
+    {
+      "object": "Reference7",
+      "kind": "globalBrep",
+      "status": "passed",
+      "valid": true,
+      "counts": {
+        "edges": 1,
+        "faces": 0,
+        "vertices": 2,
+        "solids": 0
+      },
+      "sha256": "30271fb14158a5d8a529713f457beaaac49cad4d13b6aca5816b18c6fa15dfae",
+      "bytes": 744
+    }
+  ],
+  "negativeBrepChecks": {
+    "missingBrepRejected": true,
+    "changedTopologyRejected": true
+  }
+}

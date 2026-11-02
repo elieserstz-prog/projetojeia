@@ -1,0 +1,31 @@
+JEIA DXF FASE 2B - DIAGNOSTICO WINDOWS EXPERIMENTAL
+
+1. Salve o ZIP em Downloads e use EXTRair tudo. Nao execute de dentro do ZIP.
+2. Abra a pasta extraida e execute INICIAR_DIAGNOSTICO.cmd com duplo clique.
+   Nao e necessario executar como administrador. Nao abra a JEIA CAD 04.1.
+3. Leia na janela o caminho da nova pasta resultados\sessao_...
+4. Abra RESUMO.txt e relatorio.json nessa pasta.
+
+O pacote procurara o FreeCADCmd instalado e executara um teste de versao,
+um controle do kernel e quatro importacoes DXF em processos separados.
+Escrevera somente resultados e configuracoes temporarias na pasta da sessao.
+Nao instala programas ou bibliotecas, nao altera a instalacao nem as
+preferencias habituais do FreeCAD e nao executa a JEIA. Em timeout, encerra
+somente os processos iniciados pelo diagnostico e seus descendentes.
+
+Se o Windows bloquear o PowerShell, nao mude a politica de seguranca.
+Abra o FreeCAD instalado e execute Executar_Diagnostico.FCMacro pelo menu
+Macro > Macros. Os resultados ficarao em resultados\sessao_macro_...
+Instrucoes detalhadas e selecao de FreeCADCmd: README.md.
+
+Este pacote ainda NAO FOI VALIDADO NO WINDOWS. Testes de logica e controles
+nativos foram realizados em Linux; as quatro importacoes DXF desse Linux
+falharam. Consulte RELATORIO_TECNICO.md. Os resultados Linux incluidos em
+validation nao sao os resultados de seu computador.
+
+Envie a pasta da sessao para analise. Ela inclui caminhos locais: revise
+antes de compartilhar. Nao envie sua instalacao da JEIA ou desenhos reais.
+Nenhum resultado sera transmitido automaticamente.
+
+Nao ha integracao ao JEIA, aprovacao de fabricacao ou mudanca na branch main.
+A integracao depende de revisao dos testes Windows e sua autorizacao.

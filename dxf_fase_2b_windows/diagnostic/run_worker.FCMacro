@@ -1,0 +1,6 @@
+# Explicit script entry point. The approved adapter itself remains unchanged.
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from diagnostic.native_worker import main
+main()

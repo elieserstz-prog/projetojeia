@@ -1,0 +1,8 @@
+{
+  "session": "/tmp/jeia-windows-diagnostic-linux-final",
+  "input": "/workspace/projetojeia/dxf_fase_2b_windows/examples/01_geometrias_mm.dxf",
+  "inputSha256": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+  "requestId": "diag-c4f6df22f9cb48eabb1e5a83433fcfba",
+  "generation": 1,
+  "revision": 1
+}

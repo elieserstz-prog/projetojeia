@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "a6aeed691cf4276a2e0f4c50bc723909e8712d8c",
+  "originalCADCommit": "456495402676e7b4bee023377d5fea0ddfa8230f",
+  "files": {
+    "approved_adapter/jeia_dxf_freecad/__init__.py": "2f4098dbeb3e64a89db048424be96eb3b33738a85c99ad34a87a52a5a7851e93",
+    "approved_adapter/jeia_dxf_freecad/__main__.py": "cf2e785bfe28dbbacb991de731dfbcaf272bd45deca38bf94ce289cee90e7597",
+    "approved_adapter/jeia_dxf_freecad/collector.py": "37acc7d117c42b10f04e9ea4e5095024e36e4fc8414d43d4a952dddb2fa812df",
+    "approved_adapter/jeia_dxf_freecad/contract.py": "5164551e46635ec18c439c9e8cd2e7201a26e4ba9649b2bc8f186cb6546c5dfc",
+    "approved_adapter/jeia_dxf_freecad/native.py": "e2a78af136511b5952f4ebe3fe268914562795f61aa7b5614da109dcef805fa3",
+    "approved_adapter/jeia_dxf_freecad/runner.py": "62b72ead8a84d2a4734de7adf641c496d8a800c24596062a8cf794a4eff6131d",
+    "approved_adapter/jeia_dxf_freecad/schema.json": "9f3498c2bd5b3435ec3350819ce30d5ee09b8d6009822165a4df192db1420ac9",
+    "approved_adapter/jeia_dxf_freecad/worker.py": "30e9777c1ea7b2138be88e65cd5d49cedf9db3d6b041223f0733f6abc6a60e73",
+    "examples/01_geometrias_mm.dxf": "d38e6cac8b5a4f8fc4263cc7a04e450a0ac687c30702831770e1b0dec0ec3b61",
+    "examples/02_peca_folha_carimbo_cotas.dxf": "3d83d6b1296c382a685bfbe3fcdc4a4f92fb8de413a63fad4c29d0a79cd8c800",
+    "examples/03_blocos_polegadas_ocs.dxf": "40d19b26d2416582a2209caea779357de9d8f2470e8014673f4c9ccab4d07d45",
+    "examples/04_unidade_ausente.dxf": "cd4c9e1f8b763ccba5a4ebf47284bd15c81e1e436113687193906c1cd85d21a5"
+  }
+}

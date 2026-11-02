@@ -1,0 +1,8 @@
+{
+  "session": "/tmp/jeia-windows-diagnostic-linux-final",
+  "input": "/workspace/projetojeia/dxf_fase_2b_windows/examples/02_peca_folha_carimbo_cotas.dxf",
+  "inputSha256": "3d83d6b1296c382a685bfbe3fcdc4a4f92fb8de413a63fad4c29d0a79cd8c800",
+  "requestId": "diag-b4681a25240e42c0aa8c075e4b5248eb",
+  "generation": 2,
+  "revision": 1
+}

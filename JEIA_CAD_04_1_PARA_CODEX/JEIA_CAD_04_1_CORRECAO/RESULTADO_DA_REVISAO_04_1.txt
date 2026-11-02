@@ -1,0 +1,24 @@
+JEIA TECH Industrial CAD 04.1 — Revisão de engenharia (01/11/2026)
+
+Resumo dos dados recebidos do Windows:
+- Fundido simples STEP: 1 sólido; X125, Y58.46, Z105 mm; volume 536321.775175 mm3.
+- Chapa simples STEP: 1 sólido; X495.75, Y320.54, Z50.8 mm; volume 6483851.096314 mm3.
+- Eixo simples STEP: 1 sólido; X873, Y640, Z640 mm; volume 122662149.982536 mm3.
+- STEP complexo 10015232229SWP000.STEP: 1 sólido; 1318 faces e 3191 arestas;
+  caixa BREP X2725, Y1423.028013, Z1955.252196 mm; volume 666269593.371067 mm3.
+- Divergência na peça complexa: malha do visualizador Y 950.009 / Z 1840 versus BREP Y 1423.028 / Z 1955.252.
+  O programa sinaliza diferenças: não trata a malha como prova de medidas de fabricação.
+- Para fundição, peso e volume BRUTOS não são inferidos da caixa envolvente do STEP final.
+- Distinção implementada: GEOMETRIA FINAL; MODELO DO FUNDIDO (forma do bruto; a confirmar);
+  PEÇA FUNDIDA (estado do material recebido); BLOCO MACIÇO (bruto retangular distinto).
+
+Teste local automatizado da camada web, com respostas BREP SIMULADAS dos JSONs reais:
+- Eixo (tarugo), chapa (placa) e complexa (Modelo do fundido) passaram na transferência BREP -> campos.
+- Fundido: volume final BREP disponível; volume bruto e peso bruto continuam pendentes.
+- Teste de descarte de resultado antigo ao trocar STEP passou.
+- 9 iframes de módulos preservados; JavaScript dos scripts embutidos checado com Node.
+
+LIMITAÇÕES: os motores FreeCAD/ezdxf foram executados no Windows pelo usuário na versão CAD 04.
+O novo instalador CAD 04.1 NÃO foi compilado nem testado no Windows neste ambiente Linux.
+É um pacote de fonte e script BAT para gerar o EXE no Windows. Os testes de UI são simulações
+que não substituem o teste de implantação, nem validam processos CAM/CNC.

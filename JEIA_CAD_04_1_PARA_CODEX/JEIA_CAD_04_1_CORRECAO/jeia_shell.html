@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>JEIA Windows CAD 04.1 — Integração BREP</title>
+<style>body{margin:0;font:14px Segoe UI,Arial,sans-serif;background:#e8eff6;color:#15324d}*{box-sizing:border-box}header{min-height:44px;background:#102e4d;color:#fff;padding:6px 12px;display:flex;align-items:center;gap:12px}button{border:1px solid #bbc9d7;border-radius:7px;padding:9px 13px;background:#fff;color:#163a5d;font-weight:700;cursor:pointer}header span{margin-left:auto;color:#c8d9e8;font-size:12px}iframe{width:100%;height:calc(100vh - 52px);border:0;background:#fff}details{margin:14px;border:1px solid #a5bcd0;border-radius:10px;background:#f9fbff;padding:14px}summary{font-weight:750;cursor:pointer}#result,#network{background:#fff;border:1px solid #c2d1de;border-radius:6px;padding:10px;white-space:pre-wrap;overflow:auto;max-height:260px}#test_status{color:#52687e}small{color:#657e8e}</style></head>
+<body><header><b>⚙ JEIA TECH Industrial</b><button onclick="requestJSON()">⬇ Exportar relatório JSON</button><span>Windows LAB • CAD 04.1 | V20.6.8.3 preservada</span></header>
+<iframe id="principal" src="JEIA_original_preservado.html" title="JEIA Industrial"></iframe>
+<script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script>
+let bridge=null;
+new QWebChannel(qt.webChannelTransport,function(channel){bridge=channel.objects.jeia;});
+function call(name,args=[]){return new Promise((resolve,reject)=>{if(!bridge){reject(new Error('Qt não inicializado'));return;}bridge[name](...args,(reply)=>resolve(reply));});}
+
+// Relay diagnostics from importer tab 2 to the Windows native application.
+window.addEventListener('message',async ev=>{
+ if(ev.source!==document.getElementById('principal')?.contentWindow || ev.data?.kind!=='JEIA04_NATIVE_TOOL')return;
+ const {rid,action}=ev.data;
+ try{
+  let name, args=[];
+  if(action==='status')name='status';
+  else if(action==='network')name='network_diagnostic';
+  else if(action==='backup')name='backup';
+  else if(action==='step'||action==='dxf'){name='test_file';args=[action];}
+  else throw Error('Ferramenta desconhecida');
+  const data=await call(name,args);
+  ev.source.postMessage({kind:'JEIA04_NATIVE_TOOL_RESULT',rid,ok:true,data},'*');
+ }catch(err){ev.source.postMessage({kind:'JEIA04_NATIVE_TOOL_RESULT',rid,ok:false,error:String(err)},'*');}
+});
+
+
+window.addEventListener('message', async ev=>{
+ if(ev.source!==document.getElementById('principal')?.contentWindow)return;
+ const msg=ev.data||{};
+ if(msg.kind==='JEIA04_CAD_ANALYZE'){
+   let result;
+   try{result=await call('analyze_selected',[msg.engine,msg.filename,msg.payload]);}
+   catch(err){result={sucesso:false,erro:String(err)}}
+   ev.source.postMessage({kind:'JEIA04_CAD_RESULT',rid:msg.rid,engine:msg.engine,result},'*');
+ }
+ if(msg.kind==='JEIA04_CAD_SAVE'){
+   let result;
+   try{result=await call('save_json',[msg.filename,msg.body]);}
+   catch(err){result={ok:false,erro:String(err)}}
+   ev.source.postMessage({kind:'JEIA04_CAD_SAVED',rid:msg.rid,filename:msg.filename,result},'*');
+ }
+});
+
+function requestJSON(){document.getElementById('principal').contentWindow.postMessage({kind:'JEIA_REQUEST_JSON'},'*');}
+window.addEventListener('message',async e=>{
+ if(!e.data||e.data.kind!=='JEIA_NATIVE_JSON_SAVE')return;
+ if(!e.data.filename||typeof e.data.body!=='string')return;
+ let result;try{result=await call('save_json',[e.data.filename,e.data.body]);}catch(err){result={ok:false,erro:String(err)}}
+ if(e.source)e.source.postMessage({kind:'JEIA_NATIVE_JSON_RESULT',...result},'*');
+});
+</script></body></html>

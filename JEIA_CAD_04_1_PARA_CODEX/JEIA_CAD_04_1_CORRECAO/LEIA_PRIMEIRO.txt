@@ -1,0 +1,25 @@
+JEIA CAD 04.1 — Correção de comunicação BREP e estado do projeto
+
+ATENÇÃO: pacote de fontes para gerar instalador EXE em Windows. Não contém EXE já compilado.
+
+1. Feche totalmente JEIA antes de atualizar (inclusive QtWebEngine).
+2. Execute GERAR_ATUALIZACAO_CAD_04_1.bat na pasta extraída, com Python 3.12 e Inno Setup instalados.
+3. Ao ver SUCESSO, execute INSTALADOR_PRONTO\JEIA_TECH_Industrial_ATUALIZACAO_CAD_04_1.exe.
+4. Feche o JEIA antes da instalação: a instalação anterior mostrou arquivos em uso.
+5. Para um teste STEP, use primeiro Importar STEP (visualização), depois Analisar STEP FreeCAD. Confira resumo CAD e selecione formato/fornecimento/material ANTES de Aplicar dimensões.
+
+MELHORIAS:
+- Separação de exibição no modo STEP (não mostrar botão Reconhecer DXF na matéria-prima).
+- Ao selecionar novo STEP, limpar os números de exemplo de matéria-prima 40 x 150 (sem afetar motores externos).
+- Aplicar caixa BREP (x/y/z) e volume CAD ao fluxo STEP após análise FreeCAD; não confundir volume CAD com peso bruto fundido.
+- Mostrar divergência malha versus BREP; preservar modelo visual e dados geométricos independentes.
+- Diferenciar Bloco maciço de Modelo do fundido. O modelo do fundido é uma forma de bruto de fundição, NÃO a caixa envolvente do STEP.
+- Usar forma, origem do fornecimento e liga escolhidas pelo usuário quando confirmadas.
+- O volume BREP corresponde à peça final; o peso bruto de fundido permanece pendente até indicação ou geometria do bruto.
+- Bloquear geração de processo DXF de eixo se Ø e comprimento forem inválidos.
+- Recusar respostas de motor relativas a um desenho anterior.
+- Manter as nove abas e a Qt 6.11 funcionando como antes.
+
+NÃO FEITO: cálculo de sobremetal/volume exato do bruto fundido, reconhecimento de furos usináveis, DXF -> modelo 3D, leitor PDF, CAM automático ou G-code liberado. Esses itens continuam exigindo validação.
+
+TESTES DE BASE: fundido, chapa, eixo e STEP complexo foram conferidos pelos JSONs reais. Código HTML validado estaticamente neste ambiente; AINDA requer teste Windows após compilação.
